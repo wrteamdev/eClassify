@@ -113,7 +113,6 @@
 			var linkHref;
 			var topPos;
 			var $target;
-
 			self.$nav.each(function() {
 				linkHref = self.getHash($(this));
 				$target = $('#' + linkHref);

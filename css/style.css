@@ -262,7 +262,7 @@ p {
 #content-section .section {
     position: relative;
     min-height: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 0 60px;
 }
 
@@ -323,7 +323,7 @@ p {
 
 #content-section .sec-content {
     position: relative;
-    padding: 10px 50px;
+    padding: 10px 0;
 }
 
 .introduction .sec-content h2 {
@@ -570,4 +570,94 @@ p {
 .responsive-video {
     width: 100%;
     border: 3px solid black;
+}
+
+#hamburger-input{
+    display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 25px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+            to bottom,
+            var(--theme-color), var(--theme-color) 20%,
+            white 20%, white 40%,
+            var(--theme-color) 40%, var(--theme-color) 60%,
+            white 60%, white 80%,
+            var(--theme-color) 80%, var(--theme-color) 100%
+    );
+
+    z-index: 999;
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: var(--theme-color);
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+    color: #B9FAF8;
+    font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+    padding-left: 0px;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+#hamburger-menu a {
+    color: #B9FAF8;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+    visibility: visible;
+    opacity: 0.4;
+}
+
+
+@media screen and (max-width: 750px) {
+    #sidebar {
+        display: none;
+    }
+    #content-section{
+        padding: 0;
+    }
+    #hamburger-menu {
+        display: inline;
+    }
+
+    #content-section .section {
+        padding: 30px 20px;
+    }
 }

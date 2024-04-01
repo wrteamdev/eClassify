@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <title>Eclassify | Home</title>
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon.png">
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet" />
 
@@ -14,7 +15,6 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
@@ -38,26 +38,26 @@
 
                 <!--Sticky Menu-->
                 <nav class="sticky-menu animated bounceInDown">
-                    <ul>
+                    <ul id="main-section">
                         <!-- normal list -->
                         <li class="current">
                             <a href="#introduction">Introduction <span class="fa fa-arrow-right"></span></a>
                         </li>
 
                         <!-- submenu list -->
-                        <li class='sub-menu'><a>Setup Admin Panel<i class='fa fa-caret-down right'></i></a>
+                        <li class='sub-menu'><a href="#prerequisite">Setup Admin Panel<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#prerequisite'>Prerequisite</a></li>
                                 <li><a href='#Installation-steps'>Installation Steps</a></li>
                             </ul>
                         </li>
-                        <li class="sub-menu"><a>Additional Panel Configuration<i class='fa fa-caret-down right'></i></a>
+                        <li class="sub-menu"><a href="#generalsettings">Additional Panel Configuration<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#generalsettings'>General Settings</a></li>
                                 <li><a href='#webhookconfig'>Payment Gateway Webhook Configuration</a></li>
                             </ul>
                         </li>
-                        <li class='sub-menu'><a>Setup Mobile Application<i class='fa fa-caret-down right'></i></a>
+                        <li class='sub-menu'><a href="#setupFlutter">Setup Mobile Application<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#setupFlutter'>Setup Flutter</a></li>
                                 <li><a href='#changePackageName'>Change Package Name Of Application</a></li>

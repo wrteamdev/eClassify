@@ -4,7 +4,13 @@
   //Add OnepageNav / Sidebar
   function sideNav() {
     if ($(".menu-box .sticky-menu").length) {
-      $(".menu-box .sticky-menu ul").onePageNav();
+      $(".menu-box .sticky-menu ul").onePageNav({
+        changeHash: true,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing',
+      });
     }
   }
 
@@ -17,12 +23,11 @@
   }
 
   //animate to top on Page Refresh
-  $("html, body").animate(
-    {
-      scrollTop: $("html, body").offset().top,
-    },
-    1000
-  );
+  // $("html, body").animate({
+  //     scrollTop: $("html, body").offset().top,
+  //   },
+  //   1000
+  // );
 
   $("pre.code").highlight();
 
@@ -32,6 +37,24 @@
 
   $(document).on("ready", function () {
     sideNav();
+    $("#sidebar .menu-box").mCustomScrollbar({
+      axis:"yx", //set both axis scrollbars
+      advanced:{autoExpandHorizontalScroll:true}, //auto-expand content to accommodate floated elements
+      // change mouse-wheel axis on-the-fly
+      callbacks:{
+        onOverflowY:function(){
+          var opt=$(this).data("mCS").opt;
+          if(opt.mouseWheel.axis!=="y") opt.mouseWheel.axis="y";
+        },
+        onOverflowX:function(){
+          var opt=$(this).data("mCS").opt;
+          if(opt.mouseWheel.axis!=="x") opt.mouseWheel.axis="x";
+        },
+      }
+    });
+    setTimeout(function() {
+      window.location = window.location.hash;
+    },1000)
   });
 
   $(".sub-menu ul").hide();
