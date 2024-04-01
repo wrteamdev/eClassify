@@ -5,7 +5,7 @@
   function sideNav() {
     if ($(".menu-box .sticky-menu").length) {
       $(".menu-box .sticky-menu ul").onePageNav({
-        changeHash: true,
+        changeHash: false,
         scrollSpeed: 750,
         scrollThreshold: 0.5,
         filter: '',
@@ -52,9 +52,9 @@
         },
       }
     });
-    setTimeout(function() {
-      window.location = window.location.hash;
-    },1000)
+    // setTimeout(function() {
+    //   window.location = window.location.hash;
+    // },1000)
   });
 
   $(".sub-menu ul").hide();
