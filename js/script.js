@@ -5,7 +5,7 @@
   function sideNav() {
     if ($(".menu-box .sticky-menu").length) {
       $(".menu-box .sticky-menu ul").onePageNav({
-        changeHash: false,
+        changeHash: true,
         scrollSpeed: 750,
         scrollThreshold: 0.5,
         filter: '',
