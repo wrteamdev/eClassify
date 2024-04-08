@@ -2,823 +2,901 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Eclassify | Home</title>
     <link rel="icon" type="image/x-icon" href="images/logo/favicon.png">
     <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="css/jquery.highlight.css" />
+    <link rel="stylesheet" href="css/jquery.highlight.css"/>
 
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/scrollbar.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/scrollbar.css" rel="stylesheet"/>
     <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
-    <!--Page Wrapper-->
-    <div class="page-wrapper">
-        <!--Sidebar-->
-        <aside id="sidebar">
-            <!--Toggle Button-->
-            <div class="button-container clearfix">
-                <div class="menu-toggle flaticon-menu10"></div>
+<!--Page Wrapper-->
+<div class="page-wrapper">
+    <!--Sidebar-->
+    <aside id="sidebar">
+        <!--Toggle Button-->
+        <div class="button-container clearfix">
+            <div class="menu-toggle flaticon-menu10"></div>
+        </div>
+
+        <!--Menu Box-->
+        <div class="menu-box">
+            <!--Logo-->
+            <br/>
+            <div class="logo text-right">
+                <a href="#"><img src="images/logo/sidebar_logo.png" alt=""/></a>
             </div>
 
-            <!--Menu Box-->
-            <div class="menu-box">
-                <!--Logo-->
-                <br />
-                <div class="logo text-right">
-                    <a href="#"><img src="images/logo/sidebar_logo.png" alt="" /></a>
-                </div>
+            <!--Sticky Menu-->
+            <nav class="sticky-menu animated bounceInDown">
+                <ul id="main-section">
+                    <!-- normal list -->
+                    <li class="current">
+                        <a href="#introduction">Introduction <span class="fa fa-arrow-right"></span></a>
+                    </li>
 
-                <!--Sticky Menu-->
-                <nav class="sticky-menu animated bounceInDown">
-                    <ul id="main-section">
-                        <!-- normal list -->
-                        <li class="current">
-                            <a href="#introduction">Introduction <span class="fa fa-arrow-right"></span></a>
-                        </li>
+                    <!-- submenu list -->
+                    <li class='sub-menu'><a href="#prerequisite">Setup Admin Panel<i
+                            class='fa fa-caret-down right'></i></a>
+                        <ul>
+                            <li><a href='#prerequisite'>Prerequisite</a></li>
+                            <li><a href='#Installation-steps'>Installation Steps</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#generalsettings">Additional Panel Configuration<i
+                            class='fa fa-caret-down right'></i></a>
+                        <ul>
+                            <li><a href='#generalsettings'>General Settings</a></li>
+                            <li><a href='#webhookconfig'>Payment Gateway Webhook Configuration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='sub-menu'><a href="#setupFlutter">Setup Mobile Application<i
+                            class='fa fa-caret-down right'></i></a>
+                        <ul>
+                            <li><a href='#setupFlutter'>Setup Flutter</a></li>
+                            <li><a href='#changePackageName'>Change Package Name Of Application</a>
+                            </li>
+                            <li><a href='#integrateWithFirebase'>Integrate with Firebase</a></li>
+                            <li><a href='#integrateWithAdminPanel'>Integrate with Admin Panel</a>
+                            </li>
+                            <li><a href='#changeAppLogo'>Change App logo</a></li>
+                            <li><a href='#changeAppName'>Change App name</a></li>
+                            <li><a href='#runThisApp'>Run This App</a></li>
+                            <li><a href='#changeAppTheme'>Change App theme</a></li>
+                            <li><a href='#changeFont'>Change Font</a></li>
+                            <!--<li><a href='#changeLanguage'>Change Language</a></li>
+                            <li><a href='#changeItemAnimations'>Change Item Animations</a></li>
+                            <li><a href='#chatMessageConstraints'>Chat Message Constraints</a></li>-->
+                            <li><a href='#generateReleaseVersion'>Generate Release Version</a></li>
+                        </ul>
+                    </li>
 
-                        <!-- submenu list -->
-                        <li class='sub-menu'><a href="#prerequisite">Setup Admin Panel<i class='fa fa-caret-down right'></i></a>
-                            <ul>
-                                <li><a href='#prerequisite'>Prerequisite</a></li>
-                                <li><a href='#Installation-steps'>Installation Steps</a></li>
-                            </ul>
-                        </li>
-                        <li class="sub-menu"><a href="#generalsettings">Additional Panel Configuration<i class='fa fa-caret-down right'></i></a>
-                            <ul>
-                                <li><a href='#generalsettings'>General Settings</a></li>
-                                <li><a href='#webhookconfig'>Payment Gateway Webhook Configuration</a></li>
-                            </ul>
-                        </li>
-                        <li class='sub-menu'><a href="#setupFlutter">Setup Mobile Application<i class='fa fa-caret-down right'></i></a>
-                            <ul>
-                                <li><a href='#setupFlutter'>Setup Flutter</a></li>
-                                <li><a href='#changePackageName'>Change Package Name Of Application</a></li>
-                                <li><a href='#integrateWithFirebase'>Integrate with Firebase</a></li>
-                                <li><a href='#integrateWithAdminPanel'>Integrate with Admin Panel</a></li>
-                                <li><a href='#changeAppLogo'>Change App logo</a></li>
-                                <li><a href='#changeAppName'>Change App name</a></li>
-                                <li><a href='#runThisApp'>Run This App</a></li>
-                                <li><a href='#changeAppTheme'>Change App theme</a></li>
-                                <li><a href='#changeFont'>Change Font</a></li>
-                                <li><a href='#changeLanguage'>Change Language</a></li>
-                                <li><a href='#changeItemAnimations'>Change Item Animations</a></li>
-                                <li><a href='#chatMessageConstraints'>Chat Message Constraints</a></li>
-                                <li><a href='#generateReleaseVersion'>Generate Release Version</a></li>
-                            </ul>
-                        </li>
+                    <li>
+                        <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
+                    </li>
+                    <li>
+                        <a href="#faqs">FAQs <span class="fa fa-arrow-right"></span></a>
+                    </li>
+                    <li>
+                        <a href="#rating">Rating <span class="fa fa-arrow-right"></span></a>
+                    </li>
+                    <li>
+                        <a href="#contactUs">Contact Us <span class="fa fa-arrow-right"></span></a>
+                    </li>
 
-                        <li>
-                            <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
-                        </li>
-                        <li>
-                            <a href="#faqs">FAQs <span class="fa fa-arrow-right"></span></a>
-                        </li>
-                        <li>
-                            <a href="#rating">Rating <span class="fa fa-arrow-right"></span></a>
-                        </li>
-                        <li>
-                            <a href="#contactUs">Contact Us <span class="fa fa-arrow-right"></span></a>
-                        </li>
+                </ul>
+            </nav>
+        </div>
 
-                    </ul>
-                </nav>
+        <div class="copyright">Copyright &copy; <a href="mailto:support@wrteam.in">WRTeam</a> 2024
+        </div>
+    </aside>
+
+    <div id="content-section">
+        <!--Introduction Section-->
+        <section class="section introduction" id="introduction">
+            <br/>
+            <div class="sec-content">
+                <h2>Eclassify</h2>
+                <h3>Documentation</h3>
+                <div class="separator"></div>
+                <strong>By :</strong> WRTeam<br/>
+                <strong>Email :</strong>
+                <a href="mailto:sagar.wrteam@gmail.com">sagar.wrteam@gmail.com</a> <br/>
+
+                <br/>
+                <p>
+                    Thank you for purchasing <strong>Eclassify</strong>.
+                    We appreciate your support. In this documentation, you will find instructions on
+                    how to set up
+                    the admin panel and mobile application for Eclassify.
+                    This document also provides features of Eclassify.
+                    If you have any questions, feel free to reach out. Thank you for choosing
+                    Eclassify!
+                </p>
+                <br/>
+            </div>
+        </section>
+
+        <!--Admin panel-->
+        <section class="section html-structure" id="prerequisite">
+            <div class="sec-title">
+                <span class="icon fa fa-th-large"></span>
+                <h2>Setup Admin Panel</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <h3 class="content-title">Prerequisite</h3>
+                <h3>
+                    Eclassify Admin panel is built using <strong>Laravel Framework 10.0</strong> so
+                    you need
+                    <strong>PHP version upto 8.1.0 or higher</strong> version installed on your
+                    server.
+                </h3>
+
+                <h3 class="content-title">Upload Admin Panel code on server</h3>
+                <p>1. Unzip the code you will see the <strong>Admin Panel</strong> inside the zip.
+                </p>
+                <p>2. Upload this folder content on your server in <strong>public_html</strong>
+                    folder.</p>
+                <p>3. After uploading visit your domain url. You will see the installation
+                    wizard.Follow the
+                    instructions.</p>
+                <br/>
+                <br/>
+            </div>
+        </section>
+
+        <section class="section css-structure" id="Installation-steps">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Installation Steps</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <h3 class="content-title">1. Installation Screen</h3>
+                <img src="images/admin/1.png" alt="Eclassify">
+
+                <br><br>
+
+                <h3 class="content-title">2. Server Requirements & Extensions</h3>
+                <h3>If PHP version is lower than 8.1 or any extension is not installed then it will
+                    be highlighted
+                    using Red color. So you need to make sure that your server meets the all
+                    requirement.</h3>
+                <span class="text-danger">* nd_pdo_mysql extension is also required </span><br>
+                <img src="images/admin/2.png" alt="Eclassify">
+
+                <br><br>
+
+                <h3 class="content-title">3. Permission Screen</h3>
+                <h3>Make sure this folder have read & write permissions. If not then assign this
+                    folders read &
+                    write permissions.</h3>
+                <img src="images/admin/3.png" alt="Eclassify">
+
+                <br><br>
+
+                <h3 class="content-title">4. Purchase Code Validation</h3>
+                <h3>Here you'll have to insert the purchase code obtained from CodeCanyon to
+                    authenticate your
+                    purchase and
+                    authorize your server to access the services.</h3>
+
+                <h3>To find your Purchase code you can visit this link: <a
+                        href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
+                        target=" _blank">Where
+                    is My Purchase code?</a></h3>
+
+                <img src="images/admin/4.png" alt="Eclassify">
+
+                <br><br>
+
+                <h3 class="content-title">5. Database Configuration Screen</h3>
+                <img src="images/admin/5.png" alt="Eclassify">
+
+                <br><br>
+
+                <h3 class="content-title">6. Database Connection Status</h3>
+                <img src="images/admin/6.png" alt="Eclassify">
+
+                <br><br>
+
+                <h3 class="content-title">7. Final installation Screen</h3>
+                <h3>If everything is configured successfully then your Admin panel has been
+                    installed
+                    successfully.You can login as Super Admin using the credentials provided
+                    here.</h3>
+                <img src="images/admin/7.png" alt="Eclassify">
+                <img src="images/admin/8.png" alt="Eclassify">
+            </div>
+        </section>
+
+        <section class="section css-structure">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Additional Configurations (Admin Panel)</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <h3>After Installation you need to setup some settings before using the system.</h3>
+
+                <h3 class="content-title" id="generalsettings">1. General Settings</h3>
+                <h3>This settings will be used by Admin Panel.You can set your current session year
+                    here.</h3>
+                <img src="images/admin/9.png" alt="Eclassify">
+
+                <br><br><br>
+                <h3 class="content-title" id="webhookconfig">7. Payment Gateway's Webhook
+                    Configuration</h3>
+                <img src="images/admin/10.png" alt="Eclassify">
+
+                <h4 class="content-title">1. Webhook Configuration for Stripe</h4>
+                <img src="images/admin/11.jpg" alt="Eclassify">
+                <img src="images/admin/12.jpg" alt="Eclassify">
+                <img src="images/admin/13.jpg" alt="Eclassify">
+            </div>
+        </section>
+
+
+        <!-- Setup flutter  -->
+        <section class="section css-structure" id="setupFlutter">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Setup flutter</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <h3>
+                    Setup flutter in your system
+                </h3>
+                <ol>
+                    Visit flutter official website : <a
+                        href="https://docs.flutter.dev/get-started/install"
+                        target="_blank">https://docs.flutter.dev/get-started/install</a>
+
+                    for full install guide.
+                    <br>
+                    <br>
+                    If you prefer video tutorials, we recommend this playlist for the full
+                    installation process <br>
+                    <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm"
+                       target="_blank">https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm</a>
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+
+        <!-- Change package name of this app flutter  -->
+        <section class="section css-structure" id="changePackageName">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change package name</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol>
+                    <li>
+                        Unzip the downloaded code. After unzipping you will have Eclassify - Flutter
+                        Code zip folder.
+                        Unzip that folder and open it in
+                        Android Studio or Visual Studio Code.
+                    </li>
+                    <li>
+                        Open ide terminal go to your project path and execute command <p
+                            class="command-style">
+                        flutter pub get </p>
+                    </li>
+                    <li>
+                        If you are running this app for ios then run these following commands in
+                        terminal.
+                        <p class="command-style"> cd ios </p>
+                        <p class="command-style">pod install</p>
+                        <p class="command-style">cd ..</p>
+                    </li>
+                    <li>
+                        Change package name of android app <br>
+                        Execute this command in your terminal<br>
+                        <p class="command-style">flutter pub run change_app_package_name:main
+                            your_new_package_name
+                        </p>
+                        <br>
+
+                        <img src="images/app/changePackageName.png" alt="Eclassify">
+
+                        <br><br>
+
+                    </li>
+                    <li>
+                        Change package name of ios app <br>
+                        Open ios folder of this project in xcode. Go Select
+                        Runner->Targets->General->Identity and
+                        enter new package name in Build Identifier.
+
+                        <br><br>
+
+                        <img src="images/app/changePackageName1.png" alt="Eclassify">
+                    </li>
+                    <!-- <li>
+                        Go to lib/utils/constants.dart and update package.
+                        <img src="images/app/changePackageName2.png" alt="Eclassify">
+                    </li> -->
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+        <!-- Integrate with firebase -->
+        <section class="section css-structure" id="integrateWithFirebase">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Integrate with firebase</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <ol>
+                    <li>
+                        <h4>
+                            Create firebase project in your account
+                        </h4>
+                        <br>
+                        <img src="images/app/createFirebase1.png" alt="Eclassify"/>
+                        <br><br>
+                        <img src="images/app/createFirebase2.png" alt="Eclassify"/>
+                        <br><br>
+                        <img src="images/app/createFirebase3.png" alt="Eclassify"/>
+                        <br><br>
+                        <img src="images/app/createFirebase4.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            Add android application to your firebase project
+                        </h4>
+                        <br><br>
+                        <img src="images/app/addAndroid.jpg" alt="Eclassify"/>
+                        <br><br>
+                        <h4>
+                            Download the google-service.json file and add in this folder
+                            android/app/
+                        </h4>
+                        <br><br>
+                        <img src="images/app/addAndroid2.png" alt="Eclassify"/>
+                        <br><br>
+                        <img src="images/app/addAndroid3.jpg" alt="Eclassify"/>
+                        <br><br>
+                        <img src="images/app/addAndroid4.jpg" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>Add ios application to your firebase project </h4>
+                        <br><br>
+                        <img src="images/app/addIos.jpg" alt="Eclassify"/>
+                        <br><br>
+                        <img src="images/app/addIos2.jpg" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+
+                        <h4>
+                            Download GoogleService-Info.plist and add in this folder ios/Runner/
+                        </h4>
+                        <br><br>
+                        <img src="images/app/addIos4.jpg" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+
+                    <li>
+                        <h4>
+                            Please configre this settings in-order to send ios notifications.
+                            <br>
+                        </h4>
+                        <a href="https://firebase.flutter.dev/docs/messaging/apple-integration"
+                           target="_blank">https://firebase.flutter.dev/docs/messaging/apple-integration</a><br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            You have configured firebase in your project successfully
+                        </h4>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+
+        <!-- Change package name of this app flutter  -->
+        <section class="section css-structure" id="integrateWithAdminPanel">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Integrate with admin panel</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <h4>
+                    Go to lib/settings.dart and replace the hostUrl with your admin panel
+                    url.
+                </h4>
+                <br><br>
+                <img src="images/app/changeDatabaseUrl.png" alt="Eclassify"/><br>
+                <br/>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="changeAppLogo">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change app logo</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <br/>
+                <br/>
+                <h4><b>Add Logo Manually</b></h4>
+                <br/>
+                <br/>
+                <h4> For Android, open android > app > src > main > res and add here your logo
+                    according to device
+                    screen size </h4>
+                <br><br>
+
+                <img src="images/app/androidAppIcon.png" alt="Eclassify"/>
+                <br><br>
+
+                <h4> For IOS open ios > Runner > Assets.xcassets > AppIcon.appiconset here and add
+                    your logo
+                    according to diffrent size.</h4>
+                <br><br>
+                <img src="images/app/iosAppIcon.png" alt="Eclassify"/>
+
+                <br/><br/><br>
+                <!--<h4><b>Generate Logo Files With Package</b></h4>
+                <br/><br/>
+                <h4>1. Add your logo file in assets/images folder</h4>
+                <br><br>
+                <h4>2. Add it's path and filename in pubspec.yaml file under flutter_launcher_icons
+                    configurations</h4>
+                <br><br>
+                <h4>3. Run this command to generate the ic_launcher files for both Android and IOS:
+                    <br><br><i>flutter pub
+                        run flutter_launcher_icons</i>
+                </h4>
+                <br><br>
+                <img src="images/app/generateAppLogo.png" alt="Eclassify"/>-->
+                <br><br>
+            </div>
+        </section>
+
+        <section class="section css-structure" id="changeAppName">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change app name</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+                <h4> For Android, go to android/app/src/main/AndroidManifest.xml and change the app
+                    name as shown in
+                    image. Replace the selected Eclassify text with your school name</h4>
+                <br><br>
+                <img src="images/app/androidAppName.png" alt="Eclassify"/>
+
+                <br><br>
+                <h4> For IOS open this project in xcode and enter your app name in display name
+                    field as shown in
+                    image.</h4>
+                <br><br>
+                <img src="images/app/iosAppName.png" alt="Eclassify"/>
+                <br><br>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="runThisApp">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Run this app</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+                <h4>Open your terminal, navigate to your project path and execute the following
+                    command to run this
+                    app.</h4>
+                <br>
+                <p class="command-style">flutter run</p>
+                <br>
+                <h4>Go to README.md file to check all the commonly used commands to fix issues that
+                    you may
+                    encounter while running the app. You'll also be able to run the shell script
+                    directly if you're
+                    using Android Studio.</h4>
+                <br>
+                <img src="images/app/commandList.png" alt="Eclassify"/>
+                <br><br>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="changeAppTheme">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change app theme</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+                <h4>Go to lib/ui/styles/colors.dart and set your theme colors</h4>
+                <br>
+                <img src="images/app/chaneAppTheme.png" alt="Eclassify"/>
+                <br>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="changeFont">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change font in app</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+                <ol>
+                    <li>
+                        <h4> Go to assets/fonts/ and add .tff files of fonts.</h4>
+                        <br><br>
+                        <img src="images/app/changeFont.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            Go to pubspecs.yaml and add your font as shown in image.</h4>
+                        <br><br>
+                        <img src="images/app/changeFont2.png" alt="Eclassify"/>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+
+       <!-- <section class="section css-structure" id="changeLanguage">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change language in app</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <ol>
+                    <li>
+                        <h4>By default,default applicaiton language is english. If you want to
+                            change default
+                            language
+                            go to lib/utils/appLanguages.dart and add your respective language's
+                            code shown in below
+                            image.
+                            Get your language code from here
+                            <a href="https://developers.google.com/admin-sdk/directory/v1/languages"
+                               target="_blank">https://developers.google.com/admin-sdk/directory/v1/languages</a>.
+                        </h4>
+                        <br><br>
+                        <img src="images/app/changeDefaultLanguage.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            If your default language code is not in app language list add language
+                            details
+                            in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
+                        <br><br>
+                        <img src="images/app/addLanguage.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            If your default language is not in assets/languages/[language-code].json
+                            then create new
+                            file
+                            in same folder with [language-code].json. Add all the labels from
+                            en.json and
+                            convert label values in your respective language</h4>
+                        <br><br>
+                        <img src="images/app/addNewLanguage.jpg" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            Copy all the labels form en.json file in your [language-code].json
+                            file.</h4>
+                        <br><br>
+                        <img src="images/app/addNewLanguage2.jpg" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>
+                            If you want to add new language then follow the steps 2,3 and 4.</h4>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section css-structure" id="changeItemAnimations">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Change item animations</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <h4>In the <i>lib/utils/constants.dart</i> file, to enable/disable item appearing
+                    animations, you
+                    can change the value of
+                    <i>isApplicationItemAnimationOn</i> to true/false according to your
+                    requirements.<br><br>
+                    To change the duration of animation you can adjust the milliseconds of different
+                    animations by
+                    increasing/decreasing the values of the duration variables.
+                </h4>
+                <br><br>
+                <img src="images/app/animationSettings.png" alt="Eclassify"/>
+                <br><br>
+            </div>
+        </section>
+
+        <section class="section css-structure" id="chatMessageConstraints">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Chat Message Constraints</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <h4>Within our messaging system, specific technical constraints are in place for
+                    effective
+                    functionality. When composing a regular text message, users are limited to a
+                    maximum of 500
+                    characters. For file and image attachments, the system allows for a total of 30
+                    files to be sent
+                    simultaneously, with an individual file size limit of 10 MB.
+                    <br><br>
+                    It's crucial to note that attempts to upload a file exceeding the 10 MB
+                    threshold will be
+                    unsuccessful, in adherence to these constraints. Modification of these
+                    parameters can be
+                    executed through the lib/utils/constants.dart file.
+                    <br><br>
+                    However, it's essential to acknowledge the backend's overarching limitations.
+                    The backend
+                    enforces a maximum cap of 50 files per message and restricts individual file
+                    sizes to a maximum
+                    of 2 GB. Consequently, any adjustments made within the app must align with these
+                    backend
+                    constraints for seamless operation.
+                </h4>
+                <br><br>
+                <img src="images/app/chatMessageConstraints.png" alt="Eclassify"/>
+                <br><br>
+            </div>
+        </section>-->
+
+
+        <section class="section css-structure" id="generateReleaseVersion">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Generate release version</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <h2>Create and add Key Store file for Androd:</h2>
+                <br><br>
+                <ol>
+                    <li>
+                        <h4>To generate a keystore file, run the following command:</h4>
+                        <br>
+                        <i>keytool -genkey -v -keystore your-keystore-file.jks -keyalg RSA -keysize
+                            2048 -validity
+                            10000 -alias your-alias</i>
+                        <br><br>
+                        <h4>You can replace "your-keystore-file.jks" with your preferred filename,
+                            but ensure you
+                            keep the ".jks" extension. Similarly, you can change "your-alias" as
+                            needed, but make
+                            sure to remember it. During this process, you will be prompted to set a
+                            password; please
+                            note that the password characters won't be visible on the screen.
+                            <br><br>
+                            Additional information may be requested, but you can simply press Enter
+                            to skip those as
+                            they are
+                            optional fields.
+                        </h4>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>Create a file named "key.properties" in your project's "android" folder
+                            and add the
+                            following details, which correspond to the information you used in the
+                            previous step:
+                        </h4>
+                        <br>
+                        <i>storePassword=[your-password-from-previous-step]<br>
+                            keyPassword=[your-password-from-previous-step]<br>
+                            keyAlias=[your-alias-from-previous-step]<br>
+                            storeFile=[your-keystore-file-location]<br>
+                        </i>
+                        <br><br>
+                        <h4>Replace the placeholders ("[]" brackets) with the actual details you
+                            used. Once these
+                            two steps are completed, you can generate either an APK file using the
+                            following
+                            command:</h4>
+                        <br>
+                        <i>flutter build apk</i>
+                        <br><br>
+                        <h4>Or an app bundle file for the Play Store upload with:</h4>
+                        <br>
+                        <i>flutter build appbundle</i>
+                    </li>
+                </ol>
+                <br><br>
+                <img src="images/app/generatKeyStorefile.png" alt="Eclassify"/>
+                <br><br>
+            </div>
+            <br><br>
+            <div class="sec-content">
+                <h2>Follow these links for more information on generating the release version:</h2>
+                <br><br>
+                <ol>
+                    <li>
+                        <h4>To generate release android app-bundle and publish to Playstore follow
+                            <a href="https://flutter.dev/docs/deployment/android"
+                               target="_blank">https://flutter.dev/docs/deployment/android</a>
+                        </h4>
+                        <br><br>
+                    </li>
+                    <li>
+                        <h4>To generate release ios apk and publish to appstore follow
+                            <a href="https://flutter.dev/docs/deployment/ios"
+                               target="_blank">https://flutter.dev/docs/deployment/ios</a>
+                        </h4>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!--Support-->
+        <section class="section support" id="support">
+            <div class="sec-title">
+                <span class="icon fa fa-support"></span>
+                <h2>Support</h2>
             </div>
 
-            <div class="copyright">Copyright &copy; <a href="mailto:support@wrteam.in">WRTeam</a> 2024</div>
-        </aside>
-
-        <div id="content-section">
-            <!--Introduction Section-->
-            <section class="section introduction" id="introduction">
-                <br />
-                <div class="sec-content">
-                    <h2>Eclassify</h2>
-                    <h3>Documentation</h3>
-                    <div class="separator"></div>
-                    <strong>By :</strong> WRTeam<br />
-                    <strong>Email :</strong>
-                    <a href="mailto:sagar.wrteam@gmail.com">sagar.wrteam@gmail.com</a> <br />
-
-                    <br />
-                    <p>
-                        Thank you for purchasing <strong>Eclassify</strong>.
-                        We appreciate your support. In this documentation, you will find instructions on how to set up
-                        the admin panel and mobile application for Eclassify.
-                        This document also provides features of Eclassify.
-                        If you have any questions, feel free to reach out. Thank you for choosing Eclassify!
-                    </p>
-                    <br />
-                </div>
-            </section>
-
-            <!--Admin panel-->
-            <section class="section html-structure" id="prerequisite">
-                <div class="sec-title">
-                    <span class="icon fa fa-th-large"></span>
-                    <h2>Setup Admin Panel</h2>
-                </div>
-                <br />
-                <div class="sec-content">
-                    <h3 class="content-title">Prerequisite</h3>
-                    <h3>
-                        Eclassify Admin panel is built using <strong>Laravel Framework 10.0</strong> so you need
-                        <strong>PHP version upto 8.1.0 or higher</strong> version installed on your server.
-                    </h3>
-
-                    <h3 class="content-title">Upload Admin Panel code on server</h3>
-                    <p>1. Unzip the code you will see the <strong>Admin Panel</strong> inside the zip.</p>
-                    <p>2. Upload this folder content on your server in <strong>public_html</strong> folder.</p>
-                    <p>3. After uploading visit your domain url. You will see the installation wizard.Follow the
-                        instructions.</p>
-                    <br />
-                    <br />
-                </div>
-            </section>
-
-            <section class="section css-structure" id="Installation-steps">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Installation Steps</h2>
-                </div>
-                <br />
-                <div class="sec-content">
-                    <h3 class="content-title">1. Installation Screen</h3>
-                    <img src="images/admin/1.png" alt="Eclassify">
-
-                    <br><br>
-
-                    <h3 class="content-title">2. Server Requirements & Extensions</h3>
-                    <h3>If PHP version is lower than 8.1 or any extension is not installed then it will be highlighted
-                        using Red color. So you need to make sure that your server meets the all requirement.</h3>
-                    <span class="text-danger">* nd_pdo_mysql extension is also required </span><br>
-                    <img src="images/admin/2.png" alt="Eclassify">
-
-                    <br><br>
-
-                    <h3 class="content-title">3. Permission Screen</h3>
-                    <h3>Make sure this folder have read & write permissions. If not then assign this folders read &
-                        write permissions.</h3>
-                    <img src="images/admin/3.png" alt="Eclassify">
-
-                    <br><br>
-
-                    <h3 class="content-title">4. Purchase Code Validation</h3>
-                    <h3>Here you'll have to insert the purchase code obtained from CodeCanyon to authenticate your
-                        purchase and
-                        authorize your server to access the services.</h3>
-
-                    <h3>To find your Purchase code you can visit this link: <a
-                            href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
-                            target=" _blank">Where
-                            is My Purchase code?</a></h3>
-
-                    <img src="images/admin/4.png" alt="Eclassify">
-
-                    <br><br>
-
-                    <h3 class="content-title">5. Database Configuration Screen</h3>
-                    <img src="images/admin/5.png" alt="Eclassify">
-
-                    <br><br>
-
-                    <h3 class="content-title">6. Database Connection Status</h3>
-                    <img src="images/admin/6.png" alt="Eclassify">
-
-                    <br><br>
-
-                    <h3 class="content-title">7. Final installation Screen</h3>
-                    <h3>If everything is configured successfully then your Admin panel has been installed
-                        successfully.You can login as Super Admin using the credentials provided here.</h3>
-                    <img src="images/admin/7.png" alt="Eclassify">
-                    <img src="images/admin/8.png" alt="Eclassify">
-                </div>
-            </section>
-
-            <section class="section css-structure">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Additional Configurations (Admin Panel)</h2>
-                </div>
-                <br />
-                <div class="sec-content">
-                    <h3>After Installation you need to setup some settings before using the system.</h3>
-
-                    <h3 class="content-title" id="generalsettings">1. General Settings</h3>
-                    <h3>This settings will be used by Admin Panel.You can set your current session year here.</h3>
-                    <img src="images/admin/9.png" alt="Eclassify">
-
-                    <br><br><br>
-                    <h3 class="content-title" id="webhookconfig">7. Payment Gateway's Webhook Configuration</h3>
-                    <img src="images/admin/10.png" alt="Eclassify">
-
-                    <h4 class="content-title">1. Webhook Configuration for Stripe</h4>
-                    <img src="images/admin/11.jpg" alt="Eclassify">
-                    <img src="images/admin/12.jpg" alt="Eclassify">
-                    <img src="images/admin/13.jpg" alt="Eclassify">
-                </div>
-            </section>
-
-
-            <!-- Setup flutter  -->
-            <section class="section css-structure" id="setupFlutter">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Setup flutter</h2>
-                </div>
-                <br />
-                <div class="sec-content">
-                    <h3>
-                        Setup flutter in your system
-                    </h3>
-                    <ol>
-                        Visit flutter official website : <a href="https://docs.flutter.dev/get-started/install"
-                            target="_blank">https://docs.flutter.dev/get-started/install</a>
-
-                        for full install guide.
-                        <br>
-                        <br>
-                        If you prefer video tutorials, we recommend this playlist for the full installation process <br>
-                        <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm"
-                            target="_blank">https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm</a>
-                    </ol>
-                    <br />
-                </div>
-            </section>
-
-
-            <!-- Change package name of this app flutter  -->
-            <section class="section css-structure" id="changePackageName">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change package name</h2>
-                </div>
-                <br />
-                <div class="sec-content">
-                    <ol>
-                        <li>
-                            Unzip the downloaded code. After unzipping you will have Eclassify - Flutter Code zip folder.
-                            Unzip that folder and open it in
-                            Android Studio or Visual Studio Code.</li>
-                        <li>
-                            Open ide terminal go to your project path and execute command <p class="command-style">
-                                flutter pub get </p>
-                        </li>
-                        <li>
-                            If you are running this app for ios then run these following commands in terminal.
-                            <p class="command-style"> cd ios </p>
-                            <p class="command-style">pod install</p>
-                            <p class="command-style">cd ..</p>
-                        </li>
-                        <li>
-                            Change package name of android app <br>
-                            Execute this command in your terminal<br>
-                            <p class="command-style">flutter pub run change_app_package_name:main your_new_package_name
-                            </p>
-                            <br>
-
-                            <img src="images/app/changePackageName.png" alt="Eclassify">
-
-                            <br><br>
-
-                        </li>
-                        <li>
-                            Change package name of ios app <br>
-                            Open ios folder of this project in xcode. Go Select Runner->Targets->General->Identity and
-                            enter new package name in Build Identifier.
-
-                            <br><br>
-
-                            <img src="images/app/changePackageName1.png" alt="Eclassify">
-                        </li>
-                        <!-- <li>
-                            Go to lib/utils/constants.dart and update package.
-                            <img src="images/app/changePackageName2.png" alt="Eclassify">
-                        </li> -->
-                    </ol>
-                    <br />
-                </div>
-            </section>
-
-            <!-- Integrate with firebase -->
-            <section class="section css-structure" id="integrateWithFirebase">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Integrate with firebase</h2>
-                </div>
+            <br/>
+            <div class="sec-content">
+                <h4>Its our pleasure to serve and support our customers. Please contact our support
+                    team if you
+                    encounter any issues or have any questions related to Eclassify.</h4>
                 <br>
-                <div class="sec-content">
-                    <ol>
-                        <li>
-                            <h4>
-                                Create firebase project in your account
-                            </h4>
-                            <br>
-                            <img src="images/app/createFirebase1.jpg" alt="Eclassify" />
-                            <br><br>
-                            <img src="images/app/createFirebase2.jpg" alt="Eclassify" />
-                            <br><br>
-                            <img src="images/app/createFirebase3.jpg" alt="Eclassify" />
-                            <br><br>
-                            <img src="images/app/createFirebase4.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                Add andorid application to your firebase project
-                            </h4>
-                            <br><br>
-                            <img src="images/app/addAndroid.jpg" alt="Eclassify" />
-                            <br><br>
-                            <h4>
-                                Download the google-service.json file and add in this folder android/app/
-                            </h4>
-                            <br><br>
-                            <img src="images/app/addAndroid2.png" alt="Eclassify" />
-                            <br><br>
-                            <img src="images/app/addAndroid3.jpg" alt="Eclassify" />
-                            <br><br>
-                            <img src="images/app/addAndroid4.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>Add ios application to your firebase project </h4>
-                            <br><br>
-                            <img src="images/app/addIos.jpg" alt="Eclassify" />
-                            <br><br>
-                            <img src="images/app/addIos2.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-
-                            <h4>
-                                Download GoogleService-Info.plist and add in this folder ios/Runner/
-                            </h4>
-                            <br><br>
-                            <img src="images/app/addIos4.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-
-                        <li>
-                            <h4>
-                                Please configre this settings in-order to send ios notifications.
-                                <br>
-                            </h4>
-                            <a href="https://firebase.flutter.dev/docs/messaging/apple-integration"
-                                target="_blank">https://firebase.flutter.dev/docs/messaging/apple-integration</a><br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                You have configured firebase in your project successfully
-                            </h4>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-
-
-            <!-- Change package name of this app flutter  -->
-            <section class="section css-structure" id="integrateWithAdminPanel">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Integrate with admin panel</h2>
-                </div>
+                <h4>Customer Support Head for Eclassify : <a
+                        href="https://join.skype.com/invite/vdrcOZy99P4x" target="_blank"
+                        style="color:#3c55d1">Sagar Gor</a></h4>
                 <br>
-                <div class="sec-content">
+                <h4>To help our customers, we constantly be in touch with every customer if they
+                    need any assistance
+                    regarding our product.
+                    <br> We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm
+                        IST (GMT +5.30) –
+                        We are a Team located in India – Asia.
+                        Typically we reply our customers for all the questions and queries within 24
+                        hours of time
+                        via comments, support forum or emails.</strong>
+                </h4>
+
+            </div>
+        </section>
+
+        <!--FAQs-->
+        <section class="section faqs" id="faqs">
+            <div class="sec-title">
+                <span class="icon fa fa-fqs"></span>
+                <h2>FAQs</h2>
+            </div>
+
+            <br/>
+            <div class="sec-content">
+                <h3>1. Why I'm getting unknown host issue while configuring the Database ?</h3><br>
+                <div style="padding-left: 18px;">
                     <h4>
-                        Go to lib/utils/constants.dart and replace the baseUrl with your admin panel url.
-                    </h4>
-                    <br><br>
-                    <img src="images/app/changeDatabaseUrl.png" alt="Eclassify" /><br>
-                    <br />
-                </div>
-            </section>
+                        Possible reason may be <b>nd_pdo_mysql</b> extension is not installed.
+                        Install that and try again. If you are still having the same issue Contact
+                        Us.<br>
+                    </h4><br>
 
-
-            <section class="section css-structure" id="changeAppLogo">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change app logo</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-                    <br />
-                    <br />
-                    <h4><b>Add Logo Manually</b></h4>
-                    <br />
-                    <br />
-                    <h4> For Android, open android > app > src > main > res and add here your logo according to device
-                        screen size </h4>
-                    <br><br>
-
-                    <img src="images/app/androidAppIcon.png" alt="Eclassify" />
-                    <br><br>
-
-                    <h4> For IOS open ios > Runner > Assets.xcassets > AppIcon.appiconset here and add your logo
-                        according to diffrent size.</h4>
-                    <br><br>
-                    <img src="images/app/iosAppIcon.png" alt="Eclassify" />
-
-                    <br /><br /><br>
-                    <h4><b>Generate Logo Files With Package</b></h4>
-                    <br /><br />
-                    <h4>1. Add your logo file in assets/images folder</h4>
-                    <br><br>
-                    <h4>2. Add it's path and filename in pubspec.yaml file under flutter_launcher_icons
-                        configurations</h4>
-                    <br><br>
-                    <h4>3. Run this command to generate the ic_launcher files for both Android and IOS:
-                        <br><br><i>flutter pub
-                            run flutter_launcher_icons</i>
-                    </h4>
-                    <br><br>
-                    <img src="images/app/generateAppLogo.png" alt="Eclassify" />
-                    <br><br>
-                </div>
-            </section>
-
-            <section class="section css-structure" id="changeAppName">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change app name</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-
-                    <h4> For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in
-                        image. Replace the selected Eclassify text with your school name</h4>
-                    <br><br>
-                    <img src="images/app/androidAppName.png" alt="Eclassify" />
-
-                    <br><br>
-                    <h4> For IOS open this project in xcode and enter your app name in display name field as shown in
-                        image.</h4>
-                    <br><br>
-                    <img src="images/app/iosAppName.png" alt="Eclassify" />
-                    <br><br>
-                </div>
-            </section>
-
-
-            <section class="section css-structure" id="runThisApp">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Run this app</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-
-                    <h4>Open your terminal, navigate to your project path and execute the following command to run this
-                        app.</h4>
-                    <br>
-                    <p class="command-style">flutter run</p>
-                    <br>
-                    <h4>Go to README.md file to check all the commonly used commands to fix issues that you may
-                        encounter while running the app. You'll also be able to run the shell script directly if you're
-                        using Android Studio.</h4>
-                    <br>
-                    <img src="images/app/commandList.png" alt="Eclassify" />
-                    <br><br>
-                </div>
-            </section>
-
-
-            <section class="section css-structure" id="changeAppTheme">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change app theme</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-
-                    <h4>Go to lib/ui/styles/colors.dart and set your theme colors</h4>
-                    <br>
-                    <img src="images/app/chaneAppTheme.png" alt="Eclassify" />
-                    <br>
-                </div>
-            </section>
-
-
-            <section class="section css-structure" id="changeFont">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change font in app</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-
-                    <ol>
-                        <li>
-                            <h4> Go to lib/app/app.dart and add your font as shown in image.</h4>
-                            <br><br>
-                            <img src="images/app/changeFont.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                Go to assets/google_fonts/ and add .tff files of fonts.</h4>
-                            <br><br>
-                            <img src="images/app/changeFont2.jpg" alt="Eclassify" />
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-
-            <section class="section css-structure" id="changeLanguage">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change language in app</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-                    <ol>
-                        <li>
-                            <h4>By default,default applicaiton language is english. If you want to change default
-                                language
-                                go to lib/utils/appLanguages.dart and add your respective language's code shown in below
-                                image.
-                                Get your language code from here
-                                <a href="https://developers.google.com/admin-sdk/directory/v1/languages"
-                                    target="_blank">https://developers.google.com/admin-sdk/directory/v1/languages</a>.
-                            </h4>
-                            <br><br>
-                            <img src="images/app/changeDefaultLanguage.png" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                If your default language code is not in app language list add language details
-                                in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
-                            <br><br>
-                            <img src="images/app/addLanguage.png" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                If your default language is not in assets/languages/[language-code].json then create new
-                                file
-                                in same folder with [language-code].json. Add all the labels from en.json and
-                                convert label values in your respective language</h4>
-                            <br><br>
-                            <img src="images/app/addNewLanguage.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                Copy all the labels form en.json file in your [language-code].json file.</h4>
-                            <br><br>
-                            <img src="images/app/addNewLanguage2.jpg" alt="Eclassify" />
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>
-                                If you want to add new language then follow the steps 2,3 and 4.</h4>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-            <section class="section css-structure" id="changeItemAnimations">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Change item animations</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-                    <h4>In the <i>lib/utils/constants.dart</i> file, to enable/disable item appearing animations, you
-                        can change the value of
-                        <i>isApplicationItemAnimationOn</i> to true/false according to your requirements.<br><br>
-                        To change the duration of animation you can adjust the milliseconds of different animations by
-                        increasing/decreasing the values of the duration variables.
-                    </h4>
-                    <br><br>
-                    <img src="images/app/animationSettings.png" alt="Eclassify" />
-                    <br><br>
-                </div>
-            </section>
-
-            <section class="section css-structure" id="chatMessageConstraints">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Chat Message Constraints</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-                    <h4>Within our messaging system, specific technical constraints are in place for effective
-                        functionality. When composing a regular text message, users are limited to a maximum of 500
-                        characters. For file and image attachments, the system allows for a total of 30 files to be sent
-                        simultaneously, with an individual file size limit of 10 MB.
-                        <br><br>
-                        It's crucial to note that attempts to upload a file exceeding the 10 MB threshold will be
-                        unsuccessful, in adherence to these constraints. Modification of these parameters can be
-                        executed through the lib/utils/constants.dart file.
-                        <br><br>
-                        However, it's essential to acknowledge the backend's overarching limitations. The backend
-                        enforces a maximum cap of 50 files per message and restricts individual file sizes to a maximum
-                        of 2 GB. Consequently, any adjustments made within the app must align with these backend
-                        constraints for seamless operation.
-                    </h4>
-                    <br><br>
-                    <img src="images/app/chatMessageConstraints.png" alt="Eclassify" />
-                    <br><br>
-                </div>
-            </section>
-
-
-            <section class="section css-structure" id="generateReleaseVersion">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Generate release version</h2>
-                </div>
-                <br>
-                <div class="sec-content">
-                    <h2>Create and add Key Store file for Androd:</h2>
-                    <br><br>
-                    <ol>
-                        <li>
-                            <h4>To generate a keystore file, run the following command:</h4>
-                            <br>
-                            <i>keytool -genkey -v -keystore your-keystore-file.jks -keyalg RSA -keysize 2048 -validity
-                                10000 -alias your-alias</i>
-                            <br><br>
-                            <h4>You can replace "your-keystore-file.jks" with your preferred filename, but ensure you
-                                keep the ".jks" extension. Similarly, you can change "your-alias" as needed, but make
-                                sure to remember it. During this process, you will be prompted to set a password; please
-                                note that the password characters won't be visible on the screen.
-                                <br><br>
-                                Additional information may be requested, but you can simply press Enter to skip those as
-                                they are
-                                optional fields.
-                            </h4>
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>Create a file named "key.properties" in your project's "android" folder and add the
-                                following details, which correspond to the information you used in the previous step:
-                            </h4>
-                            <br>
-                            <i>storePassword=[your-password-from-previous-step]<br>
-                                keyPassword=[your-password-from-previous-step]<br>
-                                keyAlias=[your-alias-from-previous-step]<br>
-                                storeFile=[your-keystore-file-location]<br>
-                            </i>
-                            <br><br>
-                            <h4>Replace the placeholders ("[]" brackets) with the actual details you used. Once these
-                                two steps are completed, you can generate either an APK file using the following
-                                command:</h4>
-                            <br>
-                            <i>flutter build apk</i>
-                            <br><br>
-                            <h4>Or an app bundle file for the Play Store upload with:</h4>
-                            <br>
-                            <i>flutter build appbundle</i>
-                        </li>
-                    </ol>
-                    <br><br>
-                    <img src="images/app/generatKeyStorefile.png" alt="Eclassify" />
-                    <br><br>
                 </div>
                 <br><br>
-                <div class="sec-content">
-                    <h2>Follow these links for more information on generating the release version:</h2>
-                    <br><br>
-                    <ol>
-                        <li>
-                            <h4>To generate release android app-bundle and publish to Playstore follow
-                                <a href="https://flutter.dev/docs/deployment/android"
-                                    target="_blank">https://flutter.dev/docs/deployment/android</a>
-                            </h4>
-                            <br><br>
-                        </li>
-                        <li>
-                            <h4>To generate release ios apk and publish to appstore follow
-                                <a href="https://flutter.dev/docs/deployment/ios"
-                                    target="_blank">https://flutter.dev/docs/deployment/ios</a>
-                            </h4>
-                        </li>
-                    </ol>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!--Support-->
-            <section class="section support" id="support">
-                <div class="sec-title">
-                    <span class="icon fa fa-support"></span>
-                    <h2>Support</h2>
-                </div>
 
-                <br />
-                <div class="sec-content">
-                    <h4>Its our pleasure to serve and support our customers. Please contact our support team if you
-                        encounter any issues or have any questions related to Eclassify.</h4>
+        <!--Rating-->
+        <section class="section support" id="rating">
+            <div class="sec-title">
+                <span class="icon fa fa-support"></span>
+                <h2>Rating</h2>
+            </div>
+
+            <br/>
+            <div class="sec-content">
+                <h4>Your Feedback</h4>
+                <br>
+                <h4>
+                    Dear valuable customer,
+                    Thank you very much for choosing our product.
+                    It's our pleasure to serve top-notch service to you.
+                    Please give us your honest feedback that will help us to make a more strong and
+                    reliable product
+                    by click here <a href="https://codecanyon.net/downloads" style="color:#3c55d1"
+                                     target="_blank">Rate
+                    Us</a>.
+                    Thank you very much.
+                </h4>
+            </div>
+        </section>
+
+
+        <!--Contact Us-->
+        <section class="section support" id="contactUs">
+            <div class="sec-title">
+                <span class="icon fa fa-support"></span>
+                <h2>Contact Us</h2>
+            </div>
+
+            <br/>
+            <div class="sec-content">
+                <h4>WRTeam has creative and dedicated group of developers who are mastered in Apps
+                    Developments and
+                    Web Application Development with a niche in delivering quality solutions to
+                    customers across the
+                    globe.
+                    Contact us today to find out how we can help you or for freelance work.
                     <br>
-                    <h4>Customer Support Head for Eclassify : <a href="https://join.skype.com/invite/vdrcOZy99P4x" target="_blank" style="color:#3c55d1">Sagar Gor</a></h4>
+                </h4>
+                <h4>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
                     <br>
-                    <h4>To help our customers, we constantly be in touch with every customer if they need any assistance
-                        regarding our product.
-                        <br> We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) –
-                            We are a Team located in India – Asia.
-                            Typically we reply our customers for all the questions and queries within 24 hours of time
-                            via comments, support forum or emails.</strong>
-                    </h4>
+                </h4>
+                <h4>Mail Us : <a href="mailto:support@wrteam.in"
+                                 target="_blank">support@wrteam.in</a></h4>
+                <br>
+                <h4>Thank you very much.</h4>
 
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!--FAQs-->
-            <section class="section faqs" id="faqs">
-                <div class="sec-title">
-                    <span class="icon fa fa-fqs"></span>
-                    <h2>FAQs</h2>
-                </div>
-
-                <br />
-                <div class="sec-content">
-                    <h3>1. Why I'm getting unknown host issue while configuring the Database ?</h3><br>
-                    <div style="padding-left: 18px;">
-                        <h4>
-                            Possible reason may be <b>nd_pdo_mysql</b> extension is not installed. Install that and try again. If you are still having the same issue Contact Us.<br>
-                        </h4><br>
-
-                    </div>
-                    <br><br>
-                </div>
-            </section>
-
-
-            <!--Rating-->
-            <section class="section support" id="rating">
-                <div class="sec-title">
-                    <span class="icon fa fa-support"></span>
-                    <h2>Rating</h2>
-                </div>
-
-                <br />
-                <div class="sec-content">
-                    <h4>Your Feedback</h4>
-                    <br>
-                    <h4>
-                        Dear valuable customer,
-                        Thank you very much for choosing our product.
-                        It's our pleasure to serve top-notch service to you.
-                        Please give us your honest feedback that will help us to make a more strong and reliable product
-                        by click here <a href="https://codecanyon.net/downloads" style="color:#3c55d1"
-                            target="_blank">Rate
-                            Us</a>.
-                        Thank you very much.
-                    </h4>
-                </div>
-            </section>
-
-
-            <!--Contact Us-->
-            <section class="section support" id="contactUs">
-                <div class="sec-title">
-                    <span class="icon fa fa-support"></span>
-                    <h2>Contact Us</h2>
-                </div>
-
-                <br />
-                <div class="sec-content">
-                    <h4>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments and
-                        Web Application Development with a niche in delivering quality solutions to customers across the
-                        globe.
-                        Contact us today to find out how we can help you or for freelance work.
-                        <br>
-                    </h4>
-                    <h4>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
-                        <br>
-                    </h4>
-                    <h4>Mail Us : <a href="mailto:support@wrteam.in" target="_blank">support@wrteam.in</a></h4>
-                    <br>
-                    <h4>Thank you very much.</h4>
-
-                </div>
-            </section>
-
-        </div>
     </div>
-    <!--End pagewrapper-->
+</div>
+<!--End pagewrapper-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/scrollbar.js"></script>
-    <script src="js/prism.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/prism.js"></script>
 
-    <script src="js/jquery.highlight.js"></script>
+<script src="js/jquery.highlight.js"></script>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
