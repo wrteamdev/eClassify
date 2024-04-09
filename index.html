@@ -65,14 +65,34 @@
                     <li class='sub-menu'><a href="#setupFlutter">Setup Mobile Application<i
                             class='fa fa-caret-down right'></i></a>
                         <ul>
+                            <li><a href='#setupJDK'>How to Setup Java jdk-11 on
+                                windows</a></li>
                             <li><a href='#setupFlutter'>Setup Flutter</a></li>
                             <li><a href='#changePackageName'>Change Package Name Of Application</a>
                             </li>
+                            <li><a href='#changeAppVersion'>Change Version Of Application</a>
+                            </li>
                             <li><a href='#integrateWithFirebase'>Integrate with Firebase</a></li>
+                            <li><a href='#firebaseOtp'>How to Enable Firebase Phone
+                                Authentication(OTP).</a></li>
+                            <li><a href='#googleSignIn'>Authenticate with Firebase Using
+                                Google Sign-In</a></li>
+                            <li><a href='#appleSignIn'>Authenticate with Firebase Using
+                                Apple Login</a></li>
+                            <li><a href='#notificationFcm'>How to set Notification</a></li>
+                            <li><a href='#nativeLink'>How to Create Native Link
+                                for Share
+                                item</a></li>
+                            <li><a href="#googleMap">How to Add Map API key for Address</a>
+                            </li>
                             <li><a href='#integrateWithAdminPanel'>Integrate with Admin Panel</a>
                             </li>
                             <li><a href='#changeAppLogo'>Change App logo</a></li>
                             <li><a href='#changeAppName'>Change App name</a></li>
+                            <li><a href="#assetImage">Change Images in asset</a>
+                            </li>
+                            <li><a href="#changeDefaultCountryCode">Change Default Country Code in App</a>
+                            </li>
                             <li><a href='#runThisApp'>Run This App</a></li>
                             <li><a href='#changeAppTheme'>Change App theme</a></li>
                             <li><a href='#changeFont'>Change Font</a></li>
@@ -251,6 +271,52 @@
         </section>
 
 
+        <!-- Setup Jdk  -->
+        <section class="section css-structure" id="setupJDK">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to Setup latest Java jdk on windows</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <h3>
+                    Setup JDK in your system
+                </h3>
+                <ol>
+                    <li> If your System already have latest Java jdk installed then you
+                        can skip this step. <br>
+                    </li>
+                    <li>Download latest Java jdk by clicking below link. <br> (<a
+                            style="color: #3C55D1;"
+                            href="https://www.oracle.com/java/technologies/downloads/">JAVA
+                        jdk</a>)
+                    </li>
+                    <li>Download latest Java JDK for your version 32 bit or JDK download
+                        64 bit.
+                    </li>
+                    <br>
+
+                    <li>Please prefer video tutorials, we recommend this playlist for
+                        set environment variable for java in Windows 10 -
+                        <a style="color: #3C55D1;"
+                           href="https://www.youtube.com/watch?v=zzfHPGyjoWw">
+                            https://www.youtube.com/watch?v=zzfHPGyjoWw</a>
+                    </li>
+                    <br>
+                    <br>
+
+                    <li>Please prefer video tutorials, we recommend this playlist for
+                        set environment variable for java in Windows 11 -
+                        <a style="color: #3C55D1;"
+                           href="https://www.youtube.com/watch?v=zAyIqbBAUxQ">
+                            https://www.youtube.com/watch?v=zAyIqbBAUxQ</a>
+                    </li>
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+
         <!-- Setup flutter  -->
         <section class="section css-structure" id="setupFlutter">
             <div class="sec-title">
@@ -284,7 +350,7 @@
         <section class="section css-structure" id="changePackageName">
             <div class="sec-title">
                 <span class="icon fa fa-at"></span>
-                <h2>Change package name</h2>
+                <h2>How to change package name</h2>
             </div>
             <br/>
             <div class="sec-content">
@@ -339,6 +405,56 @@
             </div>
         </section>
 
+
+        <!-- Change version code  -->
+        <section class="section css-structure" id="changeAppVersion">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to change app version</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol>
+                    <li>Go to pubspec.yaml</li>
+                    <li>EX. Update version:A.B.C+X in pubspec.yaml.
+                    <li>For Android:</li>
+                    A.B.C represents the versionName such as 1.0.0.
+
+                    X (the number after the +) represents the versionCode such as 1, 2,
+                    3, etc.
+
+                    <li><b>Do not forget</b> to execute flutter packages get, flutter
+                        build or flutter
+                        run after this step
+                    </li>
+
+
+                    <img src="images/app/android_version_change.png" alt="Eclassify"/>
+                    <br>
+
+                    <li>For iOS</li>
+                    <li>
+
+                        A.B.C represents the CFBundleShortVersionString such as 1.0.0.
+
+                        X (the number after the +) represents the CFBundleVersion such
+                        as 1, 2, 3, etc.
+                    </li>
+
+                    <li><b>Do not forget</b> to execute flutter packages get, flutter
+                        build or flutter
+                        run after this step
+                    </li>
+
+
+                    <img src="images/app/ios_version_change.png" alt="Eclassify"/>
+                    <br>
+
+                </ol>
+                <br/>
+            </div>
+        </section>
+
         <!-- Integrate with firebase -->
         <section class="section css-structure" id="integrateWithFirebase">
             <div class="sec-title">
@@ -350,7 +466,7 @@
                 <ol>
                     <li>
                         <h4>
-                            Create firebase project in your account
+                            Create firebase project in your account:
                         </h4>
                         <br>
                         <img src="images/app/createFirebase1.png" alt="Eclassify"/>
@@ -409,10 +525,536 @@
                     </li>
                     <li>
                         <h4>
-                            You have configured firebase in your project successfully
+                            You have configured firebase in your project successfully.
                         </h4>
                     </li>
+
                 </ol>
+                <br>
+                <h4><u><b>Note:</b></u></h4>
+                <br>
+                <h4>You can configure firebase with flutter project through these steps:
+                    &nbsp;&nbsp;<b><a
+                            href="https://firebase.google.com/docs/flutter/setup"
+                            target="_blank">https://firebase.google.com/docs/flutter/setup</a></b>
+                </h4>
+
+
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="firebaseOtp">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to enable Firebase Phone Authentication(OTP).</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <ol>
+                    <li>Open your firebase console.</li>
+                    <li>Go to Authentication and open Sign-in method.</li>
+                    <li>Enable Phone Sign-in method and save.</li>
+                    <br><img src="images/app/phone1.png" alt="Eclassify"></ol>
+                <br><br>
+                <li>Now, we have to add sha1 and sha256 key in firebase, for that
+                    perform below
+                    given step.
+                </li>
+                <ul>
+                    <br>
+                    <h1>How to get Debug SHA Keys?</h1>
+                    <br>
+                    <li> Open terminal and copy these both commands run below command one by one
+                        for getting debug sha
+                        keys
+                    </li>
+                    <li> cd android
+                    </li>
+                    <li> ./gradlew signingReport
+                    </li>
+                    <img src="images/app/shaCreate.png" alt="Eclassify">
+
+                </ul>
+
+                <li> After ran those command you can get debug sha keys in terminal as below
+                    image.
+                </li>
+                <br><img src="images/app/debugSha.png" alt="Eclassify"><br><br>
+                <li>Now copy debug SHA-1 and SHA-256 both and add it in
+                    firebase console as below
+                    image.
+                </li>
+
+                <br><img src="images/app/firebaseDebugSha.png" alt="Eclassify"><br><br>
+
+                <br>
+                <h1>How to get Release SHA Keys?</h1>
+                <br>
+
+                <h4>Remember: </h4>
+                <br>
+
+                <li>When we are releasing apk then we need to add release sha in
+                    firebase panel
+                    otherwise otp will not work.
+                </li>
+                <li>after release you can get sha from play console here</li>
+                <br/><img src="images/app/releaseSha.png" alt="Eclassify"><br/>
+                <br>
+
+                <li>or another way you can also get release sha from below given
+                    command in terminal
+                </li>
+
+                <li>If you have already created keystore file then do below steps otherwise first
+                    create keystore file through these steps :: &nbsp;&nbsp;<a
+                            href='#generateReleaseVersion'><b><u>Create KeyStore File</u></b></a>
+
+                </li>
+
+                <li>Then here edit this command and replace your keystore path and
+                    alias in this
+                    command <b>keytool -list -v -keystore "D:\keystore\eclassify.jks"
+                        -alias eclassify</b>
+                </li>
+                <li>Then it will ask for password. Enter password and then it will show your
+                    release SHA-1 and SHA-256 keys..
+                </li>
+                <li>Copy these both keys and add on firebase app.</li>
+                <img src="images/app/releaseSha1.png" alt="Eclassify"><br><br>
+                <h4>
+                    <b>For iOS:</b>
+                </h4>
+                <br>
+                <h5>Add custom URL schemes to your Xcode project:</h5>
+                <br>
+                <ul>
+                    <li>Open your project configuration: double-click the project
+                        name in the left
+                        tree view. Select your app from the <b>TARGETS</b> section, then
+                        select the <b>Info</b>
+                        tab, and expand the <b>URL Types</b> section.
+                    </li>
+                    <li>Click the + button, and add a URL scheme for your <b>reversed
+                        client ID</b>. To
+                        find this value, open the <b>GoogleService-Info.plist</b>
+                        configuration file, and
+                        look for the <b>REVERSED_CLIENT_ID</b> key. Copy the value of that
+                        key, and paste
+                        it into the URL Schemes box on the configuration page. Leave
+                        the other
+                        fields blank.
+                    </li>
+                    <li>When completed, your config should look something similar to
+                        the following
+                        (but with your application-specific values):
+                    </li>
+                    <img src="images/app/reversed_client_id.png" alt="Eclassify"></ul>
+                <br><br>
+
+                </p>
+            </div>
+        </section>
+
+        <section class="section css-structure" id="googleSignIn">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Authenticate with Firebase Using
+                    Google Sign-In</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol><br>
+                    <li>Open your firebase console.
+                    </li>
+                    <li>Go to Sign-in method in Authentication.
+                    </li>
+                    <li>Go to the Google.. Enable the Save it.
+                    </li>
+                    <br>
+                    <img src="images/app/googleSignIn.png" alt="Eclassify"><br><br>
+
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="appleSignIn">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Authenticate with Firebase Using
+                    Apple Sign-In</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol>
+                    <li>Open your firebase console.</li>
+                    <li>Go to Sign-in method in Authentication.</li>
+                    <li>Go to the Apple and enable apple sign in.</li>
+                    <br>
+                    <img src="images/app/apple1.png" alt="Eclassify">
+
+                    <li>In Xcode, select the Signing & Capabilities tab, and add "Sign
+                        In With Apple" as a new Capability then select a team on the
+                        Code Signing section.
+                    </li>
+                    <br>
+                    <img src="images/app/apple2.png" alt="Eclassify">
+
+                    <li>This will generate and configure an App ID in the "Certificates,
+                        Identifiers & Profiles" section of the Apple Developer portal.
+                    </li>
+
+
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="notificationFcm">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to set Notification</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol>
+                    <li> Go to Cloud Messaging and if Cloud Messaging Api is disable
+                        then first enable it like below image.
+                    </li>
+                    <br><img src="images/app/fcm1.png"><br><br>
+                    <li> Enable Cloud Messaging Api from google cloud console after
+                        refresh your firebase project cloud messaging.
+                    </li>
+                    <br><img src="images/app/fcm2.png"><br><br>
+                    <li> Get server key from your
+                        firebase project and
+                        set in panel.
+                    </li>
+                    <br><img src="images/app/fcm3.png"><br><br>
+                    <li>Now add fcm key in admin panel system settings.</li>
+                    <br><img src="images/app/fcm4.png">
+                </ol>
+                <br>
+                <ol>
+                    <h4><b>For ios your need to perform below given step.</b></h4>
+                    <br>
+                    <li>In Xcode, open the project.</li>
+                    <li>In the Project Navigator (the left-hand menu), select the
+                        project icon that
+                        represents your app.
+                    </li>
+                    <li>In the top-left corner of the right-hand pane in Xcode, select
+                        your app's
+                        target.
+                    </li>
+                    <li>Navigate to the Capabilities tab.</li>
+                    <li>Enable Push Notifications.</li>
+                    <li>Check Remote Notifications and Background Fetch from Enabling
+                        Background Modes.
+                    </li>
+                    <br>
+                    <img src="images/app/iosNotification1.png"><br><br>
+
+
+                    <li>APNs (Apple's Push Notification service) currently supports two
+                        types of
+                        connections: token-based (.p8) and certificate-based (.p12).you
+                        can follow
+                        either one of them
+                    </li>
+                    <br>
+                    <h4><b>For Token-based (.p8).</b></h4>
+                    <br>
+                    <li>Log in to the Apple Developer Portal.</li>
+                    <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs
+                        and click the
+                        App ID associated with your app.
+                    </li>
+                    <li>On the screen for your App ID, check Capabilities > Push
+                        Notifications.
+                    </li>
+                    <br>
+
+                    <img src="images/app/iosNotification2.png"><br><br>
+
+                    <img src="images/app/iosNotification3.png"><br><br>
+
+                    <li>Select App ID in next page & click continue.</li>
+                    <li>And then create Development SSL Certificate & Production SSL
+                        Certificate by
+                        adding CSR certificate. follow Apple's <a
+                                href="https://help.apple.com/developer-account/"
+                                style="color:red">Create a
+                            certificate signing request instructions.</a>
+
+                    </li>
+                    <li>Navigate to Certificates, IDs & Profiles > Keys Section and add
+                        a Universal key
+                        for Notifications,which you can use for more than one apps as
+                        well.
+
+                    </li>
+                    <br>
+
+                    <img src="images/app/iosNotification4.png"><br><br>
+
+                    <li>Just save and Download & keep it safe, as it will be downloaded
+                        only once.
+                    </li>
+
+                    <br>
+
+                    <img src="images/app/iosNotification5.png"><br><br>
+                    <li>Then go to Firebase and add this .p8 file along with Your Key ID
+                        and Team ID.
+                    </li>
+
+                    <br>
+
+                    <img src="images/app/iosNotification6.png"><br><br>
+
+
+                    <h4><b>FOR certificate-based (.p12) :</b>
+                    </h4>
+                    <br>
+                    <li>Log in to the Apple Developer Portal.</li>
+                    <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs
+                        and click the
+                        App ID associated with your app.
+                    </li>
+                    <li>On the screen for your App ID, check Capabilities > Push
+                        Notifications.
+                    </li>
+                    <li>Click Save and respond to the Modify App Capabilities dialog box
+                        that appears.
+                    </li>
+                    <li>To create the certificate, we will use to communicate with Apple
+                        when sending
+                        push notifications:
+                    </li>
+                    <ul>
+                        <li>In a new browser tab, follow Apple's <a
+                                href="https://help.apple.com/developer-account/#/devbfa00fef7"
+                                style="color:red">Create a certificate signing request
+                            instructions.</a>
+                        </li>
+                        <li>In the Apple Developer Portal, navigate back to your App
+                            ID.
+                        </li>
+                        <li>Click Capabilities > Push Notifications > Configure.</li>
+                        <li>Click one of the following buttons:</li>
+                        <ul>
+                            <li>Development SSL Certificate > Create Certificate (for
+                                testing push
+                                notifications while developing an iOS app)
+                            </li>
+                            <li>Production SSL Certificate > Create Certificate (for
+                                sending push
+                                notifications in production)
+                            </li>
+                        </ul>
+                        <li>Click Choose File and select the certificate signing request
+                            you created
+                            above.
+                        </li>
+                        <li>Click Continue.</li>
+
+                        <li>Click Download to download the certificate.</li>
+                        <li>Use this file to export a .p12 file in the next step.</li>
+
+                    </ul>
+
+
+                    <li>Navigate in the Apple Developer Portal to Certificates, IDs &
+                        Profiles >
+                        Provisioning Profiles.
+                    </li>
+                    <li>Click the provisioning profile you'd like to edit.</li>
+                    <li>Edit the provisioning profile as necessary, and click Save.</li>
+                    <li>Click Download, and double-click the downloaded provisioning
+                        profile to install
+                        it.
+                    </li>
+                    <li>Make sure your Xcode project is configured to use the
+                        provisioning profile as
+                        necessary.Next, export the downloaded certificate (.cer file) as
+                        a .p12 file
+                        that can be uploaded to firebase:
+                    </li>
+
+                    <ul>
+                        <li>On your Mac, double-click the .cer file to open it in
+                            Keychain Access.
+                        </li>
+                        <li>In Keychain Access, in the lower-left corner, select
+                            Category >
+                            Certificates.
+                        </li>
+                        <li>Select the certificate to export.</li>
+                        <li>Choose File > Export Items.</li>
+                        <li>Enter a name in the Save As field.</li>
+                        <li>Accept the default .p12 file format and click Save. Respond
+                            to the prompts,
+                            and enter a password for the file if necessary.
+                        </li>
+                        <li>Keep track of this file, since you'll upload it to firebase
+                            in a later step.
+                        </li>
+
+
+                        <br>
+
+                        <img src="images/app/iosNotification7.png"></ul>
+                    <br><br>
+
+                    <img src="images/app/iosNotification8.png"><br><br>
+
+
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="nativeLink">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to create Native Link for Share Item</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol>
+                    <li>Open lib -> settings.dart file.</li>
+                    <li>Add your host url here [Without http ot https]</li>
+
+                    <img src="images/app/nativeLink1.png" alt="Eclassify">
+
+                    <li> Go to android -> app -> main -> AndroidManifest.xml file. Also add your
+                        host url here [Without http ot https]
+                    </li>
+                    <br>
+                    <img src="images/app/nativeLink2.png" alt="Eclassify">
+
+
+                </ol>
+                <br/>
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="googleMap">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to Add Map API key for Address</h2>
+            </div>
+            <br/>
+            <div class="sec-content">
+                <ol>
+                    <li>
+                        Go to Google Cloud Platform. <a style="color: #3C55D1;"
+                                                        href="https://cloud.google.com/">
+                        Click here</a>
+                    </li>
+                    <li>
+                        Click on console.
+                        <img src="images/app/mapAPI1.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+
+                    <li>
+                        Select your Firebase Project
+                        <img src="images/app/mapAPI2.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+
+                        Search for APIs, which are shown in below image.
+                        <img src="images/app/mapAPI3.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+
+                    <li>
+                        Click on Enable to, enable that APIs
+                        <img src="images/app/mapAPI4.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+
+
+                    <li>
+                        Do above steps for below listed API. (enable all below APIs one
+                        by one by
+                        searching)
+                        <img src="images/app/mapAPI5.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        Go to Credential Tab. you will find your Androiod and iOS API
+                        keys.
+                        <img src="images/app/mapAPI6.png" alt="Eclassify"/>
+                        <br><br>
+                    </li>
+                    <li>
+                        You have to setup those above API keys for both Platform.
+
+                        <ol>
+                            <li><b>Android Setup</b>
+                                <ul>
+                                    <li>
+                                        Next, open android ‣ app ‣ src ‣ main ‣
+                                        AndroidManifest.xml and
+                                        paste the Google Maps meta data tag into your
+                                        application tag
+                                        before
+                                        the activity tag, placing the API key you copied
+                                        before to
+                                        replace
+                                        {{YOUR_API_KEY_HERE}}.
+                                        <br>
+                                    </li>
+
+                                    <xmp>
+                                        <meta-data
+                                                android:name="com.google.android.geo.API_KEY"
+                                                android:value="{{YOUR_API_KEY_HERE}}"/>
+                                    </xmp>
+                                </ul>
+                            </li>
+
+
+                            <b>Note</b>: For the value field, please paste in your API
+                            Key from the Google
+                            Maps
+                            API registration process.<br><br>
+
+                            <img src="images/app/mapAPI7.png" alt="Eclassify"/>
+                            <br><br>
+                            <li><b>iOS Setup</b>
+                                <ul>
+                                    <li>
+                                        Next, open the ios ‣ Runner ‣ AppDelegate.swift
+                                        file and paste the
+                                        following
+                                        code at shown in image.
+                                        <br><br>
+                                        GMSServices.provideAPIKey("YOUR KEY HERE")
+                                    </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <b>Note</b>: Again, for the value field please paste in your
+                    API Key from the
+                    registration process.<br><br>
+                    <img src="images/app/mapAPI8.png" alt="Eclassify"/>
+
+                </ol>
+                <div class="section_bdr"></div>
+                </li>
+                </ol>
+                <br/>
             </div>
         </section>
 
@@ -451,32 +1093,19 @@
                 <h4> For Android, open android > app > src > main > res and add here your logo
                     according to device
                     screen size </h4>
-                <br><br>
+
 
                 <img src="images/app/androidAppIcon.png" alt="Eclassify"/>
-                <br><br>
+
 
                 <h4> For IOS open ios > Runner > Assets.xcassets > AppIcon.appiconset here and add
                     your logo
                     according to diffrent size.</h4>
-                <br><br>
+
                 <img src="images/app/iosAppIcon.png" alt="Eclassify"/>
 
-                <br/><br/><br>
-                <!--<h4><b>Generate Logo Files With Package</b></h4>
-                <br/><br/>
-                <h4>1. Add your logo file in assets/images folder</h4>
-                <br><br>
-                <h4>2. Add it's path and filename in pubspec.yaml file under flutter_launcher_icons
-                    configurations</h4>
-                <br><br>
-                <h4>3. Run this command to generate the ic_launcher files for both Android and IOS:
-                    <br><br><i>flutter pub
-                        run flutter_launcher_icons</i>
-                </h4>
-                <br><br>
-                <img src="images/app/generateAppLogo.png" alt="Eclassify"/>-->
-                <br><br>
+                <br>
+
             </div>
         </section>
 
@@ -498,9 +1127,48 @@
                 <h4> For IOS open this project in xcode and enter your app name in display name
                     field as shown in
                     image.</h4>
-                <br><br>
+
                 <img src="images/app/iosAppName.png" alt="Eclassify"/>
-                <br><br>
+
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="assetImage">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to Change Images in app</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+
+                <li>Go to assets folder. You can change your image to exist image with same name.
+                </li>
+
+
+                <img src="images/app/imagesChange.png" alt="Eclassify"/>
+
+
+            </div>
+        </section>
+
+        <section class="section css-structure" id="changeDefaultCountryCode">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to Change Default Country Code in app</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+
+                <li>Go to lib -> settings.dart file.. Here you can add your default country code.
+                </li>
+
+
+                <img src="images/app/defaultCountryCode.png" alt="Eclassify"/>
+
+
             </div>
         </section>
 
@@ -526,7 +1194,7 @@
                     using Android Studio.</h4>
                 <br>
                 <img src="images/app/commandList.png" alt="Eclassify"/>
-                <br><br>
+
             </div>
         </section>
 
@@ -539,10 +1207,10 @@
             <br>
             <div class="sec-content">
 
-                <h4>Go to lib/ui/styles/colors.dart and set your theme colors</h4>
-                <br>
+                <h4>Go to lib/Ui/Theme/theme.dart and set your theme colors.</h4>
+
                 <img src="images/app/chaneAppTheme.png" alt="Eclassify"/>
-                <br>
+
             </div>
         </section>
 
@@ -558,137 +1226,137 @@
                 <ol>
                     <li>
                         <h4> Go to assets/fonts/ and add .tff files of fonts.</h4>
-                        <br><br>
+
                         <img src="images/app/changeFont.png" alt="Eclassify"/>
-                        <br><br>
+
                     </li>
                     <li>
                         <h4>
                             Go to pubspecs.yaml and add your font as shown in image.</h4>
-                        <br><br>
-                        <img src="images/app/changeFont2.png" alt="Eclassify"/>
+
+                        <img src="images/app/changeFont1.png" alt="Eclassify"/>
                     </li>
                 </ol>
             </div>
         </section>
 
 
-       <!-- <section class="section css-structure" id="changeLanguage">
-            <div class="sec-title">
-                <span class="icon fa fa-at"></span>
-                <h2>Change language in app</h2>
-            </div>
-            <br>
-            <div class="sec-content">
-                <ol>
-                    <li>
-                        <h4>By default,default applicaiton language is english. If you want to
-                            change default
-                            language
-                            go to lib/utils/appLanguages.dart and add your respective language's
-                            code shown in below
-                            image.
-                            Get your language code from here
-                            <a href="https://developers.google.com/admin-sdk/directory/v1/languages"
-                               target="_blank">https://developers.google.com/admin-sdk/directory/v1/languages</a>.
-                        </h4>
-                        <br><br>
-                        <img src="images/app/changeDefaultLanguage.png" alt="Eclassify"/>
-                        <br><br>
-                    </li>
-                    <li>
-                        <h4>
-                            If your default language code is not in app language list add language
-                            details
-                            in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
-                        <br><br>
-                        <img src="images/app/addLanguage.png" alt="Eclassify"/>
-                        <br><br>
-                    </li>
-                    <li>
-                        <h4>
-                            If your default language is not in assets/languages/[language-code].json
-                            then create new
-                            file
-                            in same folder with [language-code].json. Add all the labels from
-                            en.json and
-                            convert label values in your respective language</h4>
-                        <br><br>
-                        <img src="images/app/addNewLanguage.jpg" alt="Eclassify"/>
-                        <br><br>
-                    </li>
-                    <li>
-                        <h4>
-                            Copy all the labels form en.json file in your [language-code].json
-                            file.</h4>
-                        <br><br>
-                        <img src="images/app/addNewLanguage2.jpg" alt="Eclassify"/>
-                        <br><br>
-                    </li>
-                    <li>
-                        <h4>
-                            If you want to add new language then follow the steps 2,3 and 4.</h4>
-                    </li>
-                </ol>
-            </div>
-        </section>
+        <!-- <section class="section css-structure" id="changeLanguage">
+             <div class="sec-title">
+                 <span class="icon fa fa-at"></span>
+                 <h2>Change language in app</h2>
+             </div>
+             <br>
+             <div class="sec-content">
+                 <ol>
+                     <li>
+                         <h4>By default,default applicaiton language is english. If you want to
+                             change default
+                             language
+                             go to lib/utils/appLanguages.dart and add your respective language's
+                             code shown in below
+                             image.
+                             Get your language code from here
+                             <a href="https://developers.google.com/admin-sdk/directory/v1/languages"
+                                target="_blank">https://developers.google.com/admin-sdk/directory/v1/languages</a>.
+                         </h4>
+                         <br><br>
+                         <img src="images/app/changeDefaultLanguage.png" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             If your default language code is not in app language list add language
+                             details
+                             in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
+                         <br><br>
+                         <img src="images/app/addLanguage.png" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             If your default language is not in assets/languages/[language-code].json
+                             then create new
+                             file
+                             in same folder with [language-code].json. Add all the labels from
+                             en.json and
+                             convert label values in your respective language</h4>
+                         <br><br>
+                         <img src="images/app/addNewLanguage.jpg" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             Copy all the labels form en.json file in your [language-code].json
+                             file.</h4>
+                         <br><br>
+                         <img src="images/app/addNewLanguage2.jpg" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             If you want to add new language then follow the steps 2,3 and 4.</h4>
+                     </li>
+                 </ol>
+             </div>
+         </section>
 
-        <section class="section css-structure" id="changeItemAnimations">
-            <div class="sec-title">
-                <span class="icon fa fa-at"></span>
-                <h2>Change item animations</h2>
-            </div>
-            <br>
-            <div class="sec-content">
-                <h4>In the <i>lib/utils/constants.dart</i> file, to enable/disable item appearing
-                    animations, you
-                    can change the value of
-                    <i>isApplicationItemAnimationOn</i> to true/false according to your
-                    requirements.<br><br>
-                    To change the duration of animation you can adjust the milliseconds of different
-                    animations by
-                    increasing/decreasing the values of the duration variables.
-                </h4>
-                <br><br>
-                <img src="images/app/animationSettings.png" alt="Eclassify"/>
-                <br><br>
-            </div>
-        </section>
+         <section class="section css-structure" id="changeItemAnimations">
+             <div class="sec-title">
+                 <span class="icon fa fa-at"></span>
+                 <h2>Change item animations</h2>
+             </div>
+             <br>
+             <div class="sec-content">
+                 <h4>In the <i>lib/utils/constants.dart</i> file, to enable/disable item appearing
+                     animations, you
+                     can change the value of
+                     <i>isApplicationItemAnimationOn</i> to true/false according to your
+                     requirements.<br><br>
+                     To change the duration of animation you can adjust the milliseconds of different
+                     animations by
+                     increasing/decreasing the values of the duration variables.
+                 </h4>
+                 <br><br>
+                 <img src="images/app/animationSettings.png" alt="Eclassify"/>
+                 <br><br>
+             </div>
+         </section>
 
-        <section class="section css-structure" id="chatMessageConstraints">
-            <div class="sec-title">
-                <span class="icon fa fa-at"></span>
-                <h2>Chat Message Constraints</h2>
-            </div>
-            <br>
-            <div class="sec-content">
-                <h4>Within our messaging system, specific technical constraints are in place for
-                    effective
-                    functionality. When composing a regular text message, users are limited to a
-                    maximum of 500
-                    characters. For file and image attachments, the system allows for a total of 30
-                    files to be sent
-                    simultaneously, with an individual file size limit of 10 MB.
-                    <br><br>
-                    It's crucial to note that attempts to upload a file exceeding the 10 MB
-                    threshold will be
-                    unsuccessful, in adherence to these constraints. Modification of these
-                    parameters can be
-                    executed through the lib/utils/constants.dart file.
-                    <br><br>
-                    However, it's essential to acknowledge the backend's overarching limitations.
-                    The backend
-                    enforces a maximum cap of 50 files per message and restricts individual file
-                    sizes to a maximum
-                    of 2 GB. Consequently, any adjustments made within the app must align with these
-                    backend
-                    constraints for seamless operation.
-                </h4>
-                <br><br>
-                <img src="images/app/chatMessageConstraints.png" alt="Eclassify"/>
-                <br><br>
-            </div>
-        </section>-->
+         <section class="section css-structure" id="chatMessageConstraints">
+             <div class="sec-title">
+                 <span class="icon fa fa-at"></span>
+                 <h2>Chat Message Constraints</h2>
+             </div>
+             <br>
+             <div class="sec-content">
+                 <h4>Within our messaging system, specific technical constraints are in place for
+                     effective
+                     functionality. When composing a regular text message, users are limited to a
+                     maximum of 500
+                     characters. For file and image attachments, the system allows for a total of 30
+                     files to be sent
+                     simultaneously, with an individual file size limit of 10 MB.
+                     <br><br>
+                     It's crucial to note that attempts to upload a file exceeding the 10 MB
+                     threshold will be
+                     unsuccessful, in adherence to these constraints. Modification of these
+                     parameters can be
+                     executed through the lib/utils/constants.dart file.
+                     <br><br>
+                     However, it's essential to acknowledge the backend's overarching limitations.
+                     The backend
+                     enforces a maximum cap of 50 files per message and restricts individual file
+                     sizes to a maximum
+                     of 2 GB. Consequently, any adjustments made within the app must align with these
+                     backend
+                     constraints for seamless operation.
+                 </h4>
+                 <br><br>
+                 <img src="images/app/chatMessageConstraints.png" alt="Eclassify"/>
+                 <br><br>
+             </div>
+         </section>-->
 
 
         <section class="section css-structure" id="generateReleaseVersion">
@@ -698,19 +1366,22 @@
             </div>
             <br>
             <div class="sec-content">
-                <h2>Create and add Key Store file for Androd:</h2>
+                <h2>Create and add Keystore file for Android:</h2>
                 <br><br>
                 <ol>
                     <li>
                         <h4>To generate a keystore file, run the following command:</h4>
                         <br>
-                        <i>keytool -genkey -v -keystore your-keystore-file.jks -keyalg RSA -keysize
+                        <i><b>keytool -genkey -v -keystore your-keystore-file.jks -keyalg RSA
+                            -keysize
                             2048 -validity
-                            10000 -alias your-alias</i>
+                            10000 -alias your-alias</b></i>
                         <br><br>
-                        <h4>You can replace "your-keystore-file.jks" with your preferred filename,
+                        <h4>You can replace <b>your-keystore-file.jks</b> with your preferred
+                            filename,
                             but ensure you
-                            keep the ".jks" extension. Similarly, you can change "your-alias" as
+                            keep the ".jks" extension. Similarly, you can change <b>your-alias</b>
+                            as
                             needed, but make
                             sure to remember it. During this process, you will be prompted to set a
                             password; please
@@ -724,16 +1395,16 @@
                         <br><br>
                     </li>
                     <li>
-                        <h4>Create a file named "key.properties" in your project's "android" folder
+                        <h4>Go to <b>android -> key.properties</b> file
                             and add the
                             following details, which correspond to the information you used in the
                             previous step:
                         </h4>
                         <br>
-                        <i>storePassword=[your-password-from-previous-step]<br>
-                            keyPassword=[your-password-from-previous-step]<br>
-                            keyAlias=[your-alias-from-previous-step]<br>
-                            storeFile=[your-keystore-file-location]<br>
+                        <i><b></br>storePassword= [your-password-from-previous-step]<br>
+                            keyPassword= [your-password-from-previous-step] <br>
+                            keyAlias= [your-alias-from-previous-step]<br>
+                            storeFile= [your-keystore-file-location]<br></b>
                         </i>
                         <br><br>
                         <h4>Replace the placeholders ("[]" brackets) with the actual details you
@@ -742,18 +1413,18 @@
                             following
                             command:</h4>
                         <br>
-                        <i>flutter build apk</i>
+                        <i><b>flutter build apk</b></i>
                         <br><br>
                         <h4>Or an app bundle file for the Play Store upload with:</h4>
                         <br>
-                        <i>flutter build appbundle</i>
+                        <i><b>flutter build appbundle</b></i>
                     </li>
                 </ol>
-                <br><br>
+
                 <img src="images/app/generatKeyStorefile.png" alt="Eclassify"/>
-                <br><br>
+
             </div>
-            <br><br>
+
             <div class="sec-content">
                 <h2>Follow these links for more information on generating the release version:</h2>
                 <br><br>
