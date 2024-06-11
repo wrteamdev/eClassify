@@ -723,17 +723,20 @@
             <br/>
             <div class="sec-content">
                 <ol>
-                    <li> Go to your firebase project in project settings -> general. Copy your
-                        project id from there as below image.
+                    <li> Go to Cloud Messaging and if Cloud Messaging Api is disable
+                        then first enable it like below image.
                     </li>
-                    <br><img src="images/app/fcm_11.png"><br><br>
-                    <li> Go to project settings -> service accounts. For download service json file
-                        click on Generate new private key button as below image.
+                    <br><img src="images/app/fcm1.png"><br><br>
+                    <li> Enable Cloud Messaging Api from google cloud console after
+                        refresh your firebase project cloud messaging.
                     </li>
-                    <br><img src="images/app/fcm_12.png"><br><br>
-                    <li>Now add your project id and downloaded service json file in admin panel
-                        system settings and save it.
+                    <br><img src="images/app/fcm2.png"><br><br>
+                    <li> Get server key from your
+                        firebase project and
+                        set in panel.
                     </li>
+                    <br><img src="images/app/fcm3.png"><br><br>
+                    <li>Now add fcm key in admin panel system settings.</li>
                     <br><img src="images/app/fcm4.png">
                 </ol>
                 <br>
@@ -918,10 +921,10 @@
         </section>
 
 
-        <section class="section css-structure" id="deepLink">
+        <section class="section css-structure" id="nativeLink">
             <div class="sec-title">
                 <span class="icon fa fa-at"></span>
-                <h2>How to create Deep Link for Share Item</h2>
+                <h2>How to create Native Link for Share Item</h2>
             </div>
             <br/>
             <div class="sec-content">
@@ -936,36 +939,7 @@
                     </li>
                     <br>
                     <img src="images/app/nativeLink2.png" alt="Eclassify">
-                    <li> Open your code in xcode -> Runner -> Signing & Capabilities -> Associated
-                        Domains in add your domain here. [Without http ot https]
-                    </li>
-                    <br>
-                    <img src="images/app/nativeLink3.png" alt="Eclassify">
-                    <li>First of all download this google files from the link :<a
-                            href="https://drive.google.com/drive/folders/1LbSXPmTRvz6-VWdr4isJz9AE00p8ynJ6"
-                            target="_blank">Server Side Deeplink Files</a>
-                    </li>
-                    <li>Open both files in the any text editor and follow below steps
-                    </li>
-                    <br>
-                    <img src="images/app/deep-link-1.png" alt="Eclassify">
-                    <br>
-                    <img src="images/app/deep-link-2.png" alt="Eclassify">
-                    <li>After above changes save both files (Note- Keep name proper same of both
-                        files)
-                    </li>
-                    <li>Open server > Go to admin panel root folder
-                    </li>
-                    <li>You will get .well-known folder on root directory
-                    </li>
-                    <li>If you don't get that folder from setting enable setting visible hidden
-                        files then check
-                    </li>
-                    <li>After the change setting still you don't find the files, Create new
-                        directory named <b>.well-known</b> (Make sure name starts with dot[.])
-                    </li>
-                    <li>Add both above saved files inside the <b>.well-known</b> folder.
-                    </li>
+
 
                 </ol>
                 <br/>
@@ -1071,15 +1045,15 @@
                                     </li>
                                 </ul>
                             </li>
-
-                            <b>Note</b>: Again, for the value field please paste in your
-                            API Key from the
-                            registration process.<br><br>
-                            <img src="images/app/mapAPI8.png" alt="Eclassify"/>
-
-                        </ol>
-                        <div class="section_bdr"></div>
                     </li>
+                    <b>Note</b>: Again, for the value field please paste in your
+                    API Key from the
+                    registration process.<br><br>
+                    <img src="images/app/mapAPI8.png" alt="Eclassify"/>
+
+                </ol>
+                <div class="section_bdr"></div>
+                </li>
                 </ol>
                 <br/>
             </div>
@@ -1156,30 +1130,6 @@
                     image.</h4>
 
                 <img src="images/app/iosAppName.png" alt="Eclassify"/>
-                <h4> Change app name in lib -> settings.dart file as shown in image.</h4>
-                <br><br>
-                <img src="images/app/appName2.png" alt="Eclassify"/>
-
-            </div>
-        </section>
-
-
-        <section class="section css-structure" id="changeSplashImage">
-            <div class="sec-title">
-                <span class="icon fa fa-at"></span>
-                <h2>How to Change Splash Screen Image in app</h2>
-            </div>
-            <br>
-            <div class="sec-content">
-
-
-                <li>Go to assets folder -> svg -> Logo folder. You can change your image to exist
-                    image with same name.
-                </li>
-
-
-                <img src="images/app/splash_screen.png" alt="Eclassify"/>
-
 
             </div>
         </section>
@@ -1292,128 +1242,122 @@
         </section>
 
 
-        <!--  <section class="section css-structure" id="changeLanguage">
-              <div class="sec-title">
-                  <span class="icon fa fa-at"></span>
-                  <h2>Change language in app</h2>
-              </div>
-              <br>
-              <div class="sec-content">
-                  <ol>
-                      <li>
-                          <h4>By default,default applicaiton language is english. If you want to
-                              change default
-                              language
-                              go to lib/utils/appLanguages.dart and add your respective language's
-                              code shown in below
-                              image.
-                              Get your language code from here
-                              <a href="https://developers.google.com/admin-sdk/directory/v1/languages"
-                                 target="_blank">https://developers.google.com/admin-sdk/directory/v1/languages</a>.
-                          </h4>
-                          <br><br>
-                          <img src="images/app/changeDefaultLanguage.png" alt="Eclassify"/>
-                          <br><br>
-                      </li>
-                      <li>
-                          <h4>
-                              If your default language code is not in app language list add language
-                              details
-                              in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
-                          <br><br>
-                          <img src="images/app/addLanguage.png" alt="Eclassify"/>
-                          <br><br>
-                      </li>
-                      <li>
-                          <h4>
-                              If your default language is not in assets/languages/[language-code].json
-                              then create new
-                              file
-                              in same folder with [language-code].json. Add all the labels from
-                              en.json and
-                              convert label values in your respective language</h4>
-                          <br><br>
-                          <img src="images/app/addNewLanguage.jpg" alt="Eclassify"/>
-                          <br><br>
-                      </li>
-                      <li>
-                          <h4>
-                              Copy all the labels form en.json file in your [language-code].json
-                              file.</h4>
-                          <br><br>
-                          <img src="images/app/addNewLanguage2.jpg" alt="Eclassify"/>
-                          <br><br>
-                      </li>
-                      <li>
-                          <h4>
-                              If you want to add new language then follow the steps 2,3 and 4.</h4>
-                      </li>
-                  </ol>
-              </div>
-          </section>-->
+        <!-- <section class="section css-structure" id="changeLanguage">
+             <div class="sec-title">
+                 <span class="icon fa fa-at"></span>
+                 <h2>Change language in app</h2>
+             </div>
+             <br>
+             <div class="sec-content">
+                 <ol>
+                     <li>
+                         <h4>By default,default applicaiton language is english. If you want to
+                             change default
+                             language
+                             go to lib/utils/appLanguages.dart and add your respective language's
+                             code shown in below
+                             image.
+                             Get your language code from here
+                             <a href="https://developers.google.com/admin-sdk/directory/v1/languages"
+                                target="_blank">https://developers.google.com/admin-sdk/directory/v1/languages</a>.
+                         </h4>
+                         <br><br>
+                         <img src="images/app/changeDefaultLanguage.png" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             If your default language code is not in app language list add language
+                             details
+                             in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
+                         <br><br>
+                         <img src="images/app/addLanguage.png" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             If your default language is not in assets/languages/[language-code].json
+                             then create new
+                             file
+                             in same folder with [language-code].json. Add all the labels from
+                             en.json and
+                             convert label values in your respective language</h4>
+                         <br><br>
+                         <img src="images/app/addNewLanguage.jpg" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             Copy all the labels form en.json file in your [language-code].json
+                             file.</h4>
+                         <br><br>
+                         <img src="images/app/addNewLanguage2.jpg" alt="Eclassify"/>
+                         <br><br>
+                     </li>
+                     <li>
+                         <h4>
+                             If you want to add new language then follow the steps 2,3 and 4.</h4>
+                     </li>
+                 </ol>
+             </div>
+         </section>
 
-        <section class="section css-structure" id="admobSetting">
-            <div class="sec-title">
-                <span class="icon fa fa-at"></span>
-                <h2>How to enable/disable and admob settings</h2>
-            </div>
-            <br>
-            <div class="sec-content">
-                <ol>
-                    <li><h4>If you want to disable google admob then you can disable from admin
-                        panel -> settings -> admob settings </h4></li>
-                    <li><h4>Create android and iOS app in google admob account. You can create
-                        google admob
-                        account from here. <a href="https://admob.google.com/home/"
-                                              target="_blank">https://admob.google.com/home/</a>
-                    </h4></li>
-                    <li><h4> Create banner and interstitial ads and copy those ads id.
-                    </h4></li>
+         <section class="section css-structure" id="changeItemAnimations">
+             <div class="sec-title">
+                 <span class="icon fa fa-at"></span>
+                 <h2>Change item animations</h2>
+             </div>
+             <br>
+             <div class="sec-content">
+                 <h4>In the <i>lib/utils/constants.dart</i> file, to enable/disable item appearing
+                     animations, you
+                     can change the value of
+                     <i>isApplicationItemAnimationOn</i> to true/false according to your
+                     requirements.<br><br>
+                     To change the duration of animation you can adjust the milliseconds of different
+                     animations by
+                     increasing/decreasing the values of the duration variables.
+                 </h4>
+                 <br><br>
+                 <img src="images/app/animationSettings.png" alt="Eclassify"/>
+                 <br><br>
+             </div>
+         </section>
 
-                    <li><h4> Paste those ads id in admin panel -> settings -> admob settings..
-                    </h4></li>
-                    <br><br>
-                    <img src="images/app/admob1.png" alt="Eclassify"/>
-                    <br><br>
-                </ol>
-
-            </div>
-        </section>
-
-        <section class="section css-structure" id="chatMessageConstraints">
-            <div class="sec-title">
-                <span class="icon fa fa-at"></span>
-                <h2>Chat Message Constraints</h2>
-            </div>
-            <br>
-            <div class="sec-content">
-                <h4>Within our messaging system, specific technical constraints are in place for
-                    effective
-                    functionality. When composing a regular text message, users are limited to a
-                    maximum of 500
-                    characters. For file and image attachments, the system allows for a total of 30
-                    files to be sent
-                    simultaneously, with an individual file size limit of 10 MB.
-                    <br><br>
-                    It's crucial to note that attempts to upload a file exceeding the 10 MB
-                    threshold will be
-                    unsuccessful, in adherence to these constraints. Modification of these
-                    parameters can be
-                    executed through the lib/utils/constants.dart file.
-                    <br><br>
-                    However, it's essential to acknowledge the backend's overarching limitations.
-                    The backend
-                    enforces a maximum cap of 50 files per message and restricts individual file
-                    sizes to a maximum
-                    of 2 GB. Consequently, any adjustments made within the app must align with these
-                    backend
-                    constraints for seamless operation.
-                </h4>
-                <br><br>
-                <img src="images/app/chatMessageConstraints.png" alt="Eclassify"/>
-                <br><br>
-            </div>
-        </section>
+         <section class="section css-structure" id="chatMessageConstraints">
+             <div class="sec-title">
+                 <span class="icon fa fa-at"></span>
+                 <h2>Chat Message Constraints</h2>
+             </div>
+             <br>
+             <div class="sec-content">
+                 <h4>Within our messaging system, specific technical constraints are in place for
+                     effective
+                     functionality. When composing a regular text message, users are limited to a
+                     maximum of 500
+                     characters. For file and image attachments, the system allows for a total of 30
+                     files to be sent
+                     simultaneously, with an individual file size limit of 10 MB.
+                     <br><br>
+                     It's crucial to note that attempts to upload a file exceeding the 10 MB
+                     threshold will be
+                     unsuccessful, in adherence to these constraints. Modification of these
+                     parameters can be
+                     executed through the lib/utils/constants.dart file.
+                     <br><br>
+                     However, it's essential to acknowledge the backend's overarching limitations.
+                     The backend
+                     enforces a maximum cap of 50 files per message and restricts individual file
+                     sizes to a maximum
+                     of 2 GB. Consequently, any adjustments made within the app must align with these
+                     backend
+                     constraints for seamless operation.
+                 </h4>
+                 <br><br>
+                 <img src="images/app/chatMessageConstraints.png" alt="Eclassify"/>
+                 <br><br>
+             </div>
+         </section>-->
 
 
         <section class="section css-structure" id="generateReleaseVersion">
