@@ -723,20 +723,17 @@
             <br/>
             <div class="sec-content">
                 <ol>
-                    <li> Go to Cloud Messaging and if Cloud Messaging Api is disable
-                        then first enable it like below image.
+                    <li> Go to your firebase project in project settings -> general. Copy your
+                        project id from there as below image.
                     </li>
-                    <br><img src="images/app/fcm1.png"><br><br>
-                    <li> Enable Cloud Messaging Api from google cloud console after
-                        refresh your firebase project cloud messaging.
+                    <br><img src="images/app/fcm_11.png"><br><br>
+                    <li> Go to project settings -> service accounts. For download service json file
+                        click on Generate new private key button as below image.
                     </li>
-                    <br><img src="images/app/fcm2.png"><br><br>
-                    <li> Get server key from your
-                        firebase project and
-                        set in panel.
+                    <br><img src="images/app/fcm_12.png"><br><br>
+                    <li>Now add your project id and downloaded service json file in admin panel
+                        system settings and save it.
                     </li>
-                    <br><img src="images/app/fcm3.png"><br><br>
-                    <li>Now add fcm key in admin panel system settings.</li>
                     <br><img src="images/app/fcm4.png">
                 </ol>
                 <br>
@@ -921,10 +918,10 @@
         </section>
 
 
-        <section class="section css-structure" id="nativeLink">
+        <section class="section css-structure" id="deepLink">
             <div class="sec-title">
                 <span class="icon fa fa-at"></span>
-                <h2>How to create Native Link for Share Item</h2>
+                <h2>How to create Deep Link for Share Item</h2>
             </div>
             <br/>
             <div class="sec-content">
@@ -939,7 +936,36 @@
                     </li>
                     <br>
                     <img src="images/app/nativeLink2.png" alt="Eclassify">
-
+                    <li> Open your code in xcode -> Runner -> Signing & Capabilities -> Associated
+                        Domains in add your domain here. [Without http ot https]
+                    </li>
+                    <br>
+                    <img src="images/app/nativeLink3.png" alt="Eclassify">
+                    <li>First of all download this google files from the link :<a
+                            href="https://drive.google.com/drive/folders/1LbSXPmTRvz6-VWdr4isJz9AE00p8ynJ6"
+                            target="_blank">Server Side Deeplink Files</a>
+                    </li>
+                    <li>Open both files in the any text editor and follow below steps
+                    </li>
+                    <br>
+                    <img src="images/app/deep-link-1.png" alt="Eclassify">
+                    <br>
+                    <img src="images/app/deep-link-2.png" alt="Eclassify">
+                    <li>After above changes save both files (Note- Keep name proper same of both
+                        files)
+                    </li>
+                    <li>Open server > Go to admin panel root folder
+                    </li>
+                    <li>You will get .well-known folder on root directory
+                    </li>
+                    <li>If you don't get that folder from setting enable setting visible hidden
+                        files then check
+                    </li>
+                    <li>After the change setting still you don't find the files, Create new
+                        directory named <b>.well-known</b> (Make sure name starts with dot[.])
+                    </li>
+                    <li>Add both above saved files inside the <b>.well-known</b> folder.
+                    </li>
 
                 </ol>
                 <br/>
@@ -1045,15 +1071,15 @@
                                     </li>
                                 </ul>
                             </li>
-                    </li>
-                    <b>Note</b>: Again, for the value field please paste in your
-                    API Key from the
-                    registration process.<br><br>
-                    <img src="images/app/mapAPI8.png" alt="Eclassify"/>
+                            </li>
+                            <b>Note</b>: Again, for the value field please paste in your
+                            API Key from the
+                            registration process.<br><br>
+                            <img src="images/app/mapAPI8.png" alt="Eclassify"/>
 
-                </ol>
-                <div class="section_bdr"></div>
-                </li>
+                        </ol>
+                        <div class="section_bdr"></div>
+                    </li>
                 </ol>
                 <br/>
             </div>
@@ -1130,7 +1156,29 @@
                     image.</h4>
 
                 <img src="images/app/iosAppName.png" alt="Eclassify"/>
+                <h4> Change app name in lib -> settings.dart file as shown in image.</h4>
+                <br><br>
+                <img src="images/app/appName2.png" alt="Eclassify"/>
 
+            </div>
+        </section>
+
+
+        <section class="section css-structure" id="changeSplashImage">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to Change Splash Screen Image in app</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+
+                <li>Go to assets folder -> svg -> Logo folder. You can change your image to exist
+                    image with same name.
+                </li>
+
+
+                <img src="images/app/splash_screen.png" alt="Eclassify"/>
             </div>
         </section>
 
@@ -1240,7 +1288,33 @@
                 </ol>
             </div>
         </section>
+        <section class="section css-structure" id="admobSetting">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>How to enable/disable and admob settings</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <ol>
+                    <li><h4>If you want to disable google admob then you can disable from admin
+                        panel -> settings -> admob settings </h4></li>
+                    <li><h4>Create android and iOS app in google admob account. You can create
+                        google admob
+                        account from here. <a href="https://admob.google.com/home/"
+                                              target="_blank">https://admob.google.com/home/</a>
+                    </h4></li>
+                    <li><h4> Create banner and interstitial ads and copy those ads id.
+                    </h4></li>
 
+                    <li><h4> Paste those ads id in admin panel -> settings -> admob settings..
+                    </h4></li>
+                    <br><br>
+                    <img src="images/app/admob1.png" alt="Eclassify"/>
+                    <br><br>
+                </ol>
+
+            </div>
+        </section>
 
         <!-- <section class="section css-structure" id="changeLanguage">
              <div class="sec-title">
@@ -1322,7 +1396,7 @@
                  <img src="images/app/animationSettings.png" alt="Eclassify"/>
                  <br><br>
              </div>
-         </section>
+         </section> !-->
 
          <section class="section css-structure" id="chatMessageConstraints">
              <div class="sec-title">
@@ -1357,7 +1431,7 @@
                  <img src="images/app/chatMessageConstraints.png" alt="Eclassify"/>
                  <br><br>
              </div>
-         </section>-->
+         </section>
 
 
         <section class="section css-structure" id="generateReleaseVersion">
@@ -1494,7 +1568,24 @@
                         Install that and try again. If you are still having the same issue Contact
                         Us.<br>
                     </h4><br>
+                </div>
 
+                <h3>2. Do I have to install admin from scratch to get the Latest features ?</h3><br>
+                <div style="padding-left: 18px;">
+                    <h4>
+                        No, Fresh installation is required only for the first time.You need use System Update menu to update your system. <br>
+                    </h4><br>
+                </div>
+                <h3>3. Then How to do I update my Admin Panel to get the benefits of the latest featured ?</h3><br>
+                <div style="padding-left: 18px;">
+                    <h4>
+                        When we release new updates, We provide zip files of the Updates under the Admin Panel Code.<br><br>
+                        Follow this steps to update your system : <br>
+                        1. Open you Admin Panel <br>
+                        2. Now go to System Update menu , which you can see as the last Option in Sidebar. <br>
+                        3. In the System Update form you need to fill your Purchase code with the update version zip file. <br>
+                        4. Hit Submit. Voila ! your System is updated now. <br>
+                    </h4><br>
                 </div>
                 <br><br>
             </div>
