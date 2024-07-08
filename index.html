@@ -9,7 +9,8 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/jquery.highlight.css" />
-
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/scrollbar.css" rel="stylesheet" />
     <!-- Responsive -->
@@ -117,6 +118,7 @@
                                 <li><a href="#howTosetSitemap">How to Setup Sitemap</a></li>
                                 <li><a href="#howToRunWebProject">How to run Web project</a></li>
                                 <li><a href="#nextjsdeploy">How to deploy the Site</a></li>
+                                <li><a href="#sharedhostingDeploy">How to deploy the Site on shared hosting (not recommend)</a></li>
                             </ul>
                         </li>
 
@@ -1859,6 +1861,7 @@
                         <hr />
                     </section>
 
+
                     <section id="nextjsdeploy">
                         <h4>
                             <li>
@@ -2021,19 +2024,55 @@
                         </ol>
                     </section>
 
-
-                    <!-- <section id="uploadHtaccessFile">
+                    <section id="sharedhostingDeploy">
                         <h4>
-                            <li>Upload .htaccess file</li>
+                            <li>
+                                Deploy on Shared Hosting
+                            </li>
                         </h4>
                         <ol>
-                            <li>
-                                Once the site deploy successfully upload the provided .htaccess file to your
-                                server.
-                            </li>
+                            <br>
+                            <div class="red_warning_box">
+                                <div class="main_title">
+                                    <span class="warning_icon"><i class="fas fa-fire"></i></span>
+                                    <h6>WARNING</h6>
+                                </div>
+                                <span>
+                                    We do not recommend deploying on shared hosting as it may not support all Node.js features. If you do not have a VPS server, you can proceed with this method, but we cannot provide support for any issues that arise.
+                                </span>
+                            </div>
+                            <br>
+                            <h3>Installing a Custom Version of Node on Shared Hosting</h3>
+                            <p>NVM (Node Version Manager) helps you manage different versions of Node.js on one single computer/server.</p>
+                            <h3>Installing NVM on Shared Hosting</h3>
+                            <p>To install the latest version of NVM on Webfaction or any other shared hosting (using SSH):</p>
+                            <div class="main_box">
+                                <code><b>wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash</b></code>
+                            </div>
+                            <h3>Installing Node on Shared Hosting</h3>
+                            <p>Open a new terminal and check the installed versions of Node:</p>
+                            <div class="main_box">
+                                <code><b>nvm list</b></code>
+                            </div>
+                            <p>To install the current stable version:</p>
+                            <div class="main_box">
+                                <code><b>nvm install stable</b></code>
+                            </div>
+                            <p>To install a specific version:</p>
+                            <div class="main_box">
+                                <code><b>nvm install 18</b></code> - installs the latest Node 18.x.x<br>
+                                <code><b>nvm install 16</b></code> - installs the latest 16.x.x version<br>
+                                <code><b>nvm install 20.1.1</b></code> - installs precisely the Node v20.1.1
+                            </div>
+                            <h3>Changing Node Version</h3>
+                            <div class="main_box">
+                                <code><b>nvm list</b></code> - to see available versions<br>
+                                <code><b>nvm use default</b></code> - to switch to the default version<br>
+                                <code><b>nvm use 20.1.1</b></code> - to switch to version 20.1.1
+                            </div>
                         </ol>
-                        <hr />
-                    </section> -->
+                    </section>
+
 
                 </ol>
             </section>
