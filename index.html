@@ -2009,36 +2009,31 @@
                                 <code> <b>npm install pm2 -g</b></code>
 
                             </div>
-                            <h3>Pass the Proxy in the Server</h3>
-                            <p>Before configuring Apache, some necessary modules need to be enabled. Run the following
-                                commands to enable the modules</p>
+                            <h3>Set port </h3>
+                            <p>Before set port check available ports with this command </p>
                             <div class="main_box">
-                                <code> <b>sudo a2enmod proxy_ajp</b></code>
-                                <code> <b>sudo a2enmod rewrite</b></code>
-                                <code> <b>sudo a2enmod deflate</b></code>
-                                <code> <b>sudo a2enmod proxy_balancer</b></code>
-                                <code> <b>sudo a2enmod proxy_connect</b></code>
-                                <code> <b>sudo a2enmod proxy_html</b></code>
-
+                                <code> <b>sudo lsof -i -P -n | grep 8003</b></code>
+                                <br>
+                                <img src="./images/web/port_occupy.png" alt="eClassify" />
+                                <br>
+                                <h3>if you get response like this it means this port is occupy with other project so try
+                                    other port like (8000, 8001, 8002, 8003, 8004 etc)</h3>
+                                <br>
+                                <img src="./images/web/available_port.png" alt="eClassify" />
+                                <br>
+                                <h3>if you get response like this it means this port is available you can use this port
+                                </h3>
+                                <br>
+                                <h3>Now add available port to your <code>package.json</code> and <code>.htaccess</code> file
+                                </h3>
+                                <br>
+                                <img src="./images/web/package_json.png" alt="eClassify" />
+                                <br>
+                                <img src="./images/web/htaccess_file.png" alt="eClassify" />
+                                <br>
+                                <h3>Note:- if you have not found .htaccess file in your code then connect with <a href="https://join.skype.com/invite/yleWlTkGyS89" target="_blank">Skype</a> </h3>
                             </div>
-                            <b>
-                                Create Reverse Proxy for the Node JS server in your apache server settings
-                            </b>
-                            <p>
-                                <br>
-                                <code>
-                                       <!-- <pre> -->
-                                          <!-- <code> -->
-                                       &lt;Location /&gt; <br>
-                                       ProxyPass http://localhost:8001/ <br>
-                                       &lt;/Location&gt;
-                                    <!-- </code> -->
-                                <!-- </pre> -->
-                                <br>
-                                <img src="./images/web/proxy_config.png" alt="eClassify" />
-                                </code>
-                                <br>
-                            </p>
+                            <br>
                             <br>
                             <br>
                             <h3>Setup the Project</h3>
@@ -2058,7 +2053,7 @@
                             <span>The above command will install all the <b>node modules</b> in your directory.</span>
                             <br>
                             <span>After that, project must be built. For that, run the following command, which will
-                                build the production application in the <b> out </b> folder.</span> <br>
+                                build the production application in the <b> .next </b> folder.</span> <br>
                             <div class="main_box">
                                 <b><code>npm run build</code></b>
                             </div>
@@ -2157,7 +2152,12 @@
                                 <code><b>nvm list</b></code> - to see available versions<br>
                                 <code><b>nvm use default</b></code> - to switch to the default version<br>
                                 <code><b>nvm use 20.1.1</b></code> - to switch to version 20.1.1
+                                <br>
+                                <p>
+                                    after install node js successfully continue with pm2 process
+                                </p>
                             </div>
+                            <br>
                         </ol>
                     </section>
 
