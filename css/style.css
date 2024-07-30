@@ -787,51 +787,51 @@ color: #4d3800 !important;
 
 /* Custom CSS for the accordion */
 #accordionExample .card-header {
-    background-color: #00b2ca; /* white background */
-    color: #000; /* black text color */
-    font-size: 1.25rem; /* larger font size */
-    border: none; /* remove border for cleaner look */
+    background-color: #00b2ca !important; /* white background */
+    color: #000 !important; /* black text color */
+    font-size: 1.25rem !important; /* larger font size */
+    border: none !important; /* remove border for cleaner look */
 }
 
 #accordionExample .card-body {
-    background-color: #fff; /* white background */
-    color: #000; /* black text color */
-    font-size: 1.25rem; /* larger font size */
+    background-color: #fff !important; /* white background */
+    color: #000 !important; /* black text color */
+    font-size: 1.25rem !important; /* larger font size */
 }
 
 #accordionExample .btn-link {
-    color: #fff;
-    font-size: 26px;
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: #fff !important;
+    font-size: 26px !important;
+    text-decoration: none !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 
 #accordionExample .btn-link:hover {
-    text-decoration: underline; /* add underline on hover */
+    text-decoration: underline !important; /* add underline on hover */
 }
 
 #accordionExample .card {
-    border: 1px solid #dee2e6; /* add border to card for definition */
-    margin-bottom: 1rem; /* add space between cards */
+    border: 1px solid #dee2e6 !important; /* add border to card for definition */
+    margin-bottom: 1rem !important; /* add space between cards */
 }
 
 #accordionExample .card-header h5 {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 #accordionExample .show{
-    visibility: visible;
+    visibility: visible !important;
 }
 
 
 .card-header .icon {
-    margin-left: 10px;
-    transition: transform 0.2s ease;
+    margin-left: 10px !important;
+    transition: transform 0.2s ease !important;
 }
 
 .card-header .icon.down {
-    transform: rotate(90deg);
+    transform: rotate(90deg) !important;
 }
