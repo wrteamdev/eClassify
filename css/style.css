@@ -784,3 +784,54 @@ background-color: rgba(255,186,0,.15);
 border: 1px solid rgba(255,186,0,.15);
 color: #4d3800 !important;
 }
+
+/* Custom CSS for the accordion */
+#accordionExample .card-header {
+    background-color: #00b2ca; /* white background */
+    color: #000; /* black text color */
+    font-size: 1.25rem; /* larger font size */
+    border: none; /* remove border for cleaner look */
+}
+
+#accordionExample .card-body {
+    background-color: #fff; /* white background */
+    color: #000; /* black text color */
+    font-size: 1.25rem; /* larger font size */
+}
+
+#accordionExample .btn-link {
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#accordionExample .btn-link:hover {
+    text-decoration: underline; /* add underline on hover */
+}
+
+#accordionExample .card {
+    border: 1px solid #dee2e6; /* add border to card for definition */
+    margin-bottom: 1rem; /* add space between cards */
+}
+
+#accordionExample .card-header h5 {
+    margin-bottom: 0;
+}
+
+#accordionExample .show{
+    visibility: visible;
+}
+
+
+.card-header .icon {
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card-header .icon.down {
+    transform: rotate(90deg);
+}

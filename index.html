@@ -13,11 +13,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/scrollbar.css" rel="stylesheet" />
+
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!--[if lt IE 9]>
     <script src="js/respond.js"></script><![endif]-->
+
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
 </head>
 
 <body>
@@ -48,14 +62,14 @@
 
                         <!-- submenu list -->
                         <li class='sub-menu'><a href="#prerequisite">Setup Admin Panel<i
-                                   class='fa fa-caret-down right'></i></a>
+                                    class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#prerequisite'>Prerequisite</a></li>
                                 <li><a href='#Installation-steps'>Installation Steps</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu"><a href="#generalsettings">Additional Panel Configuration<i
-                                   class='fa fa-caret-down right'></i></a>
+                                    class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#generalsettings'>General Settings</a></li>
                                 <li><a href='#webhookconfig'>Payment Gateway Webhook Configuration</a>
@@ -63,7 +77,7 @@
                             </ul>
                         </li>
                         <li class='sub-menu'><a href="#setupFlutter">Setup Mobile Application<i
-                                   class='fa fa-caret-down right'></i></a>
+                                    class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#setupJDK'>How to Setup Java jdk-11 on
                                         windows</a></li>
@@ -119,8 +133,9 @@
                                 <li><a href="#howTosetSitemap">How to Setup Sitemap</a></li>
                                 <li><a href="#howToRunWebProject">How to run Web project</a></li>
                                 <li><a href="#nextjsdeploy">How to deploy the Site</a></li>
-                                <li><a href="#sharedhostingDeploy">How to deploy the Site on shared hosting (not
+                                <!-- <li><a href="#sharedhostingDeploy">How to deploy the Site on shared hosting (not
                                         recommend)</a></li>
+                                <li><a href="#webAutomationDeploy">Web Automation Installation Using Script</a></li> -->
                             </ul>
                         </li>
 
@@ -237,8 +252,8 @@
                         authorize your server to access the services.</h3>
 
                     <h3>To find your Purchase code you can visit this link: <a
-                           href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
-                           target=" _blank">Where
+                            href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
+                            target=" _blank">Where
                             is My Purchase code?</a></h3>
 
                     <img src="images/admin/4.png" alt="Eclassify">
@@ -308,7 +323,7 @@
                             can skip this step. <br>
                         </li>
                         <li>Download latest Java jdk by clicking below link. <br> (<a style="color: #3C55D1;"
-                               href="https://www.oracle.com/java/technologies/downloads/">JAVA
+                                href="https://www.oracle.com/java/technologies/downloads/">JAVA
                                 jdk</a>)
                         </li>
                         <li>Download latest Java JDK for your version 32 bit or JDK download
@@ -348,7 +363,7 @@
                     </h3>
                     <ol>
                         Visit flutter official website : <a href="https://docs.flutter.dev/get-started/install"
-                           target="_blank">https://docs.flutter.dev/get-started/install</a>
+                            target="_blank">https://docs.flutter.dev/get-started/install</a>
 
                         for full install guide.
                         <br>
@@ -356,7 +371,7 @@
                         If you prefer video tutorials, we recommend this playlist for the full
                         installation process <br>
                         <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm"
-                           target="_blank">https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm</a>
+                            target="_blank">https://www.youtube.com/playlist?list=PLSzsOkUDsvdtl3Pw48-R8lcK2oYkk40cm</a>
                     </ol>
                     <br />
                 </div>
@@ -537,7 +552,7 @@
                                 <br>
                             </h4>
                             <a href="https://firebase.flutter.dev/docs/messaging/apple-integration"
-                               target="_blank">https://firebase.flutter.dev/docs/messaging/apple-integration</a><br><br>
+                                target="_blank">https://firebase.flutter.dev/docs/messaging/apple-integration</a><br><br>
                         </li>
                         <li>
                             <h4>
@@ -551,7 +566,7 @@
                     <br>
                     <h4>You can configure firebase with flutter project through these steps:
                         &nbsp;&nbsp;<b><a href="https://firebase.google.com/docs/flutter/setup"
-                               target="_blank">https://firebase.google.com/docs/flutter/setup</a></b>
+                                target="_blank">https://firebase.google.com/docs/flutter/setup</a></b>
                     </h4>
 
 
@@ -625,7 +640,7 @@
 
                     <li>If you have already created keystore file then do below steps otherwise first
                         create keystore file through these steps :: &nbsp;&nbsp;<a
-                           href='#generateReleaseVersion'><b><u>Create KeyStore File</u></b></a>
+                            href='#generateReleaseVersion'><b><u>Create KeyStore File</u></b></a>
 
                     </li>
 
@@ -801,7 +816,7 @@
                         <li>And then create Development SSL Certificate & Production SSL
                             Certificate by
                             adding CSR certificate. follow Apple's <a href="https://help.apple.com/developer-account/"
-                               style="color:red">Create a
+                                style="color:red">Create a
                                 certificate signing request instructions.</a>
 
                         </li>
@@ -851,8 +866,8 @@
                         </li>
                         <ul>
                             <li>In a new browser tab, follow Apple's <a
-                                   href="https://help.apple.com/developer-account/#/devbfa00fef7"
-                                   style="color:red">Create a certificate signing request
+                                    href="https://help.apple.com/developer-account/#/devbfa00fef7"
+                                    style="color:red">Create a certificate signing request
                                     instructions.</a>
                             </li>
                             <li>In the Apple Developer Portal, navigate back to your App
@@ -958,8 +973,8 @@
 
                         <img src="images/app/nativeLink3.png" alt="Eclassify">
                         <li>First of all download this google files from the link :<a
-                               href="https://drive.google.com/drive/folders/1LbSXPmTRvz6-VWdr4isJz9AE00p8ynJ6"
-                               target="_blank">Server Side Deeplink Files</a>
+                                href="https://drive.google.com/drive/folders/1LbSXPmTRvz6-VWdr4isJz9AE00p8ynJ6"
+                                target="_blank">Server Side Deeplink Files</a>
                         </li>
                         <li>Open both files in the any text editor and follow below steps.
                         </li>
@@ -1062,7 +1077,7 @@
 
                                         <xmp>
                                             <meta-data android:name="com.google.android.geo.API_KEY"
-                                                       android:value="{{YOUR_API_KEY_HERE}}" />
+                                                android:value="{{YOUR_API_KEY_HERE}}" />
                                         </xmp>
                                     </ul>
                                 </li>
@@ -1320,7 +1335,7 @@
                             <h4>Create android and iOS app in google admob account. You can create
                                 google admob
                                 account from here. <a href="https://admob.google.com/home/"
-                                   target="_blank">https://admob.google.com/home/</a>
+                                    target="_blank">https://admob.google.com/home/</a>
                             </h4>
                         </li>
                         <li>
@@ -1498,14 +1513,14 @@
                         <li>
                             <h4>To generate release android app-bundle and publish to Playstore follow
                                 <a href="https://flutter.dev/docs/deployment/android"
-                                   target="_blank">https://flutter.dev/docs/deployment/android</a>
+                                    target="_blank">https://flutter.dev/docs/deployment/android</a>
                             </h4>
                             <br><br>
                         </li>
                         <li>
                             <h4>To generate release ios apk and publish to appstore follow
                                 <a href="https://flutter.dev/docs/deployment/ios"
-                                   target="_blank">https://flutter.dev/docs/deployment/ios</a>
+                                    target="_blank">https://flutter.dev/docs/deployment/ios</a>
                             </h4>
                         </li>
                     </ol>
@@ -1575,7 +1590,7 @@
                             <h4 class="mt-3">Install Node JS :</h4>
                             Visit Node JS Official website :
                             <a href="https://nodejs.org/en/download"
-                               target="_blank">https://nodejs.dev/en/learn/how-to-install-nodejs/</a>
+                                target="_blank">https://nodejs.dev/en/learn/how-to-install-nodejs/</a>
                             for full installation guide.
 
                             <br />
@@ -1763,7 +1778,7 @@
                             <li>
                                 <h2>
                                     Open <a href="https://console.cloud.google.com/welcome?project=home-sale-fdfb7"
-                                       target="_blank"> cloud console</a> and
+                                        target="_blank"> cloud console</a> and
                                     select your project
 
                                 </h2>
@@ -1788,7 +1803,7 @@
                             </li>
                             <br>
                             <h2> you have get place api key copy and paste to your system settings in admin panel <a
-                                   href="#howToWebSettings">check here</a></h2>
+                                    href="#howToWebSettings">check here</a></h2>
                             <br>
                             <div class="red_warning_box">
                                 <div class="main_title">
@@ -1945,220 +1960,278 @@
                         <hr />
                     </section>
 
-
                     <section id="nextjsdeploy">
-                        <h4>
+                        <h1>
                             <li>
                                 Deploy to the Server
                             </li>
-                        </h4>
-                        <ol>
-                            <br>
-                            <div class="red_warning_box">
-                                <div class="main_title">
-                                    <span class="warning_icon"><i class="fas fa-fire"></i></span>
-                                    <h6>WARNING</h6>
+                        </h1>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span>
+                                                Web Manually Deployment
+                                            </span>
+                                            <span>
+                                                <i class="fas fa-chevron-right icon"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
                                 </div>
-                                <span>
-                                    Deployment of the Next JS needs a bit of knowledge about
-                                    <code>node js</code> <code> npm</code> <code> pm2 </code> technologies. We have
-                                    assumed
-                                    that you are using a
-                                    <code>debian </code> based OS, apt is your package manager. If you are using any
-                                    other
-                                    linux distro then apt will be replaced with the respective package manager of the OS
-                                </span>
-                            </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ol>
+                                            <br>
+                                            <div class="red_warning_box">
+                                                <div class="main_title">
+                                                    <span class="warning_icon"><i class="fas fa-fire"></i></span>
+                                                    <h6>WARNING</h6>
+                                                </div>
+                                                <ol>
 
-                            <br>
-                            <h3>Before starting the project deployment, you must upload your project to the server.
-                                Project can be upload to the server using <a
-                                   href="https://filezilla-project.org/download.php"> FileZila </a> or in other ways.
-                            </h3>
-                            <br>
-                            <h3>
-                                Installing NodeJS<br>
-                            </h3>
-                            <p>NodeJS can be installed using NVM by which multi Node version can be controlled easily.
-                            </p>
+                                                    <li>
 
-                            <div class="main_box">
-                                <code> <b>sudo apt install curl</b></code>
-                                <code> <b>curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash></b></code>
-                                <code> <b>sudo apt install curl</b></code>
-                                <code> <b>nvm install node 20.*</b></code>
-                                <b>Check if node js is installed correctly using this command </b>
-                                <code> <b>node -v</b></code>
-                            </div>
+                                                        <span>
+                                                            Deployment of the Next JS needs a bit of knowledge about
+                                                            <code>node js</code> <code> npm</code> <code> pm2 </code>
+                                                            technologies.
+                                                            We have
+                                                            assumed
+                                                            that you are using a
+                                                            <code>debian </code> based OS, apt is your package manager.
+                                                            If you are
+                                                            using any
+                                                            other
+                                                            linux distro then apt will be replaced with the respective
+                                                            package
+                                                            manager of
+                                                            the OS
+                                                        </span>
+                                                    </li>
+                                                    <br>
 
-                            <div class="inform_box">
-                                <div class="main_title">
-                                    <span class="warning_icon"><i class="fas fa-exclamation-circle"></i></span>
-                                    <h6>INFO</h6>
+                                                    <li>
+
+                                                        <span>
+                                                            We do not recommend deploying on shared hosting as it may
+                                                            not support
+                                                            all
+                                                            Node.js
+                                                            features. If you do not have a VPS server, you can proceed
+                                                            with this
+                                                            method, but
+                                                            we
+                                                            cannot provide support for any issues that arise.
+                                                        </span>
+                                                    </li>
+                                                </ol>
+                                            </div>
+
+
+                                            <br>
+                                            <h3>Before starting the project deployment, you must upload your project to
+                                                the server.
+                                                Project can be upload to the server using <a
+                                                    href="https://filezilla-project.org/download.php"> FileZila </a> or
+                                                in other
+                                                ways.
+                                            </h3>
+                                            <br>
+                                            <h3>
+                                                Installing NodeJS<br>
+                                            </h3>
+                                            <p>NodeJS can be installed using NVM by which multi Node version can be
+                                                controlled
+                                                easily.
+                                            </p>
+
+                                            <div class="main_box">
+                                                <code> <b>sudo apt install curl</b></code>
+                                                <code> <b>curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash></b></code>
+                                                <code> <b>sudo apt install curl</b></code>
+                                                <code> <b>nvm install node 20.*</b></code>
+                                                <b>Check if node js is installed correctly using this command </b>
+                                                <code> <b>node -v</b></code>
+                                            </div>
+
+                                            <div class="inform_box">
+                                                <div class="main_title">
+                                                    <span class="warning_icon"><i
+                                                            class="fas fa-exclamation-circle"></i></span>
+                                                    <h6>INFO</h6>
+                                                </div>
+                                                <span>
+                                                    For more information, use <a
+                                                        href="https://nodejs.org/docs/latest/api/">official
+                                                        documentation</a>
+                                                </span>
+                                            </div>
+                                            <h3>
+                                                Installing PM2 Server<br>
+                                            </h3>
+                                            <p>By running the following command, PM2 server can be installed globally
+                                            </p>
+                                            <div class="main_box">
+                                                <code> <b>npm install pm2 -g</b></code>
+
+                                            </div>
+                                            <h3>Set port </h3>
+                                            <p>Before set port check available ports with this command </p>
+                                            <div class="main_box">
+                                                <code> <b>sudo lsof -i -P -n | grep 8003</b></code>
+                                                <br>
+                                                <img src="./images/web/port_occupy.png" alt="eClassify" />
+                                                <br>
+                                                <h3>if you get response like this it means this port is occupy with
+                                                    other project so
+                                                    try
+                                                    other port like (8000, 8001, 8002, 8003, 8004 etc)</h3>
+                                                <br>
+                                                <img src="./images/web/available_port.png" alt="eClassify" />
+                                                <br>
+                                                <h3>if you get response like this it means this port is available you
+                                                    can use this
+                                                    port
+                                                </h3>
+                                                <br>
+                                                <h3>Now add available port to your <code>package.json</code> and
+                                                    <code>.htaccess</code>
+                                                    file
+                                                </h3>
+                                                <br>
+                                                <img src="./images/web/package_json.png" alt="eClassify" />
+                                                <br>
+                                                <img src="./images/web/htaccess_file.png" alt="eClassify" />
+                                                <br>
+                                                <!-- <h3>Note:- if you have not found .htaccess file in your code then connect with <a href="https://join.skype.com/invite/yleWlTkGyS89" target="_blank">Skype</a> </h3> -->
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <h3>Setup the Project</h3>
+                                            <br>
+                                            <div class="warning_box">
+                                                <div class="main_title">
+                                                    <span class="warning_icon"><i
+                                                            class="fas fa-exclamation-triangle"></i></span>
+                                                    <h6>MANDATORY</h6>
+                                                </div>
+                                                <b>Make sure you have <code>node_modules</code> installed in your
+                                                    directory.</b>
+                                            </div>
+                                            <br>
+                                            <b>For installing package run the following command</b>
+                                            <div class="main_box">
+                                                <b><code>npm install </code></b>
+                                            </div>
+                                            <span>The above command will install all the <b>node modules</b> in your
+                                                directory.</span>
+                                            <br>
+                                            <span>After that, project must be built. For that, run the following
+                                                command, which will
+                                                build the production application in the <b> .next </b> folder.</span>
+                                            <br>
+                                            <div class="main_box">
+                                                <b><code>npm run build</code></b>
+                                            </div>
+                                            <h4>Run the PM2 server</h4>
+                                            <span>Go to the project root and run the following command</span>
+                                            <div class="main_box">
+                                                <b><code>pm2 start "npm start" -n "YOUR_PROJECT_NAME"</code></b>
+                                            </div>
+                                            <span>Check if pm2 process is Running OK</span>
+                                            <div class="main_box">
+                                                <span>
+                                                    <b><code>pm2 ls</code></b>
+                                                </span>
+                                            </div>
+                                            <div class="main_box">
+                                                When you run pm2 ls you will see , 2 types of output
+                                                </span> <br>
+                                                1. Error :<br>
+                                                <img src="./images/web/pm2_error.png" alt="eClassify" />
+                                                2. Success :<br>
+                                                <img src="./images/web/pm2_success.png" alt="eClassify" /><br>
+                                                <p>If you are getting errors in the pm2 process , then run pm2 logs and
+                                                    send us the
+                                                    Screenshot of the error, so that we can guide you to resolve your
+                                                    issues.</p>
+                                                <p>If you want to restart your pm2 process then run pm2 restart id //
+                                                    Replace id
+                                                    with
+                                                    your
+                                                    process id</p>
+                                                <p>For example here id is 0 in the above screenshot -->
+                                                    <b><code> pm2 restart 0</code></b>
+                                                </p>
+                                            </div>
+                                            <span>For deleting the previous project running in the PM2 server, use the
+                                                following
+                                                command</span>
+                                            <div class="main_box">
+                                                <b><code>pm2 delete "YOUR_PROJECT_NAME"</code></b>
+                                            </div>
+                                            <div class="inform_box">
+                                                <div class="main_title">
+                                                    <span class="warning_icon"><i
+                                                            class="fas fa-exclamation-circle"></i></span>
+                                                    <h6>INFO</h6>
+                                                </div>
+                                                <span>
+                                                    For more information, use <a
+                                                        href="https://pm2.keymetrics.io/docs/usage/quick-start/">official
+                                                        documentation</a>
+                                                </span>
+                                            </div>
+                                        </ol>
+                                    </div>
                                 </div>
-                                <span>
-                                    For more information, use <a href="https://nodejs.org/docs/latest/api/">official
-                                        documentation</a>
-                                </span>
                             </div>
-                            <h3>
-                                Installing PM2 Server<br>
-                            </h3>
-                            <p>By running the following command, PM2 server can be installed globally</p>
-                            <div class="main_box">
-                                <code> <b>npm install pm2 -g</b></code>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span>
+                                                Web Automatic Deployment
+                                            </span>
+                                            <span>
+                                                <i class="fas fa-chevron-right icon"></i>
 
-                            </div>
-                            <h3>Set port </h3>
-                            <p>Before set port check available ports with this command </p>
-                            <div class="main_box">
-                                <code> <b>sudo lsof -i -P -n | grep 8003</b></code>
-                                <br>
-                                <img src="./images/web/port_occupy.png" alt="eClassify" />
-                                <br>
-                                <h3>if you get response like this it means this port is occupy with other project so try
-                                    other port like (8000, 8001, 8002, 8003, 8004 etc)</h3>
-                                <br>
-                                <img src="./images/web/available_port.png" alt="eClassify" />
-                                <br>
-                                <h3>if you get response like this it means this port is available you can use this port
-                                </h3>
-                                <br>
-                                <h3>Now add available port to your <code>package.json</code> and <code>.htaccess</code> file
-                                </h3>
-                                <br>
-                                <img src="./images/web/package_json.png" alt="eClassify" />
-                                <br>
-                                <img src="./images/web/htaccess_file.png" alt="eClassify" />
-                                <br>
-                                <h3>Note:- if you have not found .htaccess file in your code then connect with <a href="https://join.skype.com/invite/yleWlTkGyS89" target="_blank">Skype</a> </h3>
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            <h3>Setup the Project</h3>
-                            <br>
-                            <div class="warning_box">
-                                <div class="main_title">
-                                    <span class="warning_icon"><i class="fas fa-exclamation-triangle"></i></span>
-                                    <h6>MANDATORY</h6>
+                                            </span>
+                                        </button>
+                                    </h5>
                                 </div>
-                                <b>Make sure you have <code>node_modules</code> installed in your directory.</b>
-                            </div>
-                            <br>
-                            <b>For installing package run the following command</b>
-                            <div class="main_box">
-                                <b><code>npm install </code></b>
-                            </div>
-                            <span>The above command will install all the <b>node modules</b> in your directory.</span>
-                            <br>
-                            <span>After that, project must be built. For that, run the following command, which will
-                                build the production application in the <b> .next </b> folder.</span> <br>
-                            <div class="main_box">
-                                <b><code>npm run build</code></b>
-                            </div>
-                            <h4>Run the PM2 server</h4>
-                            <span>Go to the project root and run the following command</span>
-                            <div class="main_box">
-                                <b><code>pm2 start "npm start" -n "YOUR_PROJECT_NAME"</code></b>
-                            </div>
-                            <span>Check if pm2 process is Running OK</span>
-                            <div class="main_box">
-                                <span>
-                                    <b><code>pm2 ls</code></b>
-                                </span>
-                            </div>
-                            <div class="main_box">
-                                When you run pm2 ls you will see , 2 types of output
-                                </span> <br>
-                                1. Error :<br>
-                                <img src="./images/web/pm2_error.png" alt="eClassify" />
-                                2. Success :<br>
-                                <img src="./images/web/pm2_success.png" alt="eClassify" /><br>
-                                <p>If you are getting errors in the pm2 process , then run pm2 logs and send us the
-                                    Screenshot of the error, so that we can guide you to resolve your issues.</p>
-                                <p>If you want to restart your pm2 process then run pm2 restart id // Replace id with
-                                    your
-                                    process id</p>
-                                <p>For example here id is 0 in the above screenshot -->
-                                    <b><code> pm2 restart 0</code></b>
-                                </p>
-                            </div>
-                            <span>For deleting the previous project running in the PM2 server, use the following
-                                command</span>
-                            <div class="main_box">
-                                <b><code>pm2 delete "YOUR_PROJECT_NAME"</code></b>
-                            </div>
-                            <div class="inform_box">
-                                <div class="main_title">
-                                    <span class="warning_icon"><i class="fas fa-exclamation-circle"></i></span>
-                                    <h6>INFO</h6>
-                                </div>
-                                <span>
-                                    For more information, use <a
-                                       href="https://pm2.keymetrics.io/docs/usage/quick-start/">official
-                                        documentation</a>
-                                </span>
-                            </div>
-                        </ol>
-                    </section>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ol>
+                                            <br>
+                                            <div class="inform_box">
+                                                <div class="main_title">
+                                                    <span class="warning_icon"><i
+                                                            class="fas fa-exclamation-circle"></i></span>
+                                                    <h6>INFO</h6>
+                                                </div>
+                                                <span>
+                                                    Upload your web code to your server, open the terminal, navigate to
+                                                    your web
+                                                    code directory, and run the <b>./install.sh</b> command.
+                                                </span>
 
-                    <section id="sharedhostingDeploy">
-                        <h4>
-                            <li>
-                                Deploy on Shared Hosting
-                            </li>
-                        </h4>
-                        <ol>
-                            <br>
-                            <div class="red_warning_box">
-                                <div class="main_title">
-                                    <span class="warning_icon"><i class="fas fa-fire"></i></span>
-                                    <h6>WARNING</h6>
+                                            </div>
+                                            <br>
+
+                                        </ol>
+                                    </div>
                                 </div>
-                                <span>
-                                    We do not recommend deploying on shared hosting as it may not support all Node.js
-                                    features. If you do not have a VPS server, you can proceed with this method, but we
-                                    cannot provide support for any issues that arise.
-                                </span>
                             </div>
-                            <br>
-                            <h3>Installing a Custom Version of Node on Shared Hosting</h3>
-                            <p>NVM (Node Version Manager) helps you manage different versions of Node.js on one single
-                                computer/server.</p>
-                            <h3>Installing NVM on Shared Hosting</h3>
-                            <p>To install the latest version of NVM on Webfaction or any other shared hosting (using
-                                SSH):</p>
-                            <div class="main_box">
-                                <code><b>wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash</b></code>
-                            </div>
-                            <h3>Installing Node on Shared Hosting</h3>
-                            <p>Open a new terminal and check the installed versions of Node:</p>
-                            <div class="main_box">
-                                <code><b>nvm list</b></code>
-                            </div>
-                            <p>To install the current stable version:</p>
-                            <div class="main_box">
-                                <code><b>nvm install stable</b></code>
-                            </div>
-                            <p>To install a specific version:</p>
-                            <div class="main_box">
-                                <code><b>nvm install 18</b></code> - installs the latest Node 18.x.x<br>
-                                <code><b>nvm install 16</b></code> - installs the latest 16.x.x version<br>
-                                <code><b>nvm install 20.1.1</b></code> - installs precisely the Node v20.1.1
-                            </div>
-                            <h3>Changing Node Version</h3>
-                            <div class="main_box">
-                                <code><b>nvm list</b></code> - to see available versions<br>
-                                <code><b>nvm use default</b></code> - to switch to the default version<br>
-                                <code><b>nvm use 20.1.1</b></code> - to switch to version 20.1.1
-                                <br>
-                                <p>
-                                    after install node js successfully continue with pm2 process
-                                </p>
-                            </div>
-                            <br>
-                        </ol>
+                        </div>
                     </section>
 
 
@@ -2179,7 +2252,7 @@
                         encounter any issues or have any questions related to Eclassify.</h4>
                     <br>
                     <h4>Customer Support Head for Eclassify : <a href="https://join.skype.com/invite/VkdXAk8mu9ay"
-                           target="_blank" style="color:#3c55d1">Nikita Bhanderi</a></h4>
+                            target="_blank" style="color:#3c55d1">Nikita Bhanderi</a></h4>
                     <br>
                     <h4>To help our customers, we constantly be in touch with every customer if they
                         need any assistance
@@ -2220,29 +2293,34 @@
                             to update your system. <br>
                         </h4><br>
                     </div>
-                    <h3><b>3. Then How to do I update my Admin Panel to get the benefits of the latest featured ?</b></h3><br>
+                    <h3><b>3. Then How to do I update my Admin Panel to get the benefits of the latest featured ?</b>
+                    </h3><br>
                     <div style="padding-left: 18px;">
                         <h4>
                             When we release new updates, We provide zip files of the Updates under the Admin Panel
                             Code.
                             Follow this steps to update your system :
                         </h4>
-                            <ol style="margin-left: 53px;">
-                                <li class="h4">Open you Admin Panel</li>
-                                <li class="h4">Now go to System Update menu , which you can see as the last Option in Sidebar.</li>
-                                <li class="h4">In the System Update form you need to fill your Purchase code with the update version zip file.</li>
-                                <li class="h4">Hit Submit. Voila ! your System is updated now.</li>
-                            </ol>
-                        
+                        <ol style="margin-left: 53px;">
+                            <li class="h4">Open you Admin Panel</li>
+                            <li class="h4">Now go to System Update menu , which you can see as the last Option in
+                                Sidebar.</li>
+                            <li class="h4">In the System Update form you need to fill your Purchase code with the update
+                                version zip file.</li>
+                            <li class="h4">Hit Submit. Voila ! your System is updated now.</li>
+                        </ol>
+
                     </div>
                     <h3><b>4. Images are not loading in App / Web / Admin Panel ?</b></h3><br>
                     <div>
-                        <h4>This issue will be fixed from the Admin Panel code. So Open the Admin Panel in Server file manager. Then Perform this below steps :</h4>
-                            <ol style="margin-left: 53px;">
-                                <li class="h4">Open your public folder rename storage folder to storage-old (Skip this step if storage folder does not exists.)</li>
-                                <li class="h4">Open your_domain.com/storage-link -> you will see the blank page</li>
-                                <li class="h4">After this check the images are loading or not. </li>
-                            </ol>
+                        <h4>This issue will be fixed from the Admin Panel code. So Open the Admin Panel in Server file
+                            manager. Then Perform this below steps :</h4>
+                        <ol style="margin-left: 53px;">
+                            <li class="h4">Open your public folder rename storage folder to storage-old (Skip this step
+                                if storage folder does not exists.)</li>
+                            <li class="h4">Open your_domain.com/storage-link -> you will see the blank page</li>
+                            <li class="h4">After this check the images are loading or not. </li>
+                        </ol>
                     </div>
                     <br><br>
                 </div>
@@ -2267,7 +2345,7 @@
                         Please give us your honest feedback that will help us to make a more strong and
                         reliable product
                         by click here <a href="https://codecanyon.net/downloads" style="color:#3c55d1"
-                           target="_blank">Rate
+                            target="_blank">Rate
                             Us</a>.
                         Thank you very much.
                     </h4>
@@ -2316,6 +2394,31 @@
     <script src="js/jquery.highlight.js"></script>
 
     <script src="js/script.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#accordionExample').on('show.bs.collapse', function (e) {
+                $(e.target).prev('.card-header').addClass('active');
+            });
+
+            $('#accordionExample').on('hide.bs.collapse', function (e) {
+                $(e.target).prev('.card-header').removeClass('active');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#accordionExample').on('show.bs.collapse', function (e) {
+                $(e.target).prev('.card-header').find('.icon').removeClass('down');
+            });
+
+            $('#accordionExample').on('hide.bs.collapse', function (e) {
+                $(e.target).prev('.card-header').find('.icon').addClass('down');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
