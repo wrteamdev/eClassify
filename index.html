@@ -120,6 +120,7 @@
 
                         <li class='sub-menu'><a href="#setupWeb">Setup Web<i class='fa fa-caret-down right'></i></a>
                             <ul>
+                                <li><a href="#webInstallVideo">Installation of Web Setup Video</a></li>
                                 <li><a href="#howToSetupWebVersion">How to setup Web Version</a></li>
                                 <li><a href="#WhereToSetDomainURL">Where to Set API URL</a></li>
                                 <li><a href="#howToIntegrateFirebase">Integrate Firebase with Web App</a></li>
@@ -1548,8 +1549,8 @@
                             <h3>
                                 <b>
                                     <li>
-                                        <span>Your Admin panel must be on sub-domain like (example:-
-                                            admin.yourdomain.com)</span>
+                                        <p>Your Admin panel must be on sub-domain like (example:-
+                                            admin.yourdomain.com)</p>
                                     </li>
                                 </b>
                             </h3>
@@ -1557,7 +1558,7 @@
                             <h3>
                                 <b>
                                     <li>
-                                        <span>Your Web must be on main-domain like (example:- yourdomain.com)</span>
+                                        <p>Your Web must be on main-domain like (example:- yourdomain.com)</p>
                                     </li>
                                 </b>
                             </h3>
@@ -1566,9 +1567,9 @@
                                 <b>
 
                                     <li>
-                                        <span>
+                                        <p>
                                             The Web domain must be SSL for security reasons
-                                        </span>
+                                        </p>
                                     </li>
                                 </b>
                             </h3>
@@ -1577,6 +1578,25 @@
                     <br />
                     <br />
 
+                    <section id="webInstallVideo" class="sec-content">
+                        <h2>
+                                Web Installation Video
+                        </h2>
+
+                        <br>
+                            <div class="tip_box">
+                                <div class="main_title">
+                                    <p class="warning_icon"><i class="fas fa-lightbulb"></i></p>
+                                    <p>eClassify Website Installation Process</p>
+                                </div>
+                                <p> Recommended tutorial is below 👇</p>
+                            </div>
+                            <div class="video_show">
+                                <iframe src="https://www.youtube.com/embed/bVsKkrkbzLQ?si=EhlapXFqaQiWNoh8" 
+                                frameborder="0" class="video_iframe"></iframe>
+                            </div>
+                        <hr />
+                    </section>
                     <section id="howToSetupWebVersion" class="sec-content">
                         <h4>
                             <li>
@@ -1585,15 +1605,30 @@
                         </h4>
                         <br>
                         <ol>
-                            <h4 class="mt-3">Install Node JS :</h4>
-                            Visit Node JS Official website :
-                            <a href="https://nodejs.org/en/download"
-                                target="_blank">https://nodejs.dev/en/learn/how-to-install-nodejs/</a>
-                            for full installation guide.
+                            <h3>Install Node JS</h3>
 
+                            <div class="warning_box">
+                                <div class="main_title">
+                                    <p class="warning_icon"><i class="fas fa-exclamation-triangle"></i></p>
+                                    <p><b>MANDATORY</b></p>
+                                </div>
+                                <p>
+                                    <b>NodeJS</b> version should be <b> 18 </b> or later
+                                </p>
+                                <br>
+                                <p>
+                                    How to install <a
+                                        href="https://www.wrteam.in/blog/step-by-step-guide-to-install-nodejs-on-windows-mac/"><b>NodeJS</b></a>
+                                </p>
+                                <br>
+                                <p>
+                                    NodeJS <a href="https://nodejs.org/en/download/package-manager"><b>Download</b></a>
+                                </p>
+                            </div>
                             <br />
                             <br />
                         </ol>
+
                         <hr />
                     </section>
 
@@ -1965,21 +2000,61 @@
                             </li>
                         </h1>
                         <div class="accordion" id="accordionExample">
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <p>
+                                                Web Automatic Deployment
+                                            </p>
+                                            <p>
+                                                <i class="fas fa-chevron-right icon"></i>
+
+                                            </p>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ol>
+                                            <br>
+                                            <div class="inform_box">
+                                                <div class="main_title">
+                                                    <p class="warning_icon"><i
+                                                            class="fas fa-exclamation-circle"></i></p>
+                                                    <p>INFO</p>
+                                                </div>
+                                                <p>
+                                                    Upload your web code to your server, open the terminal, navigate to
+                                                    your web
+                                                    code directory, and run the <b>./install.sh</b> command.
+                                                </p>
+
+                                            </div>
+                                            <br>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
                                         <button class="btn btn-link" type="button" data-toggle="collapse"
                                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span>
+                                            <p>
                                                 Web Manually Deployment
-                                            </span>
-                                            <span>
+                                            </p>
+                                            <p>
                                                 <i class="fas fa-chevron-right icon"></i>
-                                            </span>
+                                            </p>
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
                                         <ol>
@@ -1993,7 +2068,7 @@
 
                                                     <li>
 
-                                                        <span>
+                                                        <p>
                                                             Deployment of the Next JS needs a bit of knowledge about
                                                             <code>node js</code> <code> npm</code> <code> pm2 </code>
                                                             technologies.
@@ -2008,13 +2083,13 @@
                                                             package
                                                             manager of
                                                             the OS
-                                                        </span>
+                                                        </p>
                                                     </li>
                                                     <br>
 
                                                     <li>
 
-                                                        <span>
+                                                        <p>
                                                             We do not recommend deploying on shared hosting as it may
                                                             not support
                                                             all
@@ -2024,7 +2099,7 @@
                                                             method, but
                                                             we
                                                             cannot provide support for any issues that arise.
-                                                        </span>
+                                                        </p>
                                                     </li>
                                                 </ol>
                                             </div>
@@ -2062,11 +2137,11 @@
                                                             class="fas fa-exclamation-circle"></i></span>
                                                     <h6>INFO</h6>
                                                 </div>
-                                                <span>
+                                                <p>
                                                     For more information, use <a
                                                         href="https://nodejs.org/docs/latest/api/">official
                                                         documentation</a>
-                                                </span>
+                                                </p>
                                             </div>
                                             <h3>
                                                 Installing PM2 Server<br>
@@ -2126,26 +2201,26 @@
                                             <div class="main_box">
                                                 <b><code>npm install </code></b>
                                             </div>
-                                            <span>The above command will install all the <b>node modules</b> in your
-                                                directory.</span>
+                                            <p>The above command will install all the <b>node modules</b> in your
+                                                directory.</p>
                                             <br>
-                                            <span>After that, project must be built. For that, run the following
+                                            <p>After that, project must be built. For that, run the following
                                                 command, which will
-                                                build the production application in the <b> .next </b> folder.</span>
+                                                build the production application in the <b> .next </b> folder.</p>
                                             <br>
                                             <div class="main_box">
                                                 <b><code>npm run build</code></b>
                                             </div>
                                             <h4>Run the PM2 server</h4>
-                                            <span>Go to the project root and run the following command</span>
+                                            <p>Go to the project root and run the following command</p>
                                             <div class="main_box">
                                                 <b><code>pm2 start "npm start" -n "YOUR_PROJECT_NAME"</code></b>
                                             </div>
-                                            <span>Check if pm2 process is Running OK</span>
+                                            <p>Check if pm2 process is Running OK</p>
                                             <div class="main_box">
-                                                <span>
+                                                <p>
                                                     <b><code>pm2 ls</code></b>
-                                                </span>
+                                                </p>
                                             </div>
                                             <div class="main_box">
                                                 When you run pm2 ls you will see , 2 types of output
@@ -2167,68 +2242,29 @@
                                                     <b><code> pm2 restart 0</code></b>
                                                 </p>
                                             </div>
-                                            <span>For deleting the previous project running in the PM2 server, use the
+                                            <p>For deleting the previous project running in the PM2 server, use the
                                                 following
-                                                command</span>
+                                                command</p>
                                             <div class="main_box">
                                                 <b><code>pm2 delete "YOUR_PROJECT_NAME"</code></b>
                                             </div>
                                             <div class="inform_box">
                                                 <div class="main_title">
-                                                    <span class="warning_icon"><i
-                                                            class="fas fa-exclamation-circle"></i></span>
-                                                    <h6>INFO</h6>
+                                                    <p class="warning_icon"><i
+                                                            class="fas fa-exclamation-circle"></i></p>
+                                                    <p>INFO</p>
                                                 </div>
-                                                <span>
+                                                <p>
                                                     For more information, use <a
                                                         href="https://pm2.keymetrics.io/docs/usage/quick-start/">official
                                                         documentation</a>
-                                                </span>
+                                                </p>
                                             </div>
                                         </ol>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            <span>
-                                                Web Automatic Deployment
-                                            </span>
-                                            <span>
-                                                <i class="fas fa-chevron-right icon"></i>
-
-                                            </span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <ol>
-                                            <br>
-                                            <div class="inform_box">
-                                                <div class="main_title">
-                                                    <span class="warning_icon"><i
-                                                            class="fas fa-exclamation-circle"></i></span>
-                                                    <h6>INFO</h6>
-                                                </div>
-                                                <span>
-                                                    Upload your web code to your server, open the terminal, navigate to
-                                                    your web
-                                                    code directory, and run the <b>./install.sh</b> command.
-                                                </span>
-
-                                            </div>
-                                            <br>
-
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     </section>
 
