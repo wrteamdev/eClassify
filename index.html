@@ -1424,6 +1424,49 @@
                     <br><br>
                     <img src="images/app/admob1.png" alt="Eclassify"/>
                     <br><br>
+                    <li>
+                        You have to setup google admob app id for both Platform.
+
+                        <ol>
+                            <li><b>Android Setup</b>
+                                <ul>
+                                    <li>
+                                        Next, open android ‣ app ‣ src ‣ main ‣
+                                        AndroidManifest.xml and
+                                        paste Google Admob Android App Id meta data tag into your
+                                        application tag
+                                        before
+                                        the activity tag, placing the Admob Android App Id you copied
+                                        before.
+                                        <br>
+                                    </li>
+
+                                    <xmp>
+                                        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+                                                   android:value="{{YOUR_GOOGLE_ADMOB_ANDROID_APP_ID_HERE}}"/>
+                                    </xmp>
+                                    <br><br>
+                                    <img src="images/app/admob3.png" alt="Eclassify"/>
+                                    <br><br>
+                                </ul>
+                            </li>
+                            <li><b>iOS Setup</b>
+                                <ul>
+                                    <li>
+                                        Next, open the ios ‣ Runner ‣ Info.plist
+                                        file and paste the
+                                        following
+                                        code at shown in image.
+                                        <br><br>
+                                        <key>GADApplicationIdentifier</key>
+                                        <string>{{"PLACE_YOUR_GOOGLE_ADMOB_IOS_APP_ID"}}</string>
+                                        <br><br>
+                                        <img src="images/app/admob2.png" alt="Eclassify"/>
+                                        <br><br>
+
+                                    </li>
+                                </ul>
+                            </li>
                 </ol>
 
             </div>
