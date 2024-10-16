@@ -16,9 +16,10 @@
 
 @import url('font-awesome.css');
 
-:root{
-    --theme-color:#00B2CA;
+:root {
+    --theme-color: #00B2CA;
 }
+
 /***
 
 ====================================================================
@@ -170,7 +171,7 @@ p {
     position: relative;
     display: block;
     /*padding:3px 0px;*/
-    border-bottom: 1px solid rgba(0,0,0, 0.20);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
     font-size: 20px;
     color: #ffffff;
     /*text-align:right;*/
@@ -485,7 +486,7 @@ p {
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     font-family: Poppins;
     font-weight: 400;
@@ -572,7 +573,7 @@ p {
     border: 3px solid black;
 }
 
-#hamburger-input{
+#hamburger-input {
     display: none;
 }
 
@@ -587,14 +588,12 @@ p {
     padding: 0px;
     margin: 0px;
     font-family: 'Cabin', Sans-serif;
-    background: linear-gradient(
-            to bottom,
+    background: linear-gradient(to bottom,
             var(--theme-color), var(--theme-color) 20%,
             white 20%, white 40%,
             var(--theme-color) 40%, var(--theme-color) 60%,
             white 60%, white 80%,
-            var(--theme-color) 80%, var(--theme-color) 100%
-    );
+            var(--theme-color) 80%, var(--theme-color) 100%);
 
     z-index: 999;
 }
@@ -636,11 +635,12 @@ p {
     text-decoration: underline;
 }
 
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+#hamburger-input:checked+#hamburger-menu #sidebar-menu {
     visibility: visible;
     left: 0;
 }
-#hamburger-input:checked ~ .overlay{
+
+#hamburger-input:checked~.overlay {
     visibility: visible;
     opacity: 0.4;
 }
@@ -650,9 +650,11 @@ p {
     #sidebar {
         display: none;
     }
-    #content-section{
+
+    #content-section {
         padding: 0;
     }
+
     #hamburger-menu {
         display: inline;
     }
@@ -675,10 +677,11 @@ p {
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 
-.warning_box{
+.warning_box {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -691,45 +694,49 @@ p {
     margin-bottom: 10px;
 
 }
-.inform_box{
+
+.inform_box {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: rgba(84,199,236,.15);
+    background: rgba(84, 199, 236, .15);
     border-left: 10px solid #4cb3d4;
     border-radius: 12px;
     font-weight: 400;
     margin-bottom: 10px;
 
 }
-.red_warning_box{
+
+.red_warning_box {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: rgba(250,56,62,.15);
+    background: rgba(250, 56, 62, .15);
     border-left: 10px solid #e13238;
     border-radius: 12px;
     font-weight: 400;
     margin-bottom: 10px;
 
 }
-.tip_box{
+
+.tip_box {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: rgba(0,164,0,.15);
+    background: rgba(0, 164, 0, .15);
     border-left: 10px solid #009400;
     border-radius: 12px;
     font-weight: 400;
     margin-bottom: 10px;
 
 }
+
 .warning_box .main_title,
 .inform_box .main_title,
 .red_warning_box .main_title,
@@ -740,63 +747,79 @@ p {
     gap: 10px;
     text-transform: capitalize;
 }
+
 .inform_box .main_title {
     color: #193c47;
 }
+
 .tip_box .main_title {
     color: #003100;
-   font-weight: bold;  
+    font-weight: bold;
 }
+
 .red_warning_box .main_title {
     color: #4b1113;
-   font-weight: bold;  
+    font-weight: bold;
 }
+
 .warning_box .main_title h6,
 .inform_box .main_title h6,
-.red_warning_box .main_title h6{
-   font-weight: bold;  
+.red_warning_box .main_title h6 {
+    font-weight: bold;
 }
 
-.red_warning_box span{
+.red_warning_box span {
     color: #4b1113;
 }
-.tip_box span{
+
+.tip_box span {
     color: #003100;
 }
-.tip_box h6{
+
+.tip_box h6 {
     color: #003100;
-   font-weight: bold;  
+    font-weight: bold;
 
 }
-.red_warning_box span a{
+
+.red_warning_box span a {
     color: #4b1113;
     font-weight: bold;
 
 }
-.red_warning_box  span code{
-    background-color: rgba(250,56,62,.15);
-    border-color: rgba(250,56,62,.15);
+
+.red_warning_box span code {
+    background-color: rgba(250, 56, 62, .15);
+    border-color: rgba(250, 56, 62, .15);
     color: #4b1113 !important;
     margin-right: 10px;
 }
-.warning_box code{
-background-color: rgba(255,186,0,.15);
-border: 1px solid rgba(255,186,0,.15);
-color: #4d3800 !important;
+
+.warning_box code {
+    background-color: rgba(255, 186, 0, .15);
+    border: 1px solid rgba(255, 186, 0, .15);
+    color: #4d3800 !important;
 }
 
 /* Custom CSS for the accordion */
 #accordionExample .card-header {
-    background-color: #00b2ca !important; /* white background */
-    color: #000 !important; /* black text color */
-    font-size: 1.25rem !important; /* larger font size */
-    border: none !important; /* remove border for cleaner look */
+    background-color: #00b2ca !important;
+    /* white background */
+    color: #000 !important;
+    /* black text color */
+    font-size: 1.25rem !important;
+    /* larger font size */
+    border: none !important;
+    /* remove border for cleaner look */
 }
 
 #accordionExample .card-body {
-    background-color: #fff !important; /* white background */
-    color: #000 !important; /* black text color */
-    font-size: 1.25rem !important; /* larger font size */
+    background-color: #fff !important;
+    /* white background */
+    color: #000 !important;
+    /* black text color */
+    font-size: 1.25rem !important;
+    /* larger font size */
 }
 
 #accordionExample .btn-link {
@@ -810,19 +833,22 @@ color: #4d3800 !important;
 }
 
 #accordionExample .btn-link:hover {
-    text-decoration: underline !important; /* add underline on hover */
+    text-decoration: underline !important;
+    /* add underline on hover */
 }
 
 #accordionExample .card {
-    border: 1px solid #dee2e6 !important; /* add border to card for definition */
-    margin-bottom: 1rem !important; /* add space between cards */
+    border: 1px solid #dee2e6 !important;
+    /* add border to card for definition */
+    margin-bottom: 1rem !important;
+    /* add space between cards */
 }
 
 #accordionExample .card-header h5 {
     margin-bottom: 0 !important;
 }
 
-#accordionExample .show{
+#accordionExample .show {
     visibility: visible !important;
 }
 
@@ -844,8 +870,22 @@ color: #4d3800 !important;
     width: 100%;
     margin: 60px 0;
 }
-.video_iframe{
+
+.video_iframe {
     width: 100%;
     height: 100%;
     border: 12px;
+}
+
+.main_box p {
+    font-size: 16px;
+}
+
+.manualaDeployement p {
+    font-size: 16px;
+}
+
+.warningLabel {
+    font-size: 14px;
+    font-weight: 600;
 }
