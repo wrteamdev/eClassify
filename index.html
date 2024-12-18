@@ -212,7 +212,8 @@
                     </h4>
                     <ol style="margin-left: 53px;">
                         <li class="h4">
-                            <strong>VPS Hosting:</strong> A Virtual Private Server (VPS) is <strong>mandatory</strong> to ensure reliable
+                            <strong>VPS Hosting:</strong> A Virtual Private Server (VPS) is <strong>mandatory</strong>
+                            to ensure reliable
                             performance and security. Shared hosting
                             environments are not supported for this <strong>web application</strong>.
                         </li>
@@ -2488,24 +2489,42 @@
                                                 </span> <br>
                                                 1. Error :<br>
                                                 <img src="./images/web/pm2_error.png" alt="eClassify" />
-                                                2. Success :<br>
-                                                <img src="./images/web/pm2_success.png"
-                                                    alt="eClassify" /><br>
                                                 <p>If you are getting errors in the pm2 process , then
                                                     run pm2 logs and
                                                     send us the
                                                     Screenshot of the error, so that we can guide you to
                                                     resolve your
                                                     issues.</p>
-                                                <p>If you want to restart your pm2 process then run pm2
-                                                    restart id //
-                                                    Replace id
-                                                    with
-                                                    your
-                                                    process id</p>
-                                                <p>For example here id is 0 in the above screenshot -->
-                                                    <b><code> pm2 restart 0</code></b>
-                                                </p>
+                                                2. Success :<br>
+                                                <img src="./images/web/pm2_success.png" alt="eClassify" />
+
+                                                <div>
+                                                    <p>If successful, set up a startup script for your operating system to ensure PM2 restarts automatically after a system
+                                                    reboot.</p>
+                                                    <p>
+                                                        <b><code>pm2 startup</code></b>
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <p>After setting up PM2 with the startup command, save the current
+                                                        process list</p>
+                                                    <p>
+                                                        <b><code>pm2 save</code></b>
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <p>If you want to restart your pm2 process then run pm2
+                                                        restart id //
+                                                        Replace id
+                                                        with
+                                                        your
+                                                        process id</p>
+                                                    <p>For example here id is 0 in the above screenshot -->
+                                                        <b><code> pm2 restart 0</code></b>
+                                                    </p>
+                                                </div>
                                             </div>
                                             <p>For deleting the previous project running in the PM2
                                                 server, use the
