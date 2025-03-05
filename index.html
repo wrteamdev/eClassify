@@ -113,12 +113,13 @@
                                 <li><a href="#changeDefaultCountryCode">Change Default Country Code in
                                         App</a>
                                 </li>
-                                <li><a href='#runThisApp'>Run This App</a></li>
                                 <li><a href='#changeAppTheme'>Change App theme</a></li>
                                 <li><a href='#changeFont'>Change Font</a></li>
                                 <li><a href='#addLanguage'>Add Languages</a></li>
                                 <li><a href='#changeDefaultLanguage'>Change Default Language</a></li>
                                 <li><a href='#admobSetting'>Google Admob Settings</a></li>
+                                <li><a href='#inAppPurchaseSetting'>inAppPurchase Settings</a></li>
+                                <li><a href='#runThisApp'>Run This App</a></li>
                                 <li><a href='#generateReleaseVersion'>Generate Release Version</a></li>
                             </ul>
                         </li>
@@ -246,7 +247,7 @@
                     </h4>
                     <ol style="margin-left: 53px;">
                         <li class="h4">
-                            <strong>Flutter Version:</strong> Flutter stable channel <strong>latest</strong> sdk version
+                            <strong>Flutter Version:</strong> Flutter stable channel <strong>3.27.4</strong> sdk version
                         </li>
                         <li class="h4">
                             <strong>Java Version:</strong> JDK version <strong>22</strong>
@@ -442,9 +443,9 @@
                 </div>
                 <br />
                 <div class="sec-content">
-                    <h3>
+                    <h2>
                         Setup flutter in your system
-                    </h3>
+                    </h2>
                     <ol>
                         Visit flutter official website : <a
                             href="https://docs.flutter.dev/get-started/install"
@@ -1385,30 +1386,7 @@
             </section>
 
 
-            <section class="section css-structure" id="runThisApp">
-                <div class="sec-title">
-                    <span class="icon fa fa-at"></span>
-                    <h2>Run this app</h2>
-                </div>
-                <br>
-                <div class="sec-content">
 
-                    <h4>Open your terminal, navigate to your project path and execute the following
-                        command to run this
-                        app.</h4>
-                    <br>
-                    <p class="command-style">flutter run</p>
-                    <br>
-                    <h4>Go to README.md file to check all the commonly used commands to fix issues that
-                        you may
-                        encounter while running the app. You'll also be able to run the shell script
-                        directly if you're
-                        using Android Studio.</h4>
-                    <br>
-                    <img src="images/app/commandList.png" alt="Eclassify" />
-
-                </div>
-            </section>
 
 
             <section class="section css-structure" id="changeAppTheme">
@@ -1560,24 +1538,22 @@
                     <ol>
                         <li>
                             <h4>
-                                Go to your admin panel Settings -> Languages. Download all sample JSON
-                                files as below image.</h4>
+                                Go to your admin panel Settings -> Languages. Add your language data and save it.</h4>
                             <br><br>
                             <img src="images/app/addLanguage1.png" alt="Eclassify" />
                             <br><br>
                         </li>
                         <li>
                             <h4>
-                                Translate these all JSON files in your respective
-                                language.</h4>
+                                Edit all json files as below image.</h4>
+                            <br>
+                            <img src="images/app/addLanguage2.png" alt="Eclassify" />
                             <br><br>
                         </li>
                         <li>
                             <h4>
-                                Now Add all fields which is required for adding languages and add your
-                                respective language translated JSON files and save it as below
-                                image.</h4>
-                            <img src="images/app/addLanguage2.png" alt="Eclassify" />
+                                Please click on auto translate button so as per your language code JSON file will be automatically translated in your language. If you want to edit any label's value then you can edit it and after click on save button.</h4>
+                            <img src="images/app/addLanguage3.png" alt="Eclassify" />
                             <br><br>
                         </li>
                     </ol>
@@ -1605,6 +1581,65 @@
                         </li>
 
                     </ol>
+                </div>
+            </section>
+
+            <section class="section css-structure" id="inAppPurchaseSetting">
+                <div class="sec-title">
+                    <span class="icon fa fa-shopping-cart"></span>
+                    <h2>In-App Purchase Setup</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                   <b> <p>Note: Ensure the Paid Apps Agreement is enabled in your Apple Developer account.</p></b><br>
+                   <h4> <ol>
+                        <li>
+                            Log in to App Store Connect and select your app.
+                        </li><br>
+                        <li>
+                            Navigate to the Features tab and click on In-App Purchases.
+                        </li><br>
+                        <li>
+                            Click the + button to add a new consumable in-app purchase.
+
+                        </li><br>
+                        <li>
+                            Enter all required details for the product and save the information.
+                        </li><br>
+                        <li>
+                            When submitting your app for distribution:
+                            <ul><br>
+                                <li>Select the in-app purchases during the submission process.</li><br>
+                                <li>Then, submit your app for review.</li>
+                            </ul>
+                        </li>
+                   </ol></h4>
+                </div>
+            </section>
+
+
+            <section class="section css-structure" id="runThisApp">
+                <div class="sec-title">
+                    <span class="icon fa fa-at"></span>
+                    <h2>Run this app</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+
+                    <h4>Open your terminal, navigate to your project path and execute the following
+                        command to run this
+                        app.</h4>
+                    <br>
+                    <p class="command-style">flutter run</p>
+                    <br>
+                    <h4>Go to README.md file to check all the commonly used commands to fix issues that
+                        you may
+                        encounter while running the app. You'll also be able to run the shell script
+                        directly if you're
+                        using Android Studio.</h4>
+                    <br>
+                    <img src="images/app/commandList.png" alt="Eclassify" />
+
                 </div>
             </section>
 
@@ -1651,7 +1686,7 @@
                                 previous step:
                             </h4>
                             <br>
-                            <i><b></br>storePassword= [your-password-from-previous-step]<br>
+                            <i><b>storePassword= [your-password-from-previous-step]<br>
                                     keyPassword= [your-password-from-previous-step] <br>
                                     keyAlias= [your-alias-from-previous-step]<br>
                                     storeFile= [your-keystore-file-location]<br></b>
@@ -1663,6 +1698,41 @@
                                 following
                                 command:</h4>
                             <br>
+
+
+                    <img src="images/app/generatKeyStorefile.png" alt="Eclassify" /><br>
+
+                            <h4>Add this below code in android/app/build.gradle folder as image.</h4>
+                            <br>
+
+                            <xmp>
+                                def keystoreProperties = new Properties()
+                                def keystorePropertiesFile = rootProject.file('key.properties')
+                                if (keystorePropertiesFile.exists()) {
+                                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+                                }
+                            </xmp>
+
+
+                            <img src="images/app/keyStore1.png" alt="Eclassify" /><br><br>
+
+                            <h4>Same as above add below code in android/app/build.gradle folder as below image</h4>
+                            <br>
+                            <xmp>
+                            signingConfigs {
+                                release {
+                                keyAlias keystoreProperties['keyAlias']
+                                keyPassword keystoreProperties['keyPassword']
+                                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                                storePassword keystoreProperties['storePassword']
+                                }
+                                }
+                            </xmp>
+
+                            <h4>Note: Don't forget to change <b>signingConfig signingConfigs.release</b> as below image.</h4>
+                            <img src="images/app/keyStore2.png" alt="Eclassify" /><br><br>
+
+
                             <i><b>flutter build apk</b></i>
                             <br><br>
                             <h4>Or an app bundle file for the Play Store upload with:</h4>
@@ -1670,8 +1740,6 @@
                             <i><b>flutter build appbundle</b></i>
                         </li>
                     </ol>
-
-                    <img src="images/app/generatKeyStorefile.png" alt="Eclassify" />
 
                 </div>
 
@@ -2597,69 +2665,135 @@
 
                 <br />
                 <div class="sec-content">
-                    <h3><b>1. Why I'm getting unknown host issue while configuring the Database ?</b>
-                    </h3><br>
+                    <h3><b>1. Why am I getting an unknown host issue while configuring the Database?</b></h3><br>
                     <div style="padding-left: 18px;">
                         <h4>
                             Possible reason may be <b>nd_pdo_mysql</b> extension is not installed.
-                            Install that and try again. If you are still having the same issue Contact
-                            Us.<br>
+                            Install that and try again. If you are still having the same issue, contact us.<br>
                         </h4><br>
                     </div>
 
-                    <h3><b>2. Do I have to install admin from scratch to get the Latest features ?</b>
-                    </h3><br>
+                    <h3><b>2. Do I have to install admin from scratch to get the latest features?</b></h3><br>
                     <div style="padding-left: 18px;">
                         <h4>
-                            No, Fresh installation is required only for the first time.You need use
-                            System Update menu
-                            to update your system. <br>
+                            No, a fresh installation is required only for the first time. You need to use
+                            the System Update menu to update your system.<br>
                         </h4><br>
                     </div>
-                    <h3><b>3. Then How to do I update my Admin Panel to get the benefits of the latest
-                            featured ?</b>
-                    </h3><br>
+
+                    <h3><b>3. How do I update my Admin Panel to get the benefits of the latest features?</b></h3><br>
                     <div style="padding-left: 18px;">
                         <h4>
-                            When we release new updates, We provide zip files of the Updates under the
-                            Admin Panel
-                            Code.
-                            Follow this steps to update your system :
+                            When we release new updates, we provide zip files of the updates under the
+                            Admin Panel Code. Follow these steps to update your system:
                         </h4>
                         <ol style="margin-left: 53px;">
-                            <li class="h4">Open you Admin Panel</li>
-                            <li class="h4">Now go to System Update menu , which you can see as the last
-                                Option in
-                                Sidebar.
-                            </li>
-                            <li class="h4">In the System Update form you need to fill your Purchase code
-                                with the update
-                                version zip file.
-                            </li>
-                            <li class="h4">Hit Submit. Voila ! your System is updated now.</li>
+                            <li class="h4">Open your Admin Panel.</li>
+                            <li class="h4">Go to the System Update menu, which you can find as the last option in the sidebar.</li>
+                            <li class="h4">In the System Update form, fill in your purchase code along with the update version zip file.</li>
+                            <li class="h4">Hit Submit. Voila! Your system is updated now.</li>
                         </ol>
-
                     </div>
-                    <h3><b>4. Images are not loading in App / Web / Admin Panel ?</b></h3><br>
+
+                    <h3><b>4. Images are not loading in App/Web/Admin Panel?</b></h3><br>
                     <div>
-                        <h4>This issue will be fixed from the Admin Panel code. So Open the Admin Panel
-                            in Server file
-                            manager. Then Perform this below steps :</h4>
+                        <h4>This issue can be fixed from the Admin Panel code. Open the Admin Panel
+                            in the server file manager and perform the following steps:</h4>
                         <ol style="margin-left: 53px;">
-                            <li class="h4">Open your public folder rename storage folder to storage-old
-                                (Skip this step
-                                if storage folder does not exists.)
-                            </li>
-                            <li class="h4">Open your_domain.com/storage-link -> you will see the blank
-                                page
-                            </li>
-                            <li class="h4">After this check the images are loading or not.</li>
+                            <li class="h4">Open your public folder and rename the storage folder to storage-old (skip this step if the storage folder does not exist).</li>
+                            <li class="h4">Open your_domain.com/storage-link — you will see a blank page.</li>
+                            <li class="h4">After this, check if the images are loading.</li>
                         </ol>
                     </div>
 
-                    <br><br>
+                    <h3><b>5. Can I modify the source code after purchase?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Yes, you are allowed to modify the source code after purchasing the product.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>6. License & Usage Rights</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            <b>License Type:</b> Refer to these links for details:<br><br>
+                            <a
+                                    href="https://codecanyon.net/licenses/faq#main-differences-licenses-a"
+                                    target="_blank" style="color:#3c55d1">Envato License FAQ</a><br><br>
+                            <a
+                                    href="https://help.market.envato.com/hc/en-us/articles/115005593363-Do-I-need-a-Regular-License-or-an-Extended-License"
+                                    target="_blank" style="color:#3c55d1">Regular vs. Extended License</a><br><br>
+
+                            <b>Source Code Modification:</b> Allowed after purchase. <br><br>
+                            <b>Commercial Use:</b> Allowed for a single business with one domain per license.<br><br>
+                            <b>Multiple Domains:</b> Not permitted under a single purchase code.<br><br>
+                            <b>Project Continuity:</b> Full rights to modify and continue using the product if the developer discontinues support.<br>
+                        </h4><br>
+                    </div>
+
+
+
+                    <h3><b>7. Can I use the product on multiple domains with a single purchase code?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            No, using the product on multiple domains is not permitted under a single purchase code.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>8. Is commercial use allowed?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Yes, commercial use is allowed for a single business with one domain per license.
+                        </h4><br>
+                    </div>
+
+
+                    <h3><b>9. How often are updates released, and is there an additional cost?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Updates are released every 1.5 to 2 months and are included in the purchase price without additional fees.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>10. Is technical support available, and for how long?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Yes, technical support is available via Skype for 6 months after purchase.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>11. What are the minimum hosting requirements for this product?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            The product requires PHP version 8.1.0 or higher, a VPS server with at least 3-4 GB of free space, and MySQL for the database.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>12. Does the product support multiple languages?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Yes, the product supports multiple languages.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>14. Is customization support provided?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Yes, in-house customization services are available at $17/hour.
+                        </h4><br>
+                    </div>
+
+                    <h3><b>15. Is there a refund policy?</b></h3><br>
+                    <div style="padding-left: 18px;">
+                        <h4>
+                            Yes, refunds are provided as per <a
+                                href="https://codecanyon.net/licenses/faq#refunds"
+                                target="_blank" style="color:#3c55d1">Codecanyon’s refund policy.</a>
+                        </h4><br>
+                    </div>
                 </div>
             </section>
+
 
 
             <!--Rating-->

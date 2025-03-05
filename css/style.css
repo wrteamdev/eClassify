@@ -44,7 +44,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #353535;
     line-height: 1.6em;
     font-weight: 500;
@@ -889,3 +889,15 @@ p {
     font-size: 14px;
     font-weight: 600;
 }
+
+
+#setupFlutter, #setupJDK, #changePackageName, #changeAppVersion, 
+#integrateWithFirebase, #firebaseOtp, #emailAndPasswordSignIn, 
+#googleSignIn, #appleSignIn, #notificationFcm, #deepLink, 
+#googleMap, #integrateWithAdminPanel, #changeAppLogo, 
+#changeAppName, #changeSplashImage, #assetImage, 
+#changeDefaultCountryCode, #runThisApp, #changeAppTheme, 
+#changeFont, #addLanguage, #changeDefaultLanguage, 
+#admobSetting, #generateReleaseVersion {
+    font-size: 16px;
+    font-weight: 400;
