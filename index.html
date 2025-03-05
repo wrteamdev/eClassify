@@ -144,6 +144,7 @@
                                 <li><a href="#howTosetSitemap">How to Setup Sitemap</a></li>
                                 <li><a href="#howToRunWebProject">How to run Web project</a></li>
                                 <li><a href="#nextjsdeploy">How to deploy the Site</a></li>
+                                <li><a href="#updateweb">How to update the Site</a></li>
                                 <!-- <li><a href="#sharedhostingDeploy">How to deploy the Site on shared hosting (not
                                     recommend)</a></li>
                             <li><a href="#webAutomationDeploy">Web Automation Installation Using Script</a></li> -->
@@ -2437,7 +2438,7 @@
                                                 <code> <b>sudo apt install curl</b></code>
                                                 <code> <b>curl
                                                 https://raw.githubusercontent.com/creationix/nvm/master/install.sh
-                                                | bash></b></code>
+                                                | bash</b></code>
                                                 <code> <b>nvm install node 20.*</b></code>
                                                 <b>Check if node js is installed correctly using this
                                                     command </b>
@@ -2567,8 +2568,9 @@
                                                 <img src="./images/web/pm2_success.png" alt="eClassify" />
 
                                                 <div>
-                                                    <p>If successful, set up a startup script for your operating system to ensure PM2 restarts automatically after a system
-                                                    reboot.</p>
+                                                    <p>If successful, set up a startup script for your operating system
+                                                        to ensure PM2 restarts automatically after a system
+                                                        reboot.</p>
                                                     <p>
                                                         <b><code>pm2 startup</code></b>
                                                     </p>
@@ -2617,11 +2619,103 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </section>
+                    <section id="updateweb">
+                        <h1>
+                            <li>
+                                Update the site
+                            </li>
+                        </h1>
+                        <br>
+                        <h3><b>Access the Server:</b></h3>
+                        <div style="padding-left: 18px;">
+                            <h4>
+                                Connect to your server via SSH or open the terminal and navigate to your
+                                web code directory.
+                            </h4>
+                        </div><br>
 
-
+                        <h3><b>Check Running Port:</b></h3>
+                        <div style="padding-left: 18px;">
+                            <br>
+                            <div class="main_box">
+                                <b><code>pm2 logs</code></b>
+                            </div>
+                            <h4>Run the PM2 logs command to check the port on which your website is
+                                currently running. Look for the NODE_PORT value displayed in the output.
+                            </h4> <br>
+                            <img src="images/web/web_running_port.png" alt="Web running port">
+                        </div><br>
+                        <h3><b>Update Port in Latest Code:</b></h3>
+                        <div style="padding-left: 18px;">
+                            <h4>Open the package.json file in your latest code and update the NODE_PORT
+                                value to match the server’s port. Also, update the .htaccess file with
+                                the same port.</h4> <br>
+                            <img src="images/web/package_port.png" alt="Web running port"> <br> <br>
+                            <img src="images/web/htaccess_port.png" alt="Web running port">
+                        </div><br>
+                        <h3><b>Backup Current Code on Server:</b></h3>
+                        <div style="padding-left: 18px;">
+                            <h4>
+                                Create a backup of the current code to avoid any data loss before
+                                removing it.
+                            </h4>
+                        </div><br>
+                        <h3><b>Upload Latest Code:</b></h3>
+                        <div style="padding-left: 18px;">
+                            <h4>
+                                Delete the existing code from the server and upload the latest version.
+                            </h4>
+                        </div><br>
+                        <h3><b>Install Dependencies:</b></h3> <br>
+                        <div style="padding-left: 18px;">
+                            <div class="main_box">
+                                <b><code>npm i</code></b>
+                            </div>
+                            <h4>
+                                Navigate to the web code directory in the terminal and run npm i command
+                                to
+                                install all dependencies from the package.json file, ensuring the
+                                application functions properly.
+                            </h4>
+                        </div>
+                        <br>
+                        <h3><b>Build the Project:</b></h3> <br>
+                        <div style="padding-left: 18px;">
+                            <div class="main_box">
+                                <b><code>npm run build</code></b>
+                            </div>
+                            <h4>
+                                Execute the npm run build command to generate the necessary files for
+                                deployment. This step
+                                compiles the project and optimizes it for production.
+                            </h4>
+                        </div>
+                        <br>
+                        <h3><b>Restart PM2 Process:</b></h3> <br>
+                        <div style="padding-left: 18px;">
+                            <div class="main_box">
+                                <b><code>pm2 restart id</code></b>
+                            </div>
+                            <h4>
+                                Restart the PM2 process by running the pm2 restart command followed by
+                                the process ID or name. This ensures the new version of the code is
+                                loaded and the application runs with the latest
+                                changes.
+                            </h4> <br>
+                            <img src="images/web/restart_pm2_process.png" alt="restart pm2 process">
+                        </div>
+                        <br>
+                        <h3><b>Verify the Deployment:</b></h3> <br>
+                        <div style="padding-left: 18px;">
+                            <h4>
+                                Check if the website is running properly by accessing it in a browser. If there are any
+                                issues,
+                                review the PM2 logs for errors and troubleshoot accordingly.
+                            </h4>
+                        </div>
+                    </section>
                 </ol>
             </section>
 
