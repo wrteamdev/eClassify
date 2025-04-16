@@ -20,7 +20,7 @@ The documentation is organized into several sections:
 
 1. **Admin Panel Setup** - Instructions for setting up and configuring the admin panel
 2. **Mobile Application Setup** - Guide for setting up and customizing the mobile app
-3. **Web Application Setup** - Steps to configure and deploy the web application
+3. **Web Application Setup** - Step to configure and deploy the web application
 4. **Support** - How to get help and contact information
 
 Thank you for choosing eClassify!
