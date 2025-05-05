@@ -39,7 +39,7 @@ sidebar_position: 6
 
 3. or another way you can also get release sha from below given command in terminal
 
-4. If you have already created keystore file then do below steps otherwise first create keystore file through these steps: [Create KeyStore File](#generateReleaseVersion)
+4. If you have already created keystore file then do below steps otherwise first create keystore file through these steps: [Create KeyStore File](/docs/mobile-app/generate-release-version)
 
 5. Then here edit this command and replace your keystore path and alias in this command **keytool -list -v -keystore "D:\keystore\eclassify.jks" -alias eclassify**
 
