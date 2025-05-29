@@ -12,7 +12,7 @@ sidebar_position: 10
 
    ![FCM 2](/images/app/fcm_12.png)
 
-3. Now add your project id and downloaded service json file in admin panel system settings and save it.
+3. Now add your project id and downloaded service json file in admin panel Settings > Notification Settings and save it.
 
    ![FCM 3](/images/app/fcm4.png)
 
