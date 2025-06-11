@@ -41,7 +41,6 @@ const sidebars = {
       label: "Setup Mobile Application",
       items: [
         "mobile-app/setup-jdk",
-        "mobile-app/setup-flutter",
         "mobile-app/change-package-name",
         "mobile-app/change-app-version",
         "mobile-app/integrate-firebase",
@@ -66,6 +65,7 @@ const sidebars = {
         "mobile-app/admob-settings",
         "mobile-app/in-app-purchase-setup",
         "mobile-app/generate-release-version",
+        "mobile-app/app-deployment",
       ],
     },
     {

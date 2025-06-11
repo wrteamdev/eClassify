@@ -15,3 +15,5 @@ sidebar_position: 9
    ![Apple Sign In Xcode](/images/app/apple2.png)
 
 5. This will generate and configure an App ID in the "Certificates, Identifiers & Profiles" section of the Apple Developer portal.
+
+> **Important:** For iOS authentication setup and URL scheme configuration, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase/#-for-ios-authentication-setup). This step is crucial for enabling Apple Sign-In in your iOS app.

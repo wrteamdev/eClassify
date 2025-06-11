@@ -25,3 +25,11 @@ sidebar_position: 4
 6. **Do not forget** to execute flutter packages get, flutter build or flutter run after this step
 
    ![iOS Version Change](/images/app/ios_version_change.png)
+
+7. Additional iOS Build Settings:
+   - Open your iOS project in Xcode
+   - Go to Runner -> Build Settings
+   - Search for "FLUTTER_BUILD_NAME" and "FLUTTER_BUILD_NUMBER"
+   - Update these values to match your desired version
+
+   ![iOS Build Settings](/images/app/change_version_ios1.png)

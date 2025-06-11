@@ -4,6 +4,8 @@ sidebar_position: 14
 
 # Change App Logo
 
+For a comprehensive guide on customizing your app's appearance, including detailed steps for changing the app logo and other branding elements, please refer to our [Comprehensive Guide to App Customization](/docs/mobile-app/customization-guide).
+
 ## Add Logo Manually
 
 For Android, open android > app > src > main > res and add here your logo according to device screen size
