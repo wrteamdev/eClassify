@@ -4,6 +4,8 @@ sidebar_position: 24
 
 # How to Enable/Disable and Admob Settings
 
+For a comprehensive guide on setting up Google AdMob, please refer to: [Google AdMob Setup Guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob)
+
 1. If you want to disable google admob then you can disable from admin panel -> settings -> admob settings
 
 2. Create android and iOS app in google admob account. You can create google admob account from here. [https://admob.google.com/home/](https://admob.google.com/home/)
