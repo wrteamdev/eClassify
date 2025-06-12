@@ -22,6 +22,7 @@ const sidebars = {
       id: "intro",
       label: "Introduction",
     },
+   
     {
       type: "category",
       label: "Setup Admin Panel",
@@ -86,6 +87,16 @@ const sidebars = {
         "web-setup/deploy-to-server",
         "web-setup/update-site",
       ],
+    },
+    {
+      type: "doc",
+      id: "change-log",
+      label: "ChangeLog",
+    },
+    {
+      type: "doc",
+      id: "features",
+      label: "Features",
     },
     {
       type: "doc",

@@ -138,6 +138,70 @@ function HomepageFeatures() {
               </div>
             </div>
           </div>
+          <div className="col col--4">
+            <div className="card margin-bottom--lg">
+              <div className="card__header">
+                <div className={styles.cardIcon}>
+                  {/* Features icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                  >
+                    <path d="M12 2a1 1 0 0 1 1 1v2.07A7.002 7.002 0 0 1 19.93 11H22a1 1 0 1 1 0 2h-2.07A7.002 7.002 0 0 1 13 19.93V22a1 1 0 1 1-2 0v-2.07A7.002 7.002 0 0 1 4.07 13H2a1 1 0 1 1 0-2h2.07A7.002 7.002 0 0 1 11 4.07V2a1 1 0 0 1 1-1zm0 4a5 5 0 1 0 0 10A5 5 0 0 0 12 6z" />
+                  </svg>
+                </div>
+                <h3>Features</h3>
+              </div>
+              <div className="card__body">
+                <p>
+                  Explore the powerful and flexible features that make eClassify a complete solution for your needs.
+                </p>
+              </div>
+              <div className="card__footer">
+                <Link
+                  className="button button--outline button--primary"
+                  to="/docs/features"
+                >
+                  View Features
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col col--4">
+            <div className="card margin-bottom--lg">
+              <div className="card__header">
+                <div className={styles.cardIcon}>
+                  {/* ChangeLog icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                  >
+                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg>
+                </div>
+                <h3>ChangeLog</h3>
+              </div>
+              <div className="card__body">
+                <p>
+                  Track all updates, improvements, and changes across the eClassify platform.
+                </p>
+              </div>
+              <div className="card__footer">
+                <Link
+                  className="button button--outline button--primary"
+                  to="/docs/change-log"
+                >
+                  View ChangeLog
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
