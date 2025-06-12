@@ -42,10 +42,6 @@ These are the core admin settings that influence global behavior across both the
 * **Location Defaults**: Set default location.
 
 
-### Firebase & Notifications:
-
-* FCM Server Key
-
 ### Map and Location:
 
 * Google Place Maps API Key / Free Map Key
@@ -55,6 +51,7 @@ These are the core admin settings that influence global behavior across both the
 
 * Free Ads Listing Toggle
 * Maintenance Mode Toggle
+* Force Update Toggle
 * Ads Auto-Approval Toggle
 * Edited Ads Auto-Approval Toggle
 
@@ -129,19 +126,25 @@ Focus on system control and configuration for platform management.
 * **Plan Management**: Create subscription packages with feature limits.
 * **Custom Field Builder**: Add specific data fields per category (e.g., mileage for cars).
 * **Location Manager**: Add/manage country, state, city, and area data.
-* **User Management**: Approve users, verify sellers, assign roles.
+* **User Management**: 
+  * Approve users, verify sellers, assign roles
+  * Manage offline payments (Cash/Cheque)
+  * Assign subscription plans manually
+  * Track payment history
 * **Ad Management**: Moderate listings, promote featured ads.
 * **Reports & Reviews**: Handle reports from users and review moderation.
-* **Payments**: Set up gateways (Stripe, Razorpay, Paystack, etc.).
+* **Payments**: 
+  * Set up gateways (Stripe, Razorpay, Paystack, etc.)
+  * Manage offline payments (Cash/Cheque)
+  * Payment verification system
+  * Payment history tracking
 * **Push Notifications**: Send custom messages to all or specific users.
 * **CMS & Static Pages**: Build About Us, Privacy Policy, etc.
 * **Blog & SEO Tools**: Post content, manage tags, and optimize search visibility.
-* **Slider & Banner Manager**: Create homepage visuals and call-to-actions with featured section.
+* **Slider & Banner Manager**: Create homepage visuals and call-to-actions with featured section and slider section.
 * **Admin Roles & Permissions**: Control who can access what sections.
 
 ### 📱 Mobile App & Web Features
-
-Enhances user experience and usability on Android/iOS devices.
 
 * Material Design UI (Light/Dark themes)
 * Real-time Chat with Push Notifications
