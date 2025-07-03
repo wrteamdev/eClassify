@@ -16,7 +16,7 @@ If you have any questions or need assistance with eClassify, please don't hesita
 
 - **Email:** [support@wrteam.in](mailto:support@wrteam.in)
 - **Support Hours:** Monday to Friday, 9:00 AM to 6:00 PM (IST)
-- **Customer Support Head for eClassify:** [Nikita Bhanderi](https://join.skype.com/invite/VkdXAk8mu9ay)
+- **Customer Support Head for eClassify:** [Ishit Tanna](https://teams.live.com/l/invite/FEAHKrGHpchHDMkXgE)
 
 ## Support Policy
 
