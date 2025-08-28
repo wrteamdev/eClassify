@@ -10,10 +10,31 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 2.7.0          | 3.35.1         | 2.1.0        | 8.6.1       | 8.8                      | 22          |
 | 2.6.0          | 3.32.2         | 2.0.20        | 8.6.1       | 8.8                      | 22          |
 | 2.5.0          | 3.29.2         | 2.0.20        | 8.6.1       | 8.8                      | 22          |
 
 ## Version History
+
+### Version 2.7.0 (Updated on 27-August-2025)
+
+#### New Features
+- Multi-Language Support for Feature Section
+- Multi-Language Support for Report Reasons for Ads
+- Multi-Language Support for Subscription Packages
+- Multi-Language Support for Settings (FAQs, Privacy Policy, Terms & Conditions, Contact Us etc.)
+- Multi-Language Support for Blogs
+- Multi-Language Support for Verification Fields
+- Refund Policy Page with Multi-Language Support (Web)
+- Multi-Language Support for Ad Details and Custom Fields
+- Multi-Language Support for SEO - Metadata and Structured Data
+
+#### Improvements
+- Location Selection based on API selected in Admin Panel (Free API or Paid API)
+- Converted Web Version from CSS to Tailwind CSS
+
+#### Updates
+- Flutter App Compatibility with Flutter SDK version 3.35.1
 
 ### Version 2.6.0 (Updated on 11-June-2025)
 
