@@ -34,10 +34,12 @@ sidebar_position: 12
 8. Click on Enable to, enable that APIs
 
    ![Map API 4](/images/app/mapAPI4.png)
+9. Do above steps for the following APIs (enable each API one by one by searching):
 
-9. Do above steps for below listed API. (enable all below APIs one by one by searching)
-
-   ![Map API 5](/images/app/mapAPI5.png)
+   - Maps SDK for Android
+   - Maps SDK for iOS  
+   - Geocoding API
+   - Geolocation API
 
 10. Go to Credential Tab. You will find your Android and iOS API keys.
 
