@@ -10,11 +10,40 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 2.8.0          | 3.35.6         | 2.1.0        | 8.9.1       | 8.11.1                      | 22          |
 | 2.7.0          | 3.35.1         | 2.1.0        | 8.6.1       | 8.8                      | 22          |
 | 2.6.0          | 3.32.2         | 2.0.20        | 8.6.1       | 8.8                      | 22          |
 | 2.5.0          | 3.29.2         | 2.0.20        | 8.6.1       | 8.8                      | 22          |
 
 ## Version History
+
+### Version 2.8.0 (Updated on 16-October-2025)
+
+#### New Features
+
+- Auto-renewal for items (same-package only)
+- Bulk-delete expired items
+- Bulk-renew selected ads
+- PayPal payment gateway
+
+#### Improvements
+
+- Default language selector in top bar
+- Area-level translation support
+- Firebase notification scalability for mass admin broadcasts
+- JSON upload for English & other languages in Language editor (Admin)
+- Translation UI for About us, Contact us, Privacy policy, Terms & Conditions, Refund Policy (Admin)
+- Sticky landing-page header with dynamic section highlights (Web)
+- Responsive chat page on small screens (Web)
+- Responsive profile page on small screens (Web)
+- Side-sheet UI polish (Web)
+
+#### Updates
+
+- PhonePe SDK updated to latest version
+- Flutter SDK compatibility raised to 3.35.6
+- Resolved Google Play Console 16 KB page-size warning (App)
+- Fixed Google Play Console warnings regarding READ_MEDIA_* permission usage
 
 ### Version 2.7.0 (Updated on 27-August-2025)
 
