@@ -139,7 +139,7 @@ function HomepageFeatures() {
             </div>
           </div>
           <div className="col col--4">
-            <div className="card margin-bottom--lg">
+            <div className="card margin-bottom--lg margin-top--lg">
               <div className="card__header">
                 <div className={styles.cardIcon}>
                   {/* Features icon */}
@@ -157,7 +157,8 @@ function HomepageFeatures() {
               </div>
               <div className="card__body">
                 <p>
-                  Explore the powerful and flexible features that make eClassify a complete solution for your needs.
+                  Explore the powerful and flexible features that make eClassify
+                  a complete solution for your needs.
                 </p>
               </div>
               <div className="card__footer">
@@ -171,7 +172,7 @@ function HomepageFeatures() {
             </div>
           </div>
           <div className="col col--4">
-            <div className="card margin-bottom--lg">
+            <div className="card margin-bottom--lg margin-top--lg">
               <div className="card__header">
                 <div className={styles.cardIcon}>
                   {/* ChangeLog icon */}
@@ -189,7 +190,8 @@ function HomepageFeatures() {
               </div>
               <div className="card__body">
                 <p>
-                  Track all updates, improvements, and changes across the eClassify platform.
+                  Track all updates, improvements, and changes across the
+                  eClassify platform.
                 </p>
               </div>
               <div className="card__footer">
