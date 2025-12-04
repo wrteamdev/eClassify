@@ -10,6 +10,7 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 2.9.0          | 3.38.3         | 2.1.0        | 8.9.1       | 8.11.1                      | 22          |
 | 2.8.0          | 3.35.6         | 2.1.0        | 8.9.1       | 8.11.1                      | 22          |
 | 2.7.0          | 3.35.1         | 2.1.0        | 8.6.1       | 8.8                      | 22          |
 | 2.6.0          | 3.32.2         | 2.0.20        | 8.6.1       | 8.8                      | 22          |
@@ -17,7 +18,46 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 
 ## Version History
 
-### Version 2.8.0 (Updated on 16 October 2025)
+<details open>
+<summary>Version 2.9.0 (Updated on 4 December 2025)</summary> 
+
+#### New Features
+
+- Create ads from Admin Panel
+- Allow uploading of sample/demo data (Only Categories and Custom Field) (Admin)
+- Enable bulk uploads for custom fields (Admin)
+- Send email to users on new login (Admin)
+- Let admins cancel user subscriptions from Admin Panel
+- Caching for metadata and structured data in server-side APIs, configurable via `.env` (Web)
+
+#### Improvements
+
+- PHP support version updated to 2.8.0 or higher
+- Advertisements page UI in Admin Panel
+- Country code support for mobile numbers in Profile, Ad Listing, and Edit Listing (App + Web)
+- Integrate Logout API to stop notifications after logout (App + Web)
+- Reduce Place API costs by using session IDs (App + Web)
+- Add filter options to the featured section screen (App + Web)
+- Show global ads when no ads are available for the selected location (App + Web)
+- Sitemap improvements (Web)
+- Home page Lighthouse performance improvements (Web)
+- Improved location selection flow for new users (App)
+- Simplified authentication flow by removing redundant screens (App)
+- Optimized filter screen and cleaned up unwanted code files (App)
+- Optimized home screen to reduce lag issues (Additional optimizations are in progress and will roll out in upcoming updates)
+
+#### Bug Fixes
+
+- Minor bug fixes and general improvements
+
+
+#### Updates
+- Flutter App Compatibility with Flutter SDK version 3.38.3
+
+</details>
+
+<details>
+<summary>Version 2.8.0 (Updated on 16 October 2025)</summary>
 
 #### New Features
 
@@ -45,7 +85,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Resolved Google Play Console 16 KB page-size warning (App)
 - Fixed Google Play Console warnings regarding READ_MEDIA_* permission usage
 
-### Version 2.7.0 (Updated on 27 August 2025)
+</details>
+
+<details>
+<summary>Version 2.7.0 (Updated on 27 August 2025)</summary>
 
 #### New Features
 - Multi-Language Support for Feature Section
@@ -65,7 +108,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 #### Updates
 - Flutter App Compatibility with Flutter SDK version 3.35.1
 
-### Version 2.6.0 (Updated on 11 June 2025)
+</details>
+
+<details>
+<summary>Version 2.6.0 (Updated on 11 June 2025)</summary>
 
 #### New Features
 - Edit Listing by Admin from admin panel
@@ -86,7 +132,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 #### Updates
 - Flutter App compatibility with Flutter SDK version 3.32.2
 
-### Version 2.5.0 (Updated on 13 April 2025)
+</details>
+
+<details>
+<summary>Version 2.5.0 (Updated on 13 April 2025)</summary>
 
 #### New Features
 - Bank Transfer Payment Integration
@@ -108,7 +157,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Label Changed: 'Item' to 'Advertisement'
 - Flutter Project Now Compatible with Flutter SDK v3.29.2
 
-### Version 2.4.0 (Updated on 5 March 2025)
+</details>
+
+<details>
+<summary>Version 2.4.0 (Updated on 5 March 2025)</summary>
 
 #### New Features
 - Premium & Featured ads with expiry date in admin panel
@@ -124,7 +176,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Allow changing parent category of category in admin panel
 - Improve the appearance of the main company logo in the header for better visual appeal in website
 
-### Version 2.3.0 (Updated on 9 January 2025)
+</details>
+
+<details>
+<summary>Version 2.3.0 (Updated on 9 January 2025)</summary>
 
 #### New Features
 - Free AD Listing Option
@@ -149,7 +204,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Rating Average issue
 - Tips Rank order change issue
 
-### Version 2.2.0 (Updated on 22 November 2024)
+</details>
+
+<details>
+<summary>Version 2.2.0 (Updated on 22 November 2024)</summary>
 
 #### New Features
 - Phonepe Payment Gateway Integration
@@ -172,7 +230,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - All category name-wise items in app
 - Pagination added in chat list and chat messages
 
-### Version 2.1.0 (Updated on 29 September 2024)
+</details>
+
+<details>
+<summary>Version 2.1.0 (Updated on 29 September 2024)</summary>
 
 #### New Features
 - Nearby Ads with KM Range
@@ -200,7 +261,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Language menu UX Improvement
 - Default lat and long set if location is not selected
 
-### Version 2.0.1 (Updated on 31 July 2024)
+</details>
+
+<details>
+<summary>Version 2.0.1 (Updated on 31 July 2024)</summary>
 
 #### Improvements
 - Infinite Items Scroll added in Home page - (Web)
@@ -216,7 +280,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Broken Logo issue in General Settings - (Admin Panel)
 - Panel Translation issue in Some Specific Servers - (Admin Panel)
 
-### Version 2.0.0 (Updated on 8 July 2024)
+</details>
+
+<details>
+<summary>Version 2.0.0 (Updated on 8 July 2024)</summary>
 
 #### New Features
 - Web Version
@@ -229,7 +296,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Company Name change (Admin Panel)
 - Other Known Issues
 
-### Version 1.1.0 (Updated on 12 June 2024)
+</details>
+
+<details>
+<summary>Version 1.1.0 (Updated on 12 June 2024)</summary>
 
 #### New Features
 - Blog management (Admin Panel + App)
@@ -256,7 +326,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - FCM Notification up-gradation (Admin Panel)
 - Other known bug fixes (Admin Panel + App)
 
-### Version 1.0.2 (Updated on 5 May 2024)
+</details>
+
+<details>
+<summary>Version 1.0.2 (Updated on 5 May 2024)</summary>
 
 #### New Features
 - Block User Functionality (Admin Panel + App)
@@ -272,7 +345,10 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 #### Bug Fixes
 - User Signup issue when login using Phone Number (API)
 
-### Version 1.0.1 (Updated on 12 April 2024)
+</details>
+
+<details>
+<summary>Version 1.0.1 (Updated on 12 April 2024)</summary>
 
 #### New Features
 - Filters added in Custom Fields & Items (Admin Panel)
@@ -288,6 +364,8 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 #### Bug Fixes
 - Missing language labels
 - Known Bug Fixes
+
+</details>
 
 ## Need Help?
 

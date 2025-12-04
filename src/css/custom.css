@@ -28,3 +28,62 @@
   --ifm-color-primary-lightest: #07e0ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.markdown summary{
+  padding: 0;
+}
+
+.markdown details {
+  background: transparent;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: none;
+  padding: 0;
+  transition: box-shadow 200ms ease, border-color 200ms ease, background-color 200ms ease;
+}
+
+.markdown details > summary {
+  font-size: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+/* Hide default marker across browsers */
+.markdown details > summary::before {
+  display: none;
+}
+
+/* Custom right-side arrow */
+.markdown details > summary::after {
+  content: "▸";
+  font-size: 2.0rem;
+  color: var(--ifm-color-emphasis-700);
+  transition: transform 200ms ease;
+  margin-right: 2.0rem;
+}
+
+.markdown details[open] > summary::after {
+  font-size: 2.0rem;
+  content: "▾";
+  transform: rotate(120deg);
+  margin-right: 2.0rem;
+}
+
+div.collapsibleContent_i85q {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0 15px;
+}
+
+/* Collapsed hover glow inspired by homepage cards */
+.markdown details:not([open]):hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 20px rgba(0, 178, 202, 0.20);
+}
+
+/* Dark theme: slightly stronger glow for contrast */
+[data-theme="dark"] .markdown details:not([open]):hover {
+  box-shadow: 0 0 20px rgba(0, 178, 202, 0.30);
+}
