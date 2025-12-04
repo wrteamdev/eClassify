@@ -36,11 +36,11 @@ Thank you for choosing eClassify!
 
 ### For Admin Panel
 
-1. **PHP Version:** Eclassify Admin panel is built using **Laravel Framework 10.0** so you need PHP version **minimum 8.1.0 or higher version** installed on your server.
+1. **PHP Version:** Eclassify Admin panel is built using **Laravel Framework 10.0** so you need PHP version **minimum 8.2 or higher version** installed on your server.
 
 ### For App
 
-1. **Flutter Version:** Flutter stable channel **3.35.6** sdk version
+1. **Flutter Version:** Flutter stable channel **3.38.3** sdk version
 2. **Java Version:** JDK version **22**
 
 **Note:** A **VPS server** is only required if you plan to use the **web application**. For hosting the web app, a VPS server is mandatory to ensure proper functionality and performance. However, if you are only using the **mobile app** and the **admin panel**, you can opt for a **shared hosting server** as it is sufficient for these components.
