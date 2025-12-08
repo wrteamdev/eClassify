@@ -32,7 +32,7 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 
 #### Improvements
 
-- PHP support version updated to 2.8.0 or higher
+- PHP support version updated to 8.2.0 or higher
 - Advertisements page UI in Admin Panel
 - Country code support for mobile numbers in Profile, Ad Listing, and Edit Listing (App + Web)
 - Integrate Logout API to stop notifications after logout (App + Web)
