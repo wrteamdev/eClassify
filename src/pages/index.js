@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import logo from "../../static/images/logo/favicon.png";
+import DocBanner from "../components/doc-banner/DocBanner";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -229,6 +230,7 @@ function SupportSection() {
             FAQs
           </Link>
         </div>
+        <DocBanner />
       </div>
     </section>
   );
