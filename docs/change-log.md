@@ -10,6 +10,7 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 2.10.0          | 3.38.6         | 2.1.0        | 8.9.1       | 8.11.1                      | 22          |
 | 2.9.0          | 3.38.3         | 2.1.0        | 8.9.1       | 8.11.1                      | 22          |
 | 2.8.0          | 3.35.6         | 2.1.0        | 8.9.1       | 8.11.1                      | 22          |
 | 2.7.0          | 3.35.1         | 2.1.0        | 8.6.1       | 8.8                      | 22          |
@@ -19,6 +20,35 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 ## Version History
 
 <details open>
+<summary>Version 2.10.0 (Updated on 23 January 2026)</summary>
+
+#### New Features
+
+- Multi-currency support
+- Category-based subscription plans
+- Location-based sliders
+- Watermark feature
+- Custom field bulk update
+- Phone and password login
+- Location search in ad and edit listing (Web & App)
+- Optional phone number during ad listing with display in ad details (Web & App)
+- Stripe Dashboard payment methods support (Web)
+- Listing duration support for free ad listings
+
+#### Improvements
+
+- Custom listing duration in subscription plans
+- Share links open the app directly, avoiding website redirection (App)
+- Centralized AppConfig for all app configuration properties (App)
+- Dark theme for Map (App)
+- General fixes and improvements
+
+#### Updates
+- Flutter App Compatibility with Flutter SDK version 3.38.6
+
+</details>
+
+<details>
 <summary>Version 2.9.0 (Updated on 4 December 2025)</summary> 
 
 #### New Features
