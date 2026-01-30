@@ -27,7 +27,7 @@ Welcome to the eClassify ChangeLog! This section documents all the important cha
 - Multi-currency support
 - Category-based subscription plans
 - Location-based sliders
-- Watermark feature
+- Watermark feature (Requires [Cron Job Configuration](admin-panel-config/cron-job-setup.md))
 - Custom field bulk update
 - Phone and password login
 - Location search in ad and edit listing (Web & App)

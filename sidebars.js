@@ -35,6 +35,7 @@ const sidebars = {
         "admin-panel-config/general-settings",
         "admin-panel-config/webhook-configuration",
         "admin-panel-config/twilio-setup",
+        "admin-panel-config/cron-job-setup",
       ],
     },
     {
