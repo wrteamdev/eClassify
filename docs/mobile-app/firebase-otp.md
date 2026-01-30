@@ -9,9 +9,19 @@ sidebar_position: 6
 3. Enable Phone Sign-in method and save.
 
    ![Phone Auth](/images/app/phone1.png)
+   
+4. Add your supported countries in "Allow" list in SMS Region Policy.\
 
-4. > **Important:** For adding SHA1 and SHA256 keys in Firebase, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase#-add-sha1--sha256-keys-in-firebase). This step is crucial for enabling phone authentication in your Android app.
+   ![SMS Region Policy](/images/app/phone2.png)
 
-## For iOS:
+## Android
 
-> **Important:** For iOS authentication setup and URL scheme configuration, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase/#-for-ios-authentication-setup). This step is crucial for enabling phone authentication in your iOS app.
+:::important
+For adding SHA1 and SHA256 keys in Firebase, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase#-add-sha1--sha256-keys-in-firebase). This step is crucial for enabling phone authentication in your Android app.
+:::
+
+## iOS:
+
+:::important
+For iOS authentication setup and URL scheme configuration, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase/#-for-ios-authentication-setup). This step is crucial for enabling phone authentication in your iOS app.
+:::

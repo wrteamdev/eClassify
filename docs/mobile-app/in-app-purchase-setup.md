@@ -23,7 +23,7 @@ Apple's App Store guidelines require that all digital content and subscription s
 2. Navigate to your app
 3. Go to Features > In-App Purchases
 4. Click the "+" button to add a new in-app purchase
-5. Select "Auto-Renewable Subscription" as the type
+5. Select "Consumable" as the type
 6. Fill in the required details:
    - Reference Name
    - Product ID (this is crucial - you'll need this in the admin panel)
@@ -44,12 +44,14 @@ Apple's App Store guidelines require that all digital content and subscription s
 - The iOS Product ID in your admin panel must exactly match the Product ID created in App Store Connect
 - For Android, you can use other payment gateways as Apple's restrictions don't apply
 - Make sure to test the in-app purchase implementation using sandbox accounts before going live
-- **IMPORTANT**: Don't forget to enable paid app agreements in your Apple Developer account. Without this, in-app purchases will not work. To enable:
+:::important
+Don't forget to enable paid app agreements in your Apple Developer account. Without this, in-app purchases will not work. To enable:
   1. Log in to [Apple Developer Account](https://developer.apple.com)
   2. Go to Agreements, Tax, and Banking
   3. Accept the Paid Applications Agreement
   4. Complete the banking and tax information
   5. Wait for Apple's approval (this may take a few days)
+:::
 
 ## Additional Resources
 

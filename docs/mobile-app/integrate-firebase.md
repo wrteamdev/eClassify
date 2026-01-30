@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Integrate with Firebase
+# Firebase Setup
 
 For detailed step-by-step instructions on Firebase integration, including Android and iOS setup, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase).
 

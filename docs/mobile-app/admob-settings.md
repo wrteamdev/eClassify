@@ -2,25 +2,16 @@
 sidebar_position: 24
 ---
 
-# How to Enable/Disable and Admob Settings
+# AdMob Setup
 
-For a comprehensive guide on setting up Google AdMob, please refer to: [Google AdMob Setup Guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob)
+For a comprehensive guide, check out [Google AdMob Setup Guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob)
 
-1. If you want to disable google admob then you can disable from admin panel -> settings -> admob settings
+1. Create Android and iOS apps in your [Google AdMob account](https://admob.google.com/home/) and note the App IDs.
 
-2. Create android and iOS app in google admob account. You can create google admob account from here. [https://admob.google.com/home/](https://admob.google.com/home/)
+2. Add the App IDs to your mobile projects:
 
-3. Create banner and interstitial ads and copy those ads id.
-
-4. Paste those ads id in admin panel -> settings -> admob settings.
-
-   ![Admob 1](/images/app/admob1.png)
-
-5. You have to setup google admob app id for both Platform.
-
-## Android Setup
-
-Next, open android ‣ app ‣ src ‣ main ‣ AndroidManifest.xml and paste Google Admob Android App Id meta data tag into your application tag before the activity tag, placing the Admob Android App Id you copied before.
+## Android
+Open `android/app/src/main/AndroidManifest.xml` and add the AdMob App ID meta-data inside the application tag (before the activity tag):
 
 ```xml
 <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="{{YOUR_GOOGLE_ADMOB_ANDROID_APP_ID_HERE}}" />
@@ -28,9 +19,8 @@ Next, open android ‣ app ‣ src ‣ main ‣ AndroidManifest.xml and paste Go
 
 ![Admob 3](/images/app/admob3.png)
 
-## iOS Setup
-
-Next, open the ios ‣ Runner ‣ Info.plist file and paste the following code at shown in image.
+## iOS
+Open `ios/Runner/Info.plist` and add:
 
 ```xml
 <key>GADApplicationIdentifier</key>
@@ -38,3 +28,11 @@ Next, open the ios ‣ Runner ‣ Info.plist file and paste the following code a
 ```
 
 ![Admob 2](/images/app/admob2.png)
+
+3. (Optional) You can disable AdMob at any time in Admin Panel → Settings → AdMob Settings.
+
+4. Create ad units in AdMob (Banner, Interstitial, Native) and copy the Ad Unit IDs.
+
+5. Paste the Ad Unit IDs into Admin Panel → Settings → AdMob Settings.
+
+   ![Admob 1](/images/app/admob1.png)

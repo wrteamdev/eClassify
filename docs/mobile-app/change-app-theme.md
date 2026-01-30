@@ -2,8 +2,8 @@
 sidebar_position: 20
 ---
 
-# Change App Theme
+# How to change app theme
 
-Go to lib/Ui/Theme/theme.dart and set your theme colors.
+Go to lib/ui/theme/theme.dart and set your theme colors.
 
 ![Change App Theme](/images/app/chaneAppTheme.png)

@@ -2,8 +2,8 @@
 sidebar_position: 17
 ---
 
-# How to Change Images in App
+# How to change images
 
-Go to assets folder. You can change your image to exist image with same name.
+Navigate to the assets folder and replace the image with a new one that has the same filename.
 
 ![Images Change](/images/app/imagesChange.png)

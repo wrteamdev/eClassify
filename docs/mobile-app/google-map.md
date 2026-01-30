@@ -2,71 +2,70 @@
 sidebar_position: 12
 ---
 
-# How to Add Map API key for Address
+# Google Map Setup
 
-> ⚠️ **NOTE:** If you are using free map API, location data may not be accurate or complete. For accurate location data, it is **strongly recommended** to use place API key.
+:::note
+**Free API** uses the pre-set location data bundled with the project and Admin Panel. It may not include every country/state/city. You must manually add locations in Admin Panel for complete coverage.  
+**Place API** is Google’s paid API and provides accurate, up-to-date location results.
+:::
 
-1. Go to admin panel settings -> select map provider:
-   - If you want to use free map API, select "Free Map API"
-   - If you want to use paid map API, select "Paid Map API"
-   - If you are using place map API, you need to add place API key
+1. Go to Admin Panel → Settings → Map Provider:
+   - Free Map API: uses local/admin-managed location data
+   - Paid Map API: uses Google Place API for accurate results
+      - If selecting Paid Map API, add your Place API key
 
-2. For enabling billing and getting place API key, please refer to our [comprehensive guide](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase-billing)
+2. For enabling billing and obtaining a Place API key, refer to our guide: [Billing & API Keys](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase-billing)
 
 3. Copy place API key from Google Cloud Console and paste it into admin panel settings as shown below:
 
    ![Map API 9](/images/app/mapAPI9.png)
 
-4. Go to Google Cloud Platform. [Click here](https://cloud.google.com/)
+4. Go to [Google Cloud Platform](https://console.cloud.google.com/).
 
-5. Click on console.
-
-   ![Map API 1](/images/app/mapAPI1.png)
-
-6. Select your Firebase Project
+5. Select your Firebase Project
 
    ![Map API 2](/images/app/mapAPI2.png)
 
-7. Search for APIs, which are shown in below image.
+6. Search for APIs.
 
    ![Map API 3](/images/app/mapAPI3.png)
 
-8. Click on Enable to, enable that APIs
+7. Click on Enable.
 
    ![Map API 4](/images/app/mapAPI4.png)
-9. Do above steps for the following APIs (enable each API one by one by searching):
+8. Enable the following APIs (search and enable one by one):
 
+   Required:
    - Maps SDK for Android
-   - Maps SDK for iOS  
+   - Maps SDK for iOS
    - Geocoding API
    - Geolocation API
 
-10. Go to Credential Tab. You will find your Android and iOS API keys.
+   Only if using Paid Map API:
+   - Place API (Legacy) (Only required if using Paid Version)
+
+9. Go to Credential Tab. You will find your Android and iOS API keys.
 
     ![Map API 6](/images/app/mapAPI6.png)
 
-11. You have to setup those above API keys for both Platform.
+10. You have to setup those above API keys for both Platform.
 
-    ### Android Setup
+    ### Android
 
-    - Next, open android ‣ app ‣ src ‣ main ‣ AndroidManifest.xml and paste the Google Maps meta data tag into your application tag before the activity tag, placing the API key you copied before to replace `YOUR_API_KEY_HERE`.
+    Open `android/app/src/main/AndroidManifest.xml` and paste the Google Maps meta data tag into your application tag before the activity tag, placing the API key you copied before to replace `YOUR_API_KEY_HERE`.
 
       ```xml
       <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR_API_KEY_HERE" />
       ```
 
-    **Note**: For the value field, please paste in your API Key from the Google Maps API registration process.
-
     ![Map API 7](/images/app/mapAPI7.png)
 
-    ### iOS Setup
+    ### iOS
 
-    - Next, open the ios ‣ Runner ‣ AppDelegate.swift file and paste the following code at shown in image.
+    Open `ios/Runner/AppDelegate.swift` and paste the following code at shown in image.
 
       ```swift
       GMSServices.provideAPIKey("YOUR_API_KEY_HERE")
       ```
-
-    **Note**: Again, for the value field please paste in your API Key from the registration process.
 
     ![Map API 8](/images/app/mapAPI8.png)

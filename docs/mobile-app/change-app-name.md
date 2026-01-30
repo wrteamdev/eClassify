@@ -2,16 +2,19 @@
 sidebar_position: 15
 ---
 
-# Change App Name
+# How to change app name
 
-For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in image. Replace the selected Eclassify text with your school name
+## Android
+     - Go to android/app/src/main/AndroidManifest.xml
+     - Change the app name as shown in image. Replace the selected eClassify text with your app name
 
 ![Android App Name](/images/app/androidAppName.png)
 
-For IOS open this project in xcode and enter your app name in display name field as shown in image.
+## iOS
+     - Open this project in xcode
+     - Enter your app name in display name field as shown in image
 
 ![iOS App Name](/images/app/iosAppName.png)
 
-Change app name in lib -> settings.dart file as shown in image.
-
-![App Name 2](/images/app/appName2.png)
+## Splash screen
+     - For Splash screen, change app name in `lib/app_config.dart` file as described in [App Config](app-config.md)

@@ -44,13 +44,20 @@ Share links like `https://example.com/item/123` open the app if installed; other
 
 ### Android Setup (App Links)
 1. Generate `assetlinks.json`:
-   - You can copy the assetlinks.json from the Play Console.
-      - Visit [Play Console](https://play.google.com/console/developers/app/keymanagement)
-      - Select your app
-      - Scroll down to find the Digital Asset Links JSON content for your app
+    1. Visit [Play Console](https://play.google.com/console/developers/app/keymanagement)
+    2. Select your app
+    3. Scroll down to find the Digital Asset Links JSON content for your app
+    4. Create a new file named `assetlinks.json` with the content from Play Console.
       
 2. Host `assetlinks.json` at:
-   - `https://<your-domain>/.well-known/assetlinks.json`
+  - `https://<your-domain>/.well-known/assetlinks.json`
+
+:::note
+- The `assetlinks.json` file must be hosted at the root of your domain.
+- Ensure the file is publicly accessible over HTTPS.
+- Test the file by visiting `https://<your-domain>/.well-known/assetlinks.json` in a browser. It should display the JSON content.
+:::
+
 
 
 ### iOS Setup (Universal Links)
@@ -58,7 +65,6 @@ Share links like `https://example.com/item/123` open the app if installed; other
    - `applinks:<your-domain>`
 
 ![iOS Associated Domains](/images/app/deeplink5.png)
-Image placeholder: screenshot showing Associated Domains with `applinks:example.com`.
 
 2. Host the AASA file at one of:
    - `https://<your-domain>/.well-known/apple-app-site-association`
@@ -68,9 +74,14 @@ Image placeholder: screenshot showing Associated Domains with `applinks:example.
    - You can find your Team ID in the Apple Developer account.
    - Your bundle ID is in Xcode → Runner → General → Identity → Bundle Identifier.
 
->⚠️ **NOTE:** The "apple-app-site-association" file must not have any extensions.
+:::warning
+The "apple-app-site-association" file must not have any extensions.
+:::
 
-Demo file (replace placeholders before deploying):
+Example file:
+  - Replace the `TEAMID` with your actual Team ID.
+  - Replace `com.yourcompany.eclassify` with your actual bundle ID.
+  - Keep the rest of the file structure as is including components
 
 ```json
 {
@@ -97,7 +108,9 @@ Demo file (replace placeholders before deploying):
 
 ## Choosing the Right Method
 - Prefer Method B (HTTPS) for seamless, system-level behavior and stronger reliability.
-- Use Method A (Custom Scheme) when you need website-first control or if you cannot host `assetlinks.json`/AASA yet.
+- Use Method A (Custom Scheme) when you need website-first control or if you cannot host assetlinks/AASA yet.
 - For best UX, you can support both: HTTPS deep links as primary, custom scheme as fallback from specific web flows.
 
->⚠️ **NOTE:** Method B (HTTPS Deep Links) only works with the apps installed via Play Store or App Store.
+:::note
+Method B (HTTPS Deep Links) only works with the apps installed via Play Store or App Store.
+:::

@@ -8,6 +8,25 @@ sidebar_position: 16
 
 Before generating a release version of your Android app, you need to ensure the correct signing configuration is set up in your `build.gradle` file.
 
+### Generate Keystore File
+
+If you haven't already generated a keystore file, follow these steps:
+
+1. Open terminal
+2. Navigate to your project's `android/app` directory
+3. Run the following command:
+   
+   **For Mac/Linux:**
+   ```bash
+   keytool -genkey -v -keystore YOUR-KEYSTORE-FILE.jks -keyalg RSA -keysize 2048 -validity 10000 -alias YOUR-ALIAS
+   ```
+   
+   **For Windows:**
+   ```bash
+   keytool -genkey -v -keystore YOUR-KEYSTORE-FILE.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias YOUR-ALIAS
+   ```
+4. Follow the prompts to set up your keystore.
+
 ### Update Signing Configuration
 
 1. Open `android/app/build.gradle`
@@ -15,15 +34,6 @@ Before generating a release version of your Android app, you need to ensure the 
 3. Make sure the release configuration is set to `release` instead of `debug`
 
 ```gradle
-android {
-    signingConfigs {
-        release {
-            storeFile file("your-release-key.keystore")
-            storePassword "your-store-password"
-            keyAlias "your-key-alias"
-            keyPassword "your-key-password"
-        }
-    }
     buildTypes {
         release {
             signingConfig signingConfigs.release
@@ -34,14 +44,31 @@ android {
 }
 ```
 
+4. Update the contents at `android/key.properties` with your keystore details.
+
+Example Values
+```
+storePassword=123456          //Replace with password you set when generating keystore
+keyPassword=123456            //Replace with password you set when generating keystore
+keyAlias=upload               //Replace with alias you set when generating keystore
+storeFile=keystore.jks        //Replace with keystore file name
+```
+
+:::note
+This will be the same value which you provided when generating the keystore (.jks file)
+:::
+
 ![Release Configuration](/images/app/releaseAPK.png)
 
-## Important Notes
+:::note
+The keystore file should be placed in the `android/app` directory
+:::
 
+:::danger
 - Never commit your keystore file or passwords to version control
 - Store your keystore file securely
 - Keep a backup of your keystore file - if you lose it, you won't be able to update your app on the Play Store
-- The keystore file should be placed in the `android/app` directory
+:::
 
 ## Generating Release APK
 
