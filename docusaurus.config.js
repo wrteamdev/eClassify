@@ -13,6 +13,26 @@ const config = {
   title: "eClassify Documentation",
   tagline: "Documentation for eClassify Admin Panel, Mobile App, and Web",
   favicon: "images/logo/favicon.png",
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `
+        (function() {
+          var oldPath = window.location.pathname;
+          var relativePath = oldPath;
+          if (oldPath.startsWith('/eClassify')) {
+            relativePath = oldPath.substring('/eClassify'.length);
+          }
+          if (relativePath.startsWith('/')) {
+            relativePath = relativePath.substring(1);
+          }
+          var newUrl = 'https://wrteam-in.github.io/eclassify-doc/' + relativePath + window.location.search + window.location.hash;
+          window.location.replace(newUrl);
+        })();
+      `,
+    },
+  ],
 
   // Set the production url of your site here
   url: 'https://wrteamdev.github.io', // Your GitHub Pages URL
