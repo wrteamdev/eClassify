@@ -19,16 +19,9 @@ const config = {
       attributes: {},
       innerHTML: `
         (function() {
-          var oldPath = window.location.pathname;
-          var relativePath = oldPath;
-          if (oldPath.startsWith('/eClassify')) {
-            relativePath = oldPath.substring('/eClassify'.length);
+          if (/wrteamdev\\.github\\.io\\/eClassify/i.test(window.location.href)) {
+            window.location.replace('https://wrteam-in.github.io/eclassify-doc/');
           }
-          if (relativePath.startsWith('/')) {
-            relativePath = relativePath.substring(1);
-          }
-          var newUrl = 'https://wrteam-in.github.io/eclassify-doc/' + relativePath + window.location.search + window.location.hash;
-          window.location.replace(newUrl);
         })();
       `,
     },
